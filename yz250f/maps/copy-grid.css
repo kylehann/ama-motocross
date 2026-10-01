@@ -1,0 +1,19 @@
+/* Optional styles for Copy-grid buttons — Yz250f can @import or ignore */
+.yz-copy-btn {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 12px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.yz-copy-btn:active { transform: scale(0.98); }
+.yz-copy-hint {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin-top: 6px;
+}

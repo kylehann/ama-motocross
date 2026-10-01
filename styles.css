@@ -153,3 +153,30 @@ td.now{color:var(--yellow);font-weight:800}
 @media (max-width:640px){.banner{height:110px}.btab{flex:1 1 40%;padding:10px}}
 
 .hero-graphic{display:block;width:min(100%,720px);height:auto;margin:0 0 18px;border-radius:14px;border:1px solid var(--line);box-shadow:0 12px 40px rgba(0,0,0,.35)}
+
+/* ---- Gear deals ---- */
+.gear-filters{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 8px}
+.gf{background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:99px;padding:8px 14px;font:600 .9rem system-ui,sans-serif;cursor:pointer;min-height:40px}
+.gf:hover{border-color:var(--orange)}
+.gf[aria-pressed="true"]{background:var(--orange);border-color:var(--orange);color:#111;font-weight:800}
+.gear-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin:10px 0 16px}
+.gcard{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--orange);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.gcard h4{margin:0;font-size:1rem;line-height:1.3}
+.g-meta{display:flex;gap:8px;align-items:center;font-size:.78rem;color:var(--muted)}
+.g-cat{background:rgba(255,106,0,.15);color:var(--orange);font-weight:800;padding:1px 8px;border-radius:99px;text-transform:uppercase;letter-spacing:.04em}
+.g-price{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px}
+.g-now{font-size:1.5rem;font-weight:900;color:#fff}
+.g-was{color:var(--muted);text-decoration:line-through}
+.g-off{background:var(--orange);color:#111;font-weight:800;font-size:.78rem;padding:1px 7px;border-radius:6px}
+.g-foot{display:flex;flex-direction:column;font-size:.8rem;color:var(--muted)}
+.g-store{color:var(--text);font-weight:700}
+.g-note{margin:0;font-size:.78rem;color:var(--muted)}
+.btn{display:inline-block;margin-top:auto;text-align:center;background:var(--orange);color:#111;font-weight:800;text-decoration:none;padding:10px 16px;border-radius:10px;min-height:44px;line-height:1.5}
+.btn:hover,.btn:focus{background:var(--yellow);color:#111}
+.btn-sm{margin-top:8px;padding:5px 12px;min-height:0;font-size:.82rem;border-radius:8px}
+.appcard{margin:0 0 16px;padding:16px;border:1px solid var(--orange);border-radius:12px;background:linear-gradient(135deg,rgba(255,106,0,.18),rgba(255,196,0,.06));display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.appcard-t{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.appcard h4{margin:0;font-size:1.25rem}
+.appcard p{margin:0;color:var(--text);max-width:70ch}
+.appcard .tag{background:var(--orange);color:#111;font-weight:800}
+@media(max-width:560px){.gear-grid{grid-template-columns:1fr}.btn{display:block;width:100%}.appcard .btn{display:block;width:100%}}

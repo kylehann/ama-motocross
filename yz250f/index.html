@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-mobile-web-app-title" content="YZ250F" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="theme-color" content="#000000" />
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="icon" href="pwa/icons/icon-192.png" />
+<link rel="stylesheet" href="maps/copy-grid.css" />
+<title>YZ250F WORKSHOP — 2022 · Kyle Hann</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Press+Start+2P&family=Russo+One&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#000;--paper:#f3efe6;--cream:#ebe4d4;--ink:#0a0a0a;--mute:#8a8a8a;
+  --mute2:#b8b8b8;--line:#fff;--line2:#2a2a2a;--accent:#fff;--hot:#fff;
+  --card:#0c0c0c;--card2:#141414;--ok:#e8e8e8;
+  --outline:4px;--stamp:6px 6px 0 #fff;--stamp-sm:4px 4px 0 #fff;
+}
+*{box-sizing:border-box}
+.site-back{display:block;background:#111;color:#ff7a1a;font:700 .8rem/1 "Space Mono",ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:12px 16px;border-bottom:2px solid #ff7a1a}
+.site-back:hover,.site-back:focus{background:#ff7a1a;color:#000}
+
+html,body{margin:0;min-height:100%;background:var(--bg);color:var(--paper);
+  font-family:"Space Mono",ui-monospace,monospace;font-size:15px;line-height:1.5;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,.display{font-family:"Bebas Neue",Impact,sans-serif;letter-spacing:.05em;font-weight:400}
+.stamp{font-family:"Archivo Black",sans-serif;text-transform:uppercase;letter-spacing:.08em}
+.badge{font-family:"Press Start 2P",monospace;font-size:.48rem;letter-spacing:.04em;text-transform:uppercase;
+  border:2px solid #fff;padding:5px 7px;display:inline-block;line-height:1.4}
+.mx-display{font-family:"Russo One",Impact,sans-serif;letter-spacing:.04em;text-transform:uppercase}
+button,a,.chip,.tab,.card{font:inherit}
+a{color:var(--paper);text-decoration:underline;text-underline-offset:3px}
+a:hover{opacity:.85}
+button:focus-visible,.tab:focus-visible,.chip:focus-visible,.card:focus-visible,.search:focus-visible{
+  outline:3px solid #fff;outline-offset:3px}
+
+/* stronger dual-row checker */
+.race-stripe{
+  height:18px;border-bottom:4px solid #fff;
+  background:
+    repeating-linear-gradient(90deg,#000 0 16px,#fff 16px 32px) 0 0/100% 10px no-repeat,
+    repeating-linear-gradient(90deg,#fff 0 16px,#000 16px 32px) 0 10px/100% 8px no-repeat;
+  background-color:#000
+}
+
+/* subtle VHS/scanline overlay — low opacity, not muddy */
+body::before{
+  content:"";pointer-events:none;position:fixed;inset:0;z-index:9999;
+  background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.018) 3px 4px);
+  mix-blend-mode:soft-light;opacity:.55
+}
+body::after{
+  content:"";pointer-events:none;position:fixed;inset:0;z-index:9998;
+  background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.35) 100%);
+  opacity:.4
+}
+
+header{position:sticky;top:0;z-index:40;background:#000;border-bottom:4px solid #fff;
+  padding:16px 16px 12px;
+  background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.06) 1px,transparent 0);
+  background-size:6px 6px}
+.brand{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:flex-start}
+.brand h1{margin:0;font-size:clamp(2.1rem,6vw,3.1rem);line-height:0.88;color:#fff;
+  text-shadow:3px 3px 0 #222,-1px -1px 0 #fff}
+.brand h1 span{display:block;font-size:.42em;letter-spacing:.2em;opacity:.92;
+  font-family:"Russo One",Impact,sans-serif;margin-top:4px;text-shadow:none}
+.sub{margin:10px 0 0;color:var(--mute2);font-size:.8rem;max-width:38rem;line-height:1.45}
+.sub strong{color:#fff;font-weight:700}
+.pill{border:3px solid #fff;padding:8px 12px;font-size:.7rem;text-transform:uppercase;
+  letter-spacing:.14em;color:#fff;font-family:"Russo One",sans-serif;
+  box-shadow:var(--stamp-sm);background:#000;align-self:flex-start}
+
+.tabs{display:flex;gap:8px;margin-top:16px;overflow-x:auto;padding-bottom:6px;-webkit-overflow-scrolling:touch}
+.tab{border:3px solid #fff;background:#000;color:#fff;padding:11px 16px;cursor:pointer;
+  font-family:"Archivo Black",sans-serif;font-size:.78rem;letter-spacing:.07em;text-transform:uppercase;
+  white-space:nowrap;min-height:44px;box-shadow:3px 3px 0 #333;transition:background .1s,color .1s,box-shadow .1s}
+.tab.on{background:#fff;color:#000;box-shadow:3px 3px 0 #888}
+.tab:hover:not(.on){background:#1a1a1a;box-shadow:4px 4px 0 #fff}
+
+main{max-width:1100px;margin:0 auto;padding:20px 16px 64px}
+.search{width:100%;margin:0 0 16px;padding:14px 16px;border:4px solid #fff;background:#0a0a0a;color:#fff;
+  font-family:"Space Mono",monospace;font-size:1rem;outline:none;min-height:48px}
+.search:focus{box-shadow:5px 5px 0 #fff}
+.search::placeholder{color:#777}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.card{text-align:left;cursor:pointer;background:var(--card);border:4px solid #fff;color:#fff;padding:16px;
+  box-shadow:var(--stamp);transition:transform .12s,box-shadow .12s;min-height:44px;
+  background-image:radial-gradient(circle at 100% 0,rgba(255,255,255,.04),transparent 40%)}
+.card:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 #fff}
+.card:active{transform:translate(1px,1px);box-shadow:3px 3px 0 #fff}
+.kicker{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);margin:0 0 8px;
+  font-family:"Russo One",sans-serif}
+.card h3{margin:0 0 10px;font-size:1.7rem;line-height:.95}
+.card p{margin:0;color:#d4d4d4;font-size:.82rem;line-height:1.4}
+.tag{display:inline-block;margin-top:12px;border:2px solid #fff;padding:5px 10px;font-size:.65rem;
+  font-family:"Archivo Black",sans-serif;letter-spacing:.08em;text-transform:uppercase;
+  background:#000;box-shadow:2px 2px 0 #555}
+
+.back{border:0;background:0;color:#fff;cursor:pointer;font-family:"Archivo Black",sans-serif;
+  letter-spacing:.08em;text-transform:uppercase;padding:8px 0;margin:0 0 14px;font-size:.9rem;min-height:44px}
+.panel{background:var(--card);border:4px solid #fff;padding:18px;margin-bottom:14px;box-shadow:var(--stamp);
+  background-image:radial-gradient(circle at 0 100%,rgba(255,255,255,.03),transparent 45%)}
+.panel h2{margin:0 0 8px;font-size:clamp(1.85rem,4vw,2.35rem);line-height:.92}
+.lead{margin:0 0 14px;color:#d0d0d0;font-size:.9rem;line-height:1.45}
+.note{border:3px solid #fff;border-left:10px solid #fff;background:#141414;padding:12px 14px;margin:12px 0;
+  font-size:.84rem;color:#ececec;line-height:1.45;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
+.note.ok{background:#1a1a1a;color:#f0f0f0}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.chip{border:3px solid #fff;background:#000;color:#fff;padding:10px 14px;cursor:pointer;
+  font-family:"Archivo Black",sans-serif;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;
+  min-height:44px;box-shadow:3px 3px 0 #333}
+.chip:hover{background:#fff;color:#000;box-shadow:3px 3px 0 #888}
+
+.section{margin-top:22px}
+.section h3{margin:0 0 12px;font-size:1.65rem;border-bottom:4px solid #fff;display:inline-block;padding-bottom:3px;
+  letter-spacing:.06em}
+table{width:100%;border-collapse:collapse;font-size:.84rem}
+th,td{text-align:left;padding:11px 10px;border-bottom:1px solid #3a3a3a;vertical-align:top}
+th{font-family:"Archivo Black",sans-serif;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--mute);border-bottom:2px solid #fff;background:#0a0a0a}
+tbody tr:nth-child(even){background:rgba(255,255,255,.03)}
+tbody tr:hover{background:rgba(255,255,255,.07)}
+td strong{color:#fff;font-size:1.02em}
+.pn{font-family:"Space Mono",monospace;font-size:.78rem;border:2px solid #fff;padding:2px 6px;white-space:nowrap;
+  background:#000;box-shadow:2px 2px 0 #444}
+.buy{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.buy a{display:inline-block;padding:8px 12px;border:3px solid #fff;background:#000;color:#fff;text-decoration:none;
+  font-family:"Archivo Black",sans-serif;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;
+  min-height:40px;box-shadow:2px 2px 0 #444}
+.buy a:hover{background:#fff;color:#000}
+ol.steps{margin:0;padding-left:1.35rem}ol.steps li{margin:10px 0;color:#e4e4e4}
+.tools{display:flex;flex-wrap:wrap;gap:8px}
+.tool{border:2px solid #888;padding:7px 10px;font-size:.76rem;background:#0a0a0a;color:#ddd}
+.flag{font-size:.62rem;border:2px solid #fff;padding:2px 5px;margin-left:4px;
+  font-family:"Press Start 2P",monospace;letter-spacing:0;vertical-align:middle;background:#000}
+.hidden{display:none!important}
+footer{max-width:1100px;margin:0 auto;padding:0 16px 48px;color:#8a8a8a;font-size:.74rem;
+  border-top:4px solid #fff;padding-top:18px;line-height:1.5}
+footer strong{color:#fff}
+
+/* lubes accordion */
+.topic{background:var(--card);border:4px solid #fff;margin:0 0 12px;box-shadow:var(--stamp-sm)}
+.topic>summary{cursor:pointer;list-style:none;padding:16px 48px 16px 16px;position:relative;
+  font-family:"Bebas Neue",sans-serif;font-size:1.55rem;letter-spacing:.04em;min-height:52px}
+.topic>summary::-webkit-details-marker{display:none}
+.topic>summary::after{content:"+";position:absolute;right:16px;top:14px;font-size:1.5rem;
+  font-family:"Space Mono",monospace;line-height:1;width:28px;height:28px;border:2px solid #fff;
+  display:flex;align-items:center;justify-content:center}
+.topic[open]>summary::after{content:"–"}
+.topic .body{padding:0 16px 16px;border-top:3px solid #fff}
+.topic .subcard{border:3px solid #fff;padding:14px;margin:12px 0;background:#121212;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)}
+.topic .subcard h4{margin:0 0 8px;font-family:"Russo One",sans-serif;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
+
+/* TORQUE MAP */
+.tmap{display:grid;grid-template-columns:1.3fr .9fr;gap:16px}
+@media(max-width:900px){.tmap{grid-template-columns:1fr}}
+.map-stage{border:4px solid #fff;background:#080808;position:relative;overflow:hidden;box-shadow:var(--stamp);
+  background-image:radial-gradient(circle at 2px 2px,rgba(255,255,255,.05) 1px,transparent 0);
+  background-size:10px 10px}
+.map-stage svg{width:100%;height:auto;display:block;touch-action:manipulation}
+.bolt-dot{cursor:pointer;fill:#000;stroke:#fff;stroke-width:4}
+.bolt-dot:hover,.bolt-dot.active{fill:#fff;stroke:#000}
+.bolt-ring{fill:none;stroke:#fff;stroke-width:2.5;opacity:.55;pointer-events:none}
+.leader{stroke:#fff;stroke-width:2.5;fill:none;pointer-events:none}
+.callout{fill:#000;stroke:#fff;stroke-width:3}
+.callout-text{fill:#fff;font-family:"Archivo Black",sans-serif;font-size:12px;letter-spacing:.05em}
+.torque-side{border:4px solid #fff;background:var(--card);padding:16px;box-shadow:var(--stamp);min-height:280px}
+.torque-side h2{margin:0 0 4px;font-size:clamp(1.8rem,3.5vw,2.2rem)}
+.nm{font-family:"Bebas Neue",sans-serif;font-size:3.5rem;line-height:1;margin:10px 0;text-shadow:2px 2px 0 #333}
+.nm small{font-size:.38em;opacity:.75;letter-spacing:.08em}
+.view-switch{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.bolt-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:8px;margin-top:14px}
+.bolt-list button{border:3px solid #fff;background:#000;color:#fff;padding:12px;text-align:left;cursor:pointer;
+  min-height:52px;box-shadow:3px 3px 0 #333;font-size:.78rem}
+.bolt-list button.on{background:#fff;color:#000;box-shadow:3px 3px 0 #888}
+.bolt-list .nm-mini{font-family:"Bebas Neue",sans-serif;font-size:1.5rem;display:block;letter-spacing:.03em}
+
+/* Kyle Hann hero / photos */
+.hero-wrap{margin:0 0 18px;border:4px solid #fff;box-shadow:var(--stamp);position:relative;overflow:hidden;background:#000}
+.hero-wrap img{width:100%;height:auto;aspect-ratio:1.31/1;object-fit:cover;object-position:center center;display:block;
+  filter:contrast(1.15) saturate(1.2);image-rendering:auto}
+.hero-wrap .hero-caption{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;
+  background:linear-gradient(transparent,rgba(0,0,0,.92));border-top:3px solid #fff}
+.hero-wrap .hero-caption .mx-display{font-size:1.1rem;color:#fff;margin:0 0 4px}
+.hero-wrap .hero-caption p{margin:0;font-size:.72rem;color:#ccc}
+.hero-accent{position:absolute;top:12px;right:12px;z-index:2}
+.photo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.photo-card{border:4px solid #fff;background:#000;box-shadow:var(--stamp);overflow:hidden}
+.photo-card img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;
+  filter:contrast(1.12) saturate(1.15)}
+.photo-card.poster img{filter:contrast(1.35) saturate(1.4) brightness(1.05)}
+.photo-card .cap{padding:12px 14px;border-top:3px solid #fff}
+.photo-card .cap h3{margin:0 0 6px;font-size:1.5rem}
+.photo-card .cap p{margin:0;color:#cfcfcf;font-size:.78rem}
+.stripe-magenta{height:6px;background:linear-gradient(90deg,#ff2d95 0 33%,#fff 33% 66%,#1e6aff 66% 100%);border-bottom:3px solid #fff}
+
+
+/* cream paper accent strip under footer credit */
+.credit-bar{display:inline-block;background:var(--cream);color:#111;padding:4px 10px;margin-top:6px;
+  font-family:"Russo One",sans-serif;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  border:2px solid #fff;box-shadow:3px 3px 0 #fff}
+
+@media(max-width:600px){
+  .tab{padding:10px 12px;font-size:.7rem}
+  .brand h1{font-size:clamp(1.9rem,9vw,2.4rem)}
+  main{padding:16px 12px 56px}
+}
+</style>
+</head>
+<body>
+<div class="race-stripe"></div>
+<a class="site-back" href="../">&larr; Back to Dirt Bike Updates</a>
+<div class="stripe-magenta" aria-hidden="true"></div>
+<header>
+  <div class="brand">
+    <div>
+      <h1>YZ250F <span>2022 WORKSHOP</span></h1>
+      <p class="sub">OEM / race-proven fluids &amp; parts for the 2022 YZ250F — Yamalube FS, genuine filters, NGK, Maxima. No bargain no-name junk.</p>
+      <p class="sub" style="margin-top:4px;opacity:.9">Built with his brain by <strong>Kyle Hann</strong> · 2022 YZ250F · #4</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end">
+      <div class="pill">MX · EFI · VERIFY MANUAL</div>
+      <span class="badge">KYLE HANN</span>
+    </div>
+  </div>
+  <nav class="tabs" id="tabs">
+    <button type="button" class="tab on" data-view="jobs">Jobs</button>
+    <button type="button" class="tab" data-view="torques">Torques</button>
+    <button type="button" class="tab" data-view="maps">Maps</button>
+    <button type="button" class="tab" data-view="lubes">Lubes &amp; care</button>
+    <button type="button" class="tab" data-view="systems">Systems</button>
+    <button type="button" class="tab" data-view="schedule">Schedule</button>
+    <button type="button" class="tab" data-view="kits">Amazon kits</button>
+    <button type="button" class="tab" data-view="photos">Photos</button>
+    <button type="button" class="tab" data-view="specs">Bike specs</button>
+  </nav>
+</header>
+
+<main>
+
+<div class="hero-wrap" id="kyleHero">
+  <span class="badge hero-accent">#4 · KYLE HANN</span>
+  <img src="hero-kyle-framed.png" alt="Kyle Hann ripping — 2022 YZ250F jump" width="1200" height="1600" />
+  <div class="hero-caption">
+    <p class="mx-display">KYLE HANN · IN THE AIR</p>
+    <p>Built this workshop with his brain. Real photo — no AI rider.</p>
+  </div>
+</div>
+  <div id="listView">
+    <input class="search" id="search" type="search" placeholder="Search oil, O-ring, axle, torque…" />
+    <div id="grid" class="grid"></div>
+  </div>
+  <div id="detailView" class="hidden">
+    <button type="button" class="back" id="backBtn">← BACK</button>
+    <article class="panel" id="detailPanel"></article>
+  </div>
+  <div id="torqueView" class="hidden"></div>
+</main>
+
+<footer>
+  <div class="credit-bar">Kyle Hann · 2022 YZ250F</div>
+  <p style="margin:12px 0 0">By <strong>Kyle Hann</strong>. Quality standard: Yamaha OEM fluids/filters + Maxima + NGK (YZ250F race-common). Specs from Yamaha 2022 factsheet / OSM family. Values marked VERIFY — confirm in your 2022 owner's / service manual before final torque. Amazon links open product pages or searches; listings change. Not affiliated with Yamaha Motor Corp.</p>
+</footer>
+
+<script>
+const L = {
+  yamalubeFS: "https://www.amazon.com/dp/B0CH6W62TV",
+  yamalubeAP: "https://www.amazon.com/s?k=Yamalube+10W-40+All+Performance",
+  yamalubeGP: "https://www.amazon.com/s?k=Yamalube+RS4GP+10W-40",
+  filter: "https://www.amazon.com/dp/B00AAH6M5A",
+  kit: "https://www.amazon.com/dp/B0CQ137G9J",
+  kitOfficial: "https://www.amazon.com/dp/B00VIOFUMA",
+  kitTune: "https://www.amazon.com/dp/B0CZ9SBHZV",
+  oring: "https://www.amazon.com/s?k=Yamaha+93210-45708+oil+filter+o-ring",
+  airFilter: "https://www.amazon.com/dp/B0CQ18BNBW",
+  airFilterSearch: "https://www.amazon.com/s?k=Yamaha+B2W-14451-01-00+OEM+air+filter",
+  twinAir: "https://www.amazon.com/s?k=Twin+Air+152221+YZ250F",
+  twinAirKit: "https://www.amazon.com/dp/B08SC7V34G",
+  filterOil: "https://www.amazon.com/s?k=Yamalube+foam+air+filter+oil",
+  spark: "https://www.amazon.com/dp/B002G2H81E",
+  pads: "https://www.amazon.com/s?k=Yamaha+B2W-25805-00+brake+pads",
+  padsRear: "https://www.amazon.com/s?k=Yamaha+1C3-W0046-50+brake+pads",
+  s1: "https://www.amazon.com/dp/B0CRBFY2KN",
+  chainLube: "https://www.amazon.com/dp/B0CH1R24VR",
+  sc1: "https://www.amazon.com/dp/B07PVKXRH1",
+  sc1alt: "https://www.amazon.com/dp/B00TO61XJ8",
+  suspensionClean: "https://www.amazon.com/dp/B0FG88H3P8",
+  suspensionCleanOfficial: "https://maximausa.com/products/suspension-clean",
+  lithiumGrease: "https://www.amazon.com/dp/B01LRHDU74",
+  lithiumGreaseAlt: "https://www.amazon.com/s?k=white+lithium+grease+tube+motorcycle",
+  washer: "https://www.amazon.com/s?k=Yamaha+90430-10188+crush+washer"
+};
+function buy(links){return `<div class="buy">${links.map(([lab,u])=>`<a href="${u}" target="_blank" rel="noopener">${lab}</a>`).join("")}</div>`}
+
+const JOBS = [
+{id:"oil",kind:"job",title:"Engine oil & filter",blurb:"Yamalube, OEM filter, cover O-ring, drain washer, torques, fill amounts.",tag:"Every 2.5–10 hrs",
+ interval:"Use Yamalube Full Synthetic (or RS4GP) + OEM filter for the 2022 YZ250F. Race style every race (~2.5 h). Practical ~5 h aggressive / ~10 h recreational.",
+ tools:["12mm drain","8mm filter cover","Torque wrench","Drain pan","Funnel","Lithium grease for O-ring"],
+ capacity:[["No filter","0.95 L"],["With filter","1.05 L"],["Dry total","1.20 L"]],
+ torque:[{part:"Oil drain bolt",nm:"20",ft:"14",src:"YZ-F OSM",flag:false},{part:"Filter cover bolts",nm:"10",ft:"7.2",src:"YZ-F OSM",flag:false},{part:"Oil strainer bolt",nm:"10",ft:"7.2",src:"YZ-F OSM",flag:false}],
+ shop:[
+  {name:"★ Yamalube Hi-Perf Full Synthetic 10W-40",pn:"LUB-10W40-FS-12",qty:"2 qt",why:"HIGH QUALITY MX pick — JASO MA, Yamaha OEM, Dirt Bike Test preferred synthetic feel vs AP",links:[["Amazon OEM FS",L.yamalubeFS]]},
+  {name:"★ Yamalube GP Racing Spec RS4GP",pn:"RS4GP 10W-40",qty:"1–2 qt",why:"HIGH QUALITY race oil — top Yamalube tier for hard MX",links:[["Amazon search GP",L.yamalubeGP]]},
+  {name:"Yamalube AP 10W-40 (budget OK)",pn:"LUB-10W40-AP-12",qty:"1–2 qt",why:"Still Yamaha OEM / JASO MA — fine if you’re cheap on hours; FS is better for 2022 YZ250F thrashing",links:[["Amazon search AP",L.yamalubeAP]]},
+  {name:"★ Yamaha OEM oil filter",pn:"5D3-13440-09-00",qty:"1",why:"HIGH QUALITY — genuine Yamaha only (skip no-name / random Amazon generics)",links:[["Amazon OEM filter",L.filter]]},
+  {name:"★ OEM filter cover O-ring",pn:"93210-45708",qty:"1",why:"Must be Yamaha O-ring — grease lightly",links:[["Amazon O-ring",L.oring]]},
+  {name:"OEM drain crush washer",pn:"90430-10188 family — confirm fiche",qty:"1",why:"Replace every drain — use Yamaha washer from OEM kits",links:[["Amazon washer",L.washer],["OEM oil kit",L.kitOfficial]]}
+ ],
+ steps:["Warm engine, upright on stand.","Drain bolt + washer — drain fully.","Swap filter + O-ring; torque cover 10 Nm.","New washer; drain bolt 20 Nm.","Fill 1.05 L w/ filter (0.95 without). Idle, recheck level."],
+ related:["spark","air","preride","torques"]},
+{id:"air",kind:"job",title:"Air filter",blurb:"Twin Air Powerflow 152222C (Kyle) or OEM B2W + foam oil. Don't drop dirt in the boot.",tag:"Every dusty ride",
+ interval:"Every race / dusty session.",tools:["Filter oil","Spare element"],torque:[],
+ shop:[{name:"★ Twin Air Powerflow kit (Kyle)",pn:"152222C",qty:"1",why:"HIGH QUALITY — confirmed on Kyle’s 2022 YZ250F (2019–2023 Powerflow). Replacement filters fit this cage",links:[["Amazon Powerflow 152222C",L.twinAirKit],["Amazon Twin Air filters",L.twinAir]]},{name:"★ Yamaha OEM air filter (stock option)",pn:"B2W-14451-01-00",qty:"1+",why:"HIGH QUALITY OEM element if running stock cage",links:[["Amazon OEM air filter",L.airFilter]]},{name:"★ Yamalube / Twin Air foam oil",pn:"foam filter oil",qty:"1",why:"Proper foam oil — don’t use motor oil",links:[["Amazon",L.filterOil]]}],
+ steps:["Access airbox.","Remove filter carefully.","Wash/dry/oil or swap spare.","Reseat clean."],related:["oil","preride"]},
+{id:"spark",kind:"job",title:"Spark plug",blurb:"NGK LMAR9E-J — 13 Nm.",tag:"Inspect often",
+ interval:"Inspect on services.",tools:["Plug socket","Torque wrench"],
+ torque:[{part:"Spark plug",nm:"13",ft:"9.4",src:"YZ-F OSM M10",flag:false}],
+ shop:[{name:"★ NGK LMAR9E-J (OEM-spec)",pn:"94701-00424 / NGK 6884",qty:"1",why:"HIGH QUALITY — Yamaha scheduled-service plug for this gen",links:[["Amazon NGK",L.spark]]}],
+ steps:["Access plug.","Inspect/replace.","Hand-thread, torque 13 Nm."],related:["oil","valves"]},
+{id:"valves",kind:"job",title:"Valve clearance",blurb:"Cold check. Shim only if out of YOUR manual spec.",tag:"~15–30 hrs",
+ interval:"Confirm 2022 manual chart.",tools:["Feelers","Shim kit","Manual"],
+ torque:[{part:"Cam cap bolts",nm:"10–12",ft:"7–9",src:"Charts — VERIFY",flag:true}],
+ shop:[{name:"Shims / gaskets",pn:"as needed",qty:"—",why:"Only if out of spec",links:[]}],
+ steps:["Cold engine. TDC compression.","Measure clearances.","Shim per 2022 manual only."],related:["oil","spark"]},
+{id:"chain",kind:"job",title:"Chain & sprockets",blurb:"Slack, lube, axle torques.",tag:"Every ride",
+ interval:"Lube every ride. Replace chain+sprockets as a set.",
+ tools:["Stand","Lube","Torque wrench"],
+ torque:[
+  {part:"Rear axle nut (M22 lineage)",nm:"135",ft:"98",src:"OSM lineage — VERIFY 2022",flag:true},
+  {part:"Front axle nut (M18 lineage)",nm:"115",ft:"83",src:"OSM lineage — VERIFY 2022",flag:true},
+  {part:"Front axle pinch bolts",nm:"21",ft:"15",src:"OSM lineage — VERIFY",flag:true},
+  {part:"Chain adjuster locknuts",nm:"21",ft:"15",src:"OSM lineage — VERIFY",flag:true}
+ ],
+ shop:[{name:"★ Yamalube Synthetic Chain Lube",pn:"ACC-SYNCH-AI-NL",qty:"1",why:"HIGH QUALITY Yamaha spray — avoid dollar-store chain goop",links:[["Amazon",L.chainLube]]}],
+ steps:["Measure slack at lower run mid — use swingarm sticker / manual.","Equal adjuster marks.","Torque locks then axle.","Lube upper run."],related:["preride"]},
+{id:"brakes",kind:"job",title:"Brake pads & fluid",blurb:"Pads + DOT 4 + caliper torques.",tag:"Inspect every ride",
+ tools:["DOT 4","Allen keys","Torque wrench"],
+ torque:[
+  {part:"Front caliper bolts",nm:"28",ft:"20",src:"OSM lineage — VERIFY",flag:true},
+  {part:"Brake hose banjo",nm:"30",ft:"22",src:"OSM lineage — VERIFY",flag:true},
+  {part:"Pad pins",nm:"17",ft:"12",src:"OSM lineage — VERIFY",flag:true}
+ ],
+ shop:[
+  {name:"Front pads",pn:"B2W-25805-00",qty:"1",why:"Fiche",links:[["Amazon",L.pads]]},
+  {name:"Rear pads",pn:"1C3-W0046-50",qty:"1",why:"Fiche kit 2",links:[["Amazon",L.padsRear]]}
+ ],
+ steps:["Check pad thickness.","Replace before metal-on-metal.","Flush DOT 4 if spongy."],related:["preride"]},
+{id:"coolant",kind:"job",title:"Coolant",blurb:"Check every ride. Flush ~2 years.",tag:"Check often",
+ shop:[{name:"Coolant",pn:"ethylene glycol mix",qty:"~1.0 L",why:"Confirm 2022 capacity",links:[]}],
+ steps:["Cold level check.","Flush per manual if due."],related:["preride"]},
+{id:"forks",kind:"job",title:"Fork oil / seals",blurb:"KYB SSS 48 mm + clamp torques.",tag:"~5 races",
+ torque:[
+  {part:"Lower fork clamps",nm:"15–20",ft:"11–15",src:"Charts — VERIFY; before uppers",flag:true},
+  {part:"Upper fork clamps",nm:"15–20",ft:"11–15",src:"Charts — VERIFY",flag:true},
+  {part:"Bar clamps",nm:"20–25",ft:"15–18",src:"Charts — VERIFY; front first",flag:true}
+ ],
+ shop:[{name:"★ Maxima Suspension Clean",pn:"71920",qty:"1 can",why:"HIGH QUALITY MX shop standard — safe on seals/anodizing",links:[["Amazon",L.suspensionClean],["Maxima site",L.suspensionCleanOfficial]]},
+ {name:"Yamalube S1",pn:"907-93380-49-00",qty:"per manual",why:"Factory KYB oil — confirm volume",links:[["Amazon S1",L.s1]]}],
+ steps:["Note clickers.","Service oil/seals.","Lower clamps then upper then bars."],related:["shock","torques"]},
+{id:"shock",kind:"job",title:"Shock sag & linkage",blurb:"Race sag ~100–105 mm. Grease after mud.",tag:"After mud",
+ torque:[
+  {part:"Linkage bolts",nm:"45–60",ft:"33–44",src:"Charts — VERIFY",flag:true},
+  {part:"Swingarm pivot",nm:"55–75",ft:"41–55",src:"Charts — VERIFY",flag:true}
+ ],
+ shop:[{name:"★ Maxima Waterproof Grease (or Yamaha moly)",pn:"80916 / Yamaha moly",qty:"1",why:"HIGH QUALITY — pack linkage bearings; Maxima Waterproof preferred",links:[["Amazon Maxima",L.lithiumGrease],["Amazon moly search","https://www.amazon.com/s?k=motorcycle+linkage+grease+moly"]]}],
+ steps:["Measure sag.","Grease linkage.","Torque to spec."],related:["forks","torques"]},
+{id:"preride",kind:"job",title:"Pre-ride checklist",blurb:"Five minutes before you leave the truck.",tag:"Every ride",
+ steps:["Tires & spokes.","Chain slack/lube.","Oil & coolant.","Controls & kill.","Bolts: bars, axles, plastics."],related:["oil","air","chain","brakes"]},
+{id:"maps",kind:"job",title:"Power Tuner maps",blurb:"Wi-Fi maps + bar switch.",tag:"Trackside",
+ steps:["Connect under left panel password.","Load two maps.","Flip switch throttle closed."],related:[]},
+{id:"topend",kind:"job",title:"Top-end inspection",blurb:"Piston/rings — gasket kit + wear limits.",tag:"~30–60 hrs",
+ torque:[{part:"Head bolts",nm:"manual sequence",ft:"—",src:"Factory only",flag:true}],
+ steps:["Open per reverse-head procedure.","Measure vs limits.","New gaskets + sequence."],related:["valves","oil"]}
+];
+
+const SYSTEMS=[
+{id:"engine",kind:"system",title:"Engine",blurb:"Reverse-head 250F · 13.8:1 · Mikuni 44 mm EFI.",specs:[["Type","DOHC 4-valve LC"],["Bore×stroke","77.0×53.6"],["Oil","0.95 / 1.05 L"]],related:["oil","valves"]},
+{id:"chassis",kind:"system",title:"Frame & geometry",blurb:"1475 mm WB · 26°50′ / 119 mm trail · 106 kg wet.",specs:[["Seat","970 mm"],["GC","335 mm"]],related:["forks","shock"]},
+{id:"suspension",kind:"system",title:"Suspension",blurb:"KYB SSS 48 mm · Monocross · 310 / 317 mm.",related:["forks","shock","torques"]},
+{id:"wheels",kind:"system",title:"Wheels & brakes",blurb:"MX33 · discs 270 / 240 mm.",related:["brakes","chain"]},
+{id:"electrics",kind:"system",title:"Electrics",blurb:"Lithium · TCI · Power Tuner · no lights.",related:["maps","spark"]},
+{id:"controls",kind:"system",title:"Controls",blurb:"Bars, levers, map switch, pegs.",related:["torques","maps"]},
+{id:"fuel",kind:"system",title:"Fuel & EFI",blurb:"Mikuni 44 mm · premium · 6.2 L.",related:["air","maps"]},
+{id:"body",kind:"system",title:"Plastics",blurb:"Icon Blue duo-tone · in-mold graphics.",related:["preride"]}
+];
+
+const SCHEDULE=[
+{when:"Every ride",jobIds:["preride","air","chain"]},
+{when:"Every race (~2.5 h)",jobIds:["oil","air","preride","brakes"]},
+{when:"~5 h aggressive",jobIds:["oil","air"]},
+{when:"~10 h recreational",jobIds:["oil","chain"]},
+{when:"~12.5–15 h",jobIds:["oil","forks","valves","spark"]},
+{when:"~30 h",jobIds:["valves","topend"]},
+{when:"~50–100 h / 2 yr",jobIds:["coolant","topend"]}
+];
+
+
+const POWER_TUNER = {
+  appIos: "https://apps.apple.com/us/app/power-tuner-app/id1235945328",
+  appAndroid: "https://play.google.com/store/apps/details?id=yamahamotor.powertuner",
+  yamahaProfiles: "https://yamahamotorsports.com/power-tuner-app",
+  note: "2022 YZ250F uses the free Yamaha POWER TUNER app + bike Wi‑Fi CCU. Maps are proprietary — you cannot sideload a random .map file. Enter grids in-app, upload to ECU, share via app. Stock baseline = all zeros."
+};
+
+/* FI/IG grids: rows = throttle high→low (typical app), cols = rpm low→high.
+   Numbers are relative trims. VERIFY on your bike. Sources cited per map. */
+const MAPS_COPY = {"source": "maps/maps-copy.md (Apple) + Kyle screenshots 2026-09-09 (Donny)", "section_intro": "Power Tuner maps for the 2022 YZ250F. Your bike holds two maps; the bar switch flips between them (throttle closed). Stock often ships the same map in both slots — Map 2 only gets useful after you load a second map. Copy grids → enter in Power Tuner → upload. Not a one-tap .map install.", "starter_pair": {"Map1": "Smooth Linear (Kyle) — warm-up, slippery, learning", "Map2": "Map10 Hard/Rich FI or Loam/Deep Sand — punch / sand"}, "air_note": "Kyle runs Twin Air Powerflow 152222C — maps assume a clean filter.", "axis_warning": "Always match POSITION + RPM axes when copying charts (wrong scale makes a map feel dead)."};
+const MAPS = [
+  {
+    id: "stock-smooth",
+    title: "SMOOTH LINEAR (KYLE)",
+    blurb: "Default / learning / slippery — Kyle’s saved Smooth Linear",
+    when: "Default / learning / slippery — Kyle’s saved Smooth Linear",
+    source: "Kyle Power Tuner screenshot 2026-09-09",
+    yearNote: "From Kyle Power Tuner screenshot. Last Sent Map2 07/11/2026. FI richer toward top; IG retarded for smoother delivery. Match POSITION axes exactly (FI TH 20/40/60/80 @ 5/7.5/10/12k; IG TH 15/30/50/70). · Status: verified_kyle_screenshot",
+    slot: "Map1",
+    cardTip: "Kyle’s Smooth Linear — verified from screenshot. Soft Map1 baseline before you chase a harder Map2.",
+    th: [80, 60, 40, 20],
+    fiRpm: [5000, 7500, 10000, 12000],
+    fi: [[2, 3, 3, 3], [2, 2, 3, 3], [1, 1, 2, 3], [0, 1, 1, 3]],
+    igTh: [70, 50, 30, 15],
+    igRpm: [5000, 7500, 10000, 12000],
+    ig: [[-2, -3, -3, -4], [-1, -2, -2, -3], [0, 0, -2, -3], [0, 0, -1, -2]],
+    external: null,
+    screenshot: "maps/screenshots/kyle-smooth-linear-loam.png",
+    downloadUrl: null,
+    downloadOfficial: null,
+    downloadable: false,
+    how: "Enter FI/IG grids below with matching POSITION + RPM axes, then upload. Prefer Map slot shown.",
+    status: "verified_kyle_screenshot"
+  },
+  {
+    id: "yamaha-exciting-power",
+    title: "YAMAHA EXCITING POWER",
+    blurb: "Official Yamaha profile — strong overall character for the YZ250F.",
+    when: "Official Yamaha profile — strong overall character for the YZ250F.",
+    source: "Yamaha Motorsports Power Tuner Profiles; https://yamahamotorsports.com/power-tuner-app",
+    yearNote: "Listed as 2021 YZ250F on Yamaha site; same-generation candidate for 2022 — confirm in Power Tuner when importing. Download .yptsjsnz then open/share in the app. · Status: verified_yamaha_profile_image",
+    slot: "Map2",
+    cardTip: "Prefer the .yptsjsnz download into Power Tuner if your phone can open/share it; otherwise enter the grids with matching POSITION axes.",
+    th: [80, 60, 15, 5],
+    fiRpm: [4500, 9500, 11500, 12000],
+    fi: [[-2, -1, 1, 1], [-2, -1, 0, 1], [-1, -2, -1, 0], [-1, -2, 0, 1]],
+    igTh: [90, 60, 25, 10],
+    igRpm: [4000, 8500, 10000, 13000],
+    ig: [[2, 3, 0, -1], [2, 2, 0, 1], [2, 2, 2, 0], [1, 2, -1, -1]],
+    external: "https://yamahamotorsports.com/power-tuner-app",
+    screenshot: null,
+    downloadUrl: "maps/downloads/exciting-power-21-yz250f.yptsjsnz",
+    downloadOfficial: "https://yamahamotorsports.com/media/images/power_tuner/exciting-power-21-yz250f.yptsjsnz",
+    downloadable: true,
+    how: "Best: download the .yptsjsnz and open/share into Power Tuner. Fallback: enter grids with exact POSITION axes, then upload.",
+    status: "verified_yamaha_profile_image"
+  },
+  {
+    id: "aggressive",
+    title: "MAP10 (KYLE) — HARD / RICH FI",
+    blurb: "When you want more fuel hit with stock ignition timing (IG zeros)",
+    when: "When you want more fuel hit with stock ignition timing (IG zeros)",
+    source: "Kyle Power Tuner screenshot 2026-09-09",
+    yearNote: "From Kyle Power Tuner screenshot “Map10”. FI rich mid–top; IG flat zeros. Map11 in the same dump matches Smooth Linear exactly — not stored separately. · Status: verified_kyle_screenshot",
+    slot: "Map2",
+    cardTip: "Quicker throttle than stock — the Map 2 most riders load first. Prefer Yamaha built-in preset or verified cells.",
+    th: [80, 60, 40, 20],
+    fiRpm: [5000, 7500, 10000, 12000],
+    fi: [[4, 5, 6, 6], [3, 4, 5, 5], [2, 3, 4, 4], [1, 1, 2, 3]],
+    igTh: [70, 50, 30, 15],
+    igRpm: [5000, 7500, 10000, 12000],
+    ig: [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+    external: null,
+    screenshot: "maps/screenshots/kyle-map11-map10.png",
+    downloadUrl: null,
+    downloadOfficial: null,
+    downloadable: false,
+    how: "Enter FI/IG grids below with matching POSITION + RPM axes, then upload. Prefer Map slot shown.",
+    status: "verified_kyle_screenshot"
+  },
+  {
+    id: "hard-pack",
+    title: "HARD PACK",
+    blurb: "Firm, slick hardpack — tractable drive, less wheelspin.",
+    when: "Firm, slick hardpack — tractable drive, less wheelspin.",
+    source: "",
+    yearNote: "Community Power Tuner style map; enter from trusted chart or your own tune — do not invent cells. · Status: empty_awaiting_kyle_or_verified_source",
+    slot: "Map2",
+    cardTip: "Tractable mid; less spin than Aggressive. Verified source only.",
+    th: null,
+    fiRpm: null,
+    fi: null,
+    igTh: null,
+    igRpm: null,
+    ig: null,
+    external: null,
+    screenshot: null,
+    downloadUrl: null,
+    downloadOfficial: null,
+    downloadable: false,
+    how: "Enter FI/IG in Power Tuner with matching POSITION, upload, assign Map1/Map2.",
+    status: "empty_awaiting_kyle_or_verified_source"
+  },
+  {
+    id: "loamy",
+    title: "LOAM / DEEP SAND (KYLE)",
+    blurb: "Loam or deep sand needing more fuel and softer ignition",
+    when: "Loam or deep sand needing more fuel and softer ignition",
+    source: "Kyle Power Tuner screenshot 2026-09-09",
+    yearNote: "From Kyle Power Tuner screenshot “Loam / Deep Sand”. FI heavily enriched at mid–high throttle; IG retarded across the board. Match POSITION axes. · Status: verified_kyle_screenshot",
+    slot: "Map2",
+    cardTip: "Harder mid hit so the tire can dig. Verified source only.",
+    th: [80, 60, 40, 20],
+    fiRpm: [5000, 7500, 10000, 12000],
+    fi: [[4, 4, 4, 4], [4, 4, 4, 4], [2, 2, 3, 3], [1, 2, 3, 3]],
+    igTh: [70, 50, 30, 15],
+    igRpm: [5000, 7500, 10000, 12000],
+    ig: [[-3, -3, -4, -4], [-2, -3, -3, -4], [-1, -2, -2, -3], [-1, -2, -2, -3]],
+    external: null,
+    screenshot: "maps/screenshots/kyle-smooth-linear-loam.png",
+    downloadUrl: null,
+    downloadOfficial: null,
+    downloadable: false,
+    how: "Enter FI/IG grids below with matching POSITION + RPM axes, then upload. Prefer Map slot shown.",
+    status: "verified_kyle_screenshot"
+  },
+  {
+    id: "mud-slippery",
+    title: "MUD / SLIPPERY",
+    blurb: "Wet, slick, muddy — softer delivery to cut spin.",
+    when: "Wet, slick, muddy — softer delivery to cut spin.",
+    source: "",
+    yearNote: "Pair with Stock/Smooth mindset; prioritize traction over punch. · Status: empty_awaiting_kyle_or_verified_source",
+    slot: "Map1 or Map2",
+    cardTip: "Softer delivery; don’t stack Aggressive on ice-slick clay.",
+    th: null,
+    fiRpm: null,
+    fi: null,
+    igTh: null,
+    igRpm: null,
+    ig: null,
+    external: null,
+    screenshot: null,
+    downloadUrl: null,
+    downloadOfficial: null,
+    downloadable: false,
+    how: "Enter FI/IG in Power Tuner with matching POSITION, upload, assign Map1/Map2.",
+    status: "empty_awaiting_kyle_or_verified_source"
+  },
+  {
+    id: "keefer-free-feeling",
+    title: "KEEFER FREE FEELING",
+    blurb: "Less engine braking, freer high-rpm feel, more balanced chassis off throttle.",
+    when: "Less engine braking, freer high-rpm feel, more balanced chassis off throttle.",
+    source: "Keefer Inc. 2023 optional maps — Free Feeling image",
+    yearNote: "Keefer Free Feeling — different POSITION axes than Top End/Rev (80/60/40/20). Do not mix charts. · Status: verified_keefer_screenshot",
+    slot: "Map2",
+    cardTip: "Less engine braking / freer mid-corner. Often run with stock 13/50. Axes are 80/60/40/20 — not the 15/5 Top End chart.",
+    th: [80, 60, 40, 20],
+    fiRpm: [5000, 7500, 10000, 12000],
+    fi: [[-2, -3, -2, -1], [-2, -2, -3, -2], [-1, -2, -2, -2], [-1, -1, -2, -2]],
+    igTh: [80, 60, 40, 20],
+    igRpm: [5000, 7500, 10000, 12000],
+    ig: [[2, 3, 2, 1], [2, 2, 2, 2], [1, 2, 2, 1], [1, 1, 0, -2]],
+    external: "Keefer Inc. 2023 optional maps — Free Feeling image",
+    screenshot: null,
+    downloadUrl: null,
+    downloadOfficial: null,
+    downloadable: false,
+    how: "Enter FI/IG grids below with matching POSITION + RPM axes, then upload. Prefer Map slot shown.",
+    status: "verified_keefer_screenshot"
+  },
+  {
+    id: "keefer-top-end-rev",
+    title: "KEEFER TOP END / REV (MID-TOP)",
+    blurb: "More mid–top pull through 2nd–4th; Yamaha R&D / Keefer Mid-Top End chart.",
+    when: "More mid–top pull through 2nd–4th; Yamaha R&D / Keefer Mid-Top End chart.",
+    source: "Keefer Inc. 2022 baseline + 2023 optional maps",
+    yearNote: "Keefer 2022 baseline Mid-Top End and 2023 Top End/Rev show the same grids. Explicitly OK for 2022–2023 YZ250F. · Status: verified_keefer_screenshot",
+    slot: "Map2",
+    cardTip: "This is the chart we first transcribed (was mislabeled Free Feeling). Match FI axes 80/60/15/5 and IG 90/60/25/10.",
+    th: [80, 60, 15, 5],
+    fiRpm: [4500, 9500, 11500, 12000],
+    fi: [[-2, -3, -1, 1], [-2, -3, -2, 1], [-1, -2, -1, 0], [-1, -2, 0, 1]],
+    igTh: [90, 60, 25, 10],
+    igRpm: [4000, 8500, 10000, 13000],
+    ig: [[2, 3, 2, -1], [2, 2, 2, 1], [2, 2, 2, 0], [1, 2, -1, -1]],
+    external: "Keefer Inc. 2022 baseline + 2023 optional maps",
+    screenshot: "maps/keefer-map-1.jpeg",
+    downloadUrl: null,
+    downloadOfficial: null,
+    downloadable: false,
+    how: "Enter FI/IG grids below with matching POSITION + RPM axes, then upload. Prefer Map slot shown.",
+    status: "verified_keefer_screenshot"
+  },
+  {
+    id: "tp-map-2019",
+    title: "TP MAP 2019 (TRAVIS PRESTON)",
+    blurb: "Classic TP feel — 2019-gen reference; try on 2022 only if Power Tuner accepts the file.",
+    when: "Classic TP feel — 2019-gen reference; try on 2022 only if Power Tuner accepts the file.",
+    source: "Yamaha Motorsports; Racer X 2018 TP map article (2019 bike)",
+    yearNote: "Yamaha hosts tp-map-2019-yz250f.yptsjsnz. Racer X published a 2019-gen screenshot (not guaranteed identical to current Yamaha file). Prefer the official .yptsjsnz import. · Status: verified_racerx_2019_gen_screenshot",
+    slot: "Map2",
+    cardTip: "Download the Yamaha .yptsjsnz first; Racer X grids are for manual entry if import fails.",
+    th: [80, 60, 15, 5],
+    fiRpm: [4500, 9500, 11500, 13000],
+    fi: [[-2, -3, -2, -1], [-2, -3, -3, -3], [-1, -2, -2, 0], [-1, -2, 0, 2]],
+    igTh: [80, 60, 20, 10],
+    igRpm: [4500, 8500, 10000, 13000],
+    ig: [[2, 3, 3, 2], [2, 2, 2, 3], [2, 2, 2, 3], [1, 2, 2, 2]],
+    external: "Racer X 2018 TP map article (2019 bike)",
+    screenshot: null,
+    downloadUrl: "maps/downloads/tp-map-2019-yz250f.yptsjsnz",
+    downloadOfficial: "https://yamahamotorsports.com/media/images/power_tuner/tp-map-2019-yz250f.yptsjsnz",
+    downloadable: true,
+    how: "Best: download the .yptsjsnz and open/share into Power Tuner. Fallback: enter grids with exact POSITION axes, then upload.",
+    status: "verified_racerx_2019_gen_screenshot"
+  },
+  {
+    id: "track-day",
+    title: "TRACK DAY",
+    blurb: "Practice / track day: Map1 Stock-Smooth for warm-up, Map2 Aggressive or Keefer Free Feeling once up to temp.",
+    when: "Practice / track day: Map1 Stock-Smooth for warm-up, Map2 Aggressive or Keefer Free Feeling once up to temp.",
+    source: "",
+    yearNote: "Link to track-day kit BOM + oil/air/chain Jobs checklist before you leave the truck.",
+    slot: "Map1 + Map2 combo",
+    cardTip: "Map1 Stock warm-up · Map2 Aggressive or Keefer when hot. Check oil/air/chain/kit first.",
+    th: null,
+    fiRpm: null,
+    fi: null,
+    igTh: null,
+    igRpm: null,
+    ig: null,
+    external: null,
+    screenshot: null,
+    downloadUrl: null,
+    downloadOfficial: null,
+    downloadable: false,
+    how: "Enter FI/IG in Power Tuner with matching POSITION, upload, assign Map1/Map2.",
+    status: "empty_combo_card_no_numeric_until_kyle_picks_pair"
+  },
+  {
+    id: "cool-morning",
+    title: "COOL MORNING",
+    blurb: "Cold ambient / cool morning practice — slightly richer / smoother until the bike is fully warm (user preference).",
+    when: "Cold ambient / cool morning practice — slightly richer / smoother until the bike is fully warm (user preference).",
+    source: "",
+    yearNote: "Template only until Kyle’s real cool-weather map exists.",
+    slot: "Map1",
+    cardTip: "Template until Kyle’s cool-weather map exists.",
+    th: null,
+    fiRpm: null,
+    fi: null,
+    igTh: null,
+    igRpm: null,
+    ig: null,
+    external: null,
+    screenshot: null,
+    downloadUrl: null,
+    downloadOfficial: null,
+    downloadable: false,
+    how: "Enter FI/IG in Power Tuner with matching POSITION, upload, assign Map1/Map2.",
+    status: "empty_awaiting_kyle"
+  },
+  {
+    id: "hot-afternoon",
+    title: "HOT AFTERNOON",
+    blurb: "Hot weather / thin air afternoon — lean toward maps that don’t feel boggy when heat-soaked (user preference).",
+    when: "Hot weather / thin air afternoon — lean toward maps that don’t feel boggy when heat-soaked (user preference).",
+    source: "",
+    yearNote: "Template only until Kyle’s real hot-weather map exists.",
+    slot: "Map2",
+    cardTip: "Template until Kyle’s hot-weather map exists.",
+    th: null,
+    fiRpm: null,
+    fi: null,
+    igTh: null,
+    igRpm: null,
+    ig: null,
+    external: null,
+    screenshot: null,
+    downloadUrl: null,
+    downloadOfficial: null,
+    downloadable: false,
+    how: "Enter FI/IG in Power Tuner with matching POSITION, upload, assign Map1/Map2.",
+    status: "empty_awaiting_kyle"
+  },
+  {
+    id: "kyle-map11",
+    title: "MAP11 (KYLE) = SMOOTH LINEAR",
+    blurb: "Same numbers as Smooth Linear — Kyle’s alternate save name",
+    when: "Same numbers as Smooth Linear — Kyle’s alternate save name",
+    source: "Kyle Power Tuner screenshot 2026-09-09",
+    yearNote: "Identical FI/IG to Smooth Linear in the Sep 9 screenshots. Use Smooth Linear card for copy. · Status: verified_kyle_screenshot_alias",
+    slot: "",
+    cardTip: "",
+    th: [80, 60, 40, 20],
+    fiRpm: [5000, 7500, 10000, 12000],
+    fi: [[2, 3, 3, 3], [2, 2, 3, 3], [1, 1, 2, 3], [0, 1, 1, 3]],
+    igTh: [70, 50, 30, 15],
+    igRpm: [5000, 7500, 10000, 12000],
+    ig: [[-2, -3, -3, -4], [-1, -2, -2, -3], [0, 0, -2, -3], [0, 0, -1, -2]],
+    external: null,
+    screenshot: "maps/screenshots/kyle-map11-map10.png",
+    downloadUrl: null,
+    downloadOfficial: null,
+    downloadable: false,
+    how: "Enter FI/IG grids below with matching POSITION + RPM axes, then upload. Prefer Map slot shown.",
+    status: "verified_kyle_screenshot_alias"
+  }
+];
+
+function mapGridHtml(label, grid, th, rpm){
+  if(!grid) return `<div class="note">Grid not transcribed yet — use the official / source link, or wait for the next update.</div>`;
+  const ths = th||[80,60,40,20];
+  const rpms = rpm||["Lo","Mid-Lo","Mid-Hi","Hi"];
+  const head = rpms.map(v=>`<th>${v}</th>`).join("");
+  const rows = grid.map((row,i)=>`<tr><th>${ths[i]}%</th>${row.map(c=>`<td><strong>${c>0?"+"+c:c}</strong></td>`).join("")}</tr>`).join("");
+  return `<div class="section"><h3>${label}</h3>
+    <table><thead><tr><th>TH \\ RPM→</th>${head}</tr></thead>
+    <tbody>${rows}</tbody></table>
+    <p class="lead" style="font-size:.75rem">Relative trims from stock zero. Set POSITION to match these TH% / rpm labels before entering cells. Closed course only.</p></div>`;
+}
+
+const BIKE_SPECS=[["MSRP","$8,499 / $8,699 Monster"],["Wet weight","106 kg"],["Seat","970 mm"],["Wheelbase","1475 mm"],["Fuel","6.2 L"],["Oil","0.95 / 1.05 L"],["Engine","250F reverse-head EFI"],["Fork","KYB SSS 48 mm · 310 mm"],["Shock","Monocross · 317 mm"],["Brakes","270 / 240 mm"],["Tires","MX33 80/100-21 · 110/90-19"]];
+
+/* ===== TORQUE HOTSPOTS (side view coords in viewBox 0 0 1000 560) ===== */
+const TORQUES = [
+  {id:"bar",label:"BAR CLAMPS",nm:"20–25",ft:"15–18",x:430,y:70,lx:300,ly:40,note:"Front bolts first. VERIFY 2022 chart.",map:true,flag:true},
+  {id:"upper-tc",label:"UPPER TRIPLE",nm:"15–20",ft:"11–15",x:400,y:110,lx:250,ly:90,note:"After lower clamps. VERIFY.",map:true,flag:true},
+  {id:"lower-tc",label:"LOWER TRIPLE",nm:"15–20",ft:"11–15",x:395,y:160,lx:240,ly:150,note:"Set before uppers. VERIFY.",map:true,flag:true},
+  {id:"faxle",label:"FRONT AXLE",nm:"115",ft:"83",x:320,y:320,lx:160,ly:300,note:"M18 OSM lineage — VERIFY 2022. Then pinch. Reject Motosport 20–30 Nm.",map:true,flag:true},
+  {id:"fpinch",label:"FRONT AXLE PINCH",nm:"21",ft:"15",x:345,y:300,lx:170,ly:250,note:"After axle seated. VERIFY.",map:true,flag:true},
+  {id:"fcal",label:"FRONT CALIPER",nm:"28",ft:"20",x:300,y:360,lx:140,ly:380,note:"OSM lineage. VERIFY.",map:true,flag:true},
+  {id:"banjo",label:"FRONT BRAKE BANJO",nm:"30",ft:"22",x:310,y:200,lx:160,ly:180,note:"New crush washers both sides. VERIFY.",map:true,flag:true},
+  {id:"drain",label:"OIL DRAIN",nm:"20",ft:"14",x:520,y:390,lx:520,ly:500,note:"New crush washer every time. OSM 20 Nm (high confidence).",map:true,flag:false},
+  {id:"filter",label:"FILTER COVER",nm:"10",ft:"7.2",x:560,y:370,lx:700,ly:420,note:"M6 into aluminum — don't overtighten. New O-ring.",map:true,flag:false},
+  {id:"plug",label:"SPARK PLUG",nm:"13",ft:"9.4",x:540,y:250,lx:700,ly:200,note:"Hand-thread first. OSM 13 Nm (high confidence).",map:true,flag:false},
+  {id:"pivot",label:"SWINGARM PIVOT",nm:"55–75",ft:"41–55",x:580,y:310,lx:580,ly:200,note:"Grease bearings. VERIFY chart.",map:true,flag:true},
+  {id:"link",label:"LINKAGE",nm:"45–60",ft:"33–44",x:680,y:340,lx:820,ly:320,note:"Clean & grease after mud. VERIFY.",map:true,flag:true},
+  {id:"raxle",label:"REAR AXLE",nm:"135",ft:"98",x:820,y:330,lx:920,ly:280,note:"M22 OSM lineage — VERIFY 2022. Align chain first. Reject Motosport 65–85 Nm.",map:true,flag:true},
+  {id:"adj",label:"CHAIN ADJUSTER",nm:"21",ft:"15",x:780,y:350,lx:920,ly:380,note:"Equal marks both sides. VERIFY.",map:true,flag:true},
+  {id:"sprocket",label:"SPROCKET BOLTS",nm:"35–45",ft:"26–33",x:800,y:300,lx:930,ly:220,note:"Thread locker. VERIFY chart.",map:true,flag:true},
+  /* table-only extras — still labeled with Nm */
+  {id:"rbanjo",label:"REAR BRAKE BANJO",nm:"30",ft:"22",note:"New crush washers. VERIFY.",map:false,flag:true},
+  {id:"fmc",label:"FRONT MASTER CYL",nm:"9",ft:"6.5",note:"Holder bolts. VERIFY.",map:false,flag:true},
+  {id:"rmc",label:"REAR MASTER CYL",nm:"10",ft:"7.2",note:"VERIFY.",map:false,flag:true},
+  {id:"fpad",label:"FRONT PAD PIN",nm:"17",ft:"12",note:"VERIFY.",map:false,flag:true},
+  {id:"rpad",label:"REAR PAD PIN",nm:"17",ft:"12",note:"VERIFY.",map:false,flag:true},
+  {id:"bleed",label:"BLEED SCREW",nm:"6",ft:"4.3",note:"VERIFY.",map:false,flag:true},
+  {id:"vcover",label:"VALVE COVER",nm:"10",ft:"7.2",note:"M6 cover bolts — VERIFY sequence/count on 2022 OSM.",map:false,flag:true},
+  {id:"cdrain",label:"COOLANT DRAIN",nm:"10",ft:"7.2",note:"~10 Nm older OSM — VERIFY 2022.",map:false,flag:true},
+  {id:"airfit",label:"AIR FILTER FITTING",nm:"2",ft:"1.4",note:"Very light — don't crush foam/cage. VERIFY. Kyle runs Twin Air Powerflow 152222C — follow Twin Air hardware torques if different.",map:false,flag:true}
+];
+
+const LUBES = [
+{id:"lube-engine",title:"Engine oil",blurb:"Yamalube 10W-40 — full cart under Jobs.",
+ body:`<p><strong>High quality only:</strong> Yamalube Full Synthetic (or RS4GP) + genuine Yamaha filter. AP is OEM but a step down for hard MX.</p>${buy([["Amazon FS",L.yamalubeFS],["Amazon OEM filter",L.filter],["Amazon O-ring",L.oring]])}<div class="meta"><button type="button" class="chip" data-open="oil">Oil job →</button></div>`},
+{id:"lube-chain",title:"Chain lube",blurb:"Every ride after cleaning.",
+ body:`<ol class="steps"><li>Clean if muddy.</li><li>Spray upper run while spinning wheel.</li><li>Wipe excess off rotor.</li></ol>${buy([["Amazon chain lube",L.chainLube]])}`},
+{id:"lube-cables",title:"Cable lube",blurb:"Clutch / throttle PTFE spray.",
+ body:`<ol class="steps"><li>Luber or disconnect at perch.</li><li>Spray until it drips far end.</li><li>Reset free play.</li></ol>`},
+{id:"lube-suspension",title:"Suspension",blurb:"Bars, Suspension Clean, SC1, lithium grease, linkage, fork oil.",
+ body:`
+ <div class="subcard"><h4>Straighten bars</h4>
+ <ol class="steps"><li>Loosen four bar clamp bolts.</li><li>Square bars to front wheel.</li><li>Snug front bolts first → ${"20–25"} Nm <span class="flag">VERIFY</span>.</li><li>Triple clamps ${"15–20"} Nm if disturbed <span class="flag">VERIFY</span>.</li></ol>
+ <div class="meta"><button type="button" class="chip" data-go-torque="bar">Show on torque map →</button></div></div>
+ <div class="subcard"><h4>Maxima Suspension Clean</h4>
+ <p><strong>Forks &amp; shocks cleaner</strong> — PN 71920. Spray for stanchions, shock shafts, seals, linkage grime. Residue-free.</p>
+ <ol class="steps"><li>Shake can. Spray tubes / shafts / dust wipers.</li><li>Wipe clean. Repeat if greasy.</li><li>Keep off brake rotors.</li></ol>
+ ${buy([["Amazon — Suspension Clean",L.suspensionClean],["Maxima official",L.suspensionCleanOfficial]])}</div>
+ <div class="subcard"><h4>★ Maxima SC1</h4>
+ <p>Also kept here for padock use — plastics shine / mud shed on plates &amp; shrouds (and some riders hit dust wipers lightly after Suspension Clean). Main body use is under Plastics too.</p>
+ ${buy([["Amazon SC1",L.sc1],["Amazon SC1 alt",L.sc1alt]])}</div>
+ <div class="subcard"><h4>Lithium grease</h4>
+ <p>Linkage bearings, swingarm pivot, axle spacer faces, filter-cover O-ring film. MX pick: Maxima Waterproof Grease (lithium complex, PN 80916).</p>
+ <ol class="steps"><li>Clean the joint first (Suspension Clean helps).</li><li>Pack / film with lithium grease.</li><li>Reassemble and torque.</li></ol>
+ ${buy([["Amazon — Maxima lithium grease",L.lithiumGrease],["Amazon white lithium search",L.lithiumGreaseAlt]])}
+ <div class="meta"><button type="button" class="chip" data-open="shock">Shock / linkage job →</button><button type="button" class="chip" data-go-torque="link">Torque map →</button></div></div>
+ <div class="subcard"><h4>Fork oil</h4>${buy([["Amazon S1",L.s1]])}<div class="meta"><button type="button" class="chip" data-open="forks">Forks job →</button></div></div>`},
+{id:"lube-grease",title:"Grease points",blurb:"Stem, swingarm, linkage, axles — lithium grease.",
+ body:`<ul><li>Steering stem</li><li>Swingarm pivot</li><li>Linkage</li><li>Axle spacer faces</li><li>Filter O-ring (light lithium film)</li></ul>
+ ${buy([["Amazon — Maxima lithium grease",L.lithiumGrease],["Amazon white lithium search",L.lithiumGreaseAlt]])}`},
+{id:"lube-filter",title:"Air filter oil",blurb:"Twin Air / OEM foam — oil after every wash.",
+ body:`${buy([["Amazon foam oil",L.filterOil]])}<div class="meta"><button type="button" class="chip" data-open="air">Air job →</button></div>`},
+{id:"lube-brakes",title:"Brake fluid",blurb:"DOT 4.",body:`<div class="meta"><button type="button" class="chip" data-open="brakes">Brakes job →</button></div>`},
+{id:"lube-coolant",title:"Coolant",blurb:"Check every ride.",body:`<div class="meta"><button type="button" class="chip" data-open="coolant">Coolant job →</button></div>`},
+{id:"lube-plastics",title:"Plastics / body — ★ Maxima SC1",blurb:"SC1 is for number plates, shrouds, fenders — NOT forks or shocks.",
+ body:`<p><strong>★ Maxima SC1</strong> = bodywork shine &amp; mud shed on plastics. Use <strong>Maxima Suspension Clean</strong> for forks/shocks (Suspension topic).</p>
+ <ol class="steps"><li>Wash the bike first.</li><li>Spray SC1 on plastics; wipe or leave wet for mud resistance.</li><li>Keep off seat if you don’t want it slippery; keep off brakes; don’t use as your fork cleaner.</li></ol>
+ ${buy([["Amazon SC1",L.sc1],["Amazon SC1 alt",L.sc1alt]])}`}
+];
+
+const KITS = [
+{id:"kit-listing-pack",title:"★ Track-day kit listing pack",blurb:"First Amazon product — ~$94.99 FBM.",amazonReady:true,
+ contents:[["Yamalube FS 2qt","LUB-10W40-FS-12",L.yamalubeFS],["Oil filter","5D3-13440-09-00",L.filter],["O-ring","93210-45708",L.oring],["Crush washer","confirm",L.washer],["Twin Air Powerflow kit (Kyle)","152222C",L.twinAirKit],["OEM air filter (stock option)","B2W-14451-01-00",L.airFilter],["Spark plug","NGK LMAR9E-J",L.spark]],
+ existing:[["★ OEM-style FS oil kit LUB-OFFCG-KT-15",L.kitOfficial],["Oil+filter kit",L.kit],["Cyclemax (check it uses FS not AP)",L.kitTune]],
+ notes:"QUALITY RULE (2022 YZ250F): Yamalube FS, OEM 5D3 filter, Twin Air Powerflow 152222C (Kyle) or OEM B2W, NGK LMAR9E-J. Skip SC1/chain lube in v1 (hazmat). Listing art = part-number diagram or real BOM photos — never the AI photo mock."},
+{id:"kit-oil",title:"Oil change kit",blurb:"Core oil service BOM.",amazonReady:true,
+ contents:[["Yamalube FS","LUB-10W40-FS-12",L.yamalubeFS],["Filter","5D3-13440-09",L.filter],["O-ring","93210-45708",L.oring],["Washer","confirm",L.washer]],
+ existing:[["Amazon kit",L.kit],["LUB-OFFCG-KT-15",L.kitOfficial]],notes:"Crowded — differentiate with O-ring included."},
+{id:"kit-suspension",title:"Suspension care kit",blurb:"Suspension Clean + SC1 + lithium grease + S1.",amazonReady:"hazmat",
+ contents:[["Maxima Suspension Clean","71920",L.suspensionClean],["★ Maxima SC1","78920",L.sc1],["Maxima lithium grease","80916",L.lithiumGrease],["S1 fork oil","907-93380-49-00",L.s1]],
+ existing:[],notes:"Aerosols = hazmat for FBA. Lithium grease ships easy."}
+];
+
+const byId=Object.fromEntries([...JOBS,...SYSTEMS].map(x=>[x.id,x]));
+let view="jobs", selectedTorque="drain";
+
+const grid=document.getElementById("grid");
+const listView=document.getElementById("listView");
+const detailView=document.getElementById("detailView");
+const detailPanel=document.getElementById("detailPanel");
+const torqueView=document.getElementById("torqueView");
+const search=document.getElementById("search");
+
+document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{
+  document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("on",x===t));
+  view=t.dataset.view; showList(); render();
+}));
+document.getElementById("backBtn").onclick=()=>{showList();render();};
+search.addEventListener("input",()=>render());
+
+function showList(){listView.classList.remove("hidden");detailView.classList.add("hidden");torqueView.classList.add("hidden");}
+function showDetail(){listView.classList.add("hidden");torqueView.classList.add("hidden");detailView.classList.remove("hidden");window.scrollTo({top:0,behavior:"smooth"});}
+function showTorque(){listView.classList.add("hidden");detailView.classList.add("hidden");torqueView.classList.remove("hidden");window.scrollTo({top:0,behavior:"smooth"});}
+
+function render(){
+  if(view==="torques"){search.classList.add("hidden");grid.innerHTML="";showTorque();renderTorque();return;}
+  showList();
+  if(view==="lubes"){
+    search.classList.add("hidden");grid.className="";grid.style.display="block";
+    grid.innerHTML=`<div class="note ok">Tap a topic. Suspension has bar steps + SC1 Amazon links.</div>`+
+      LUBES.map(t=>`<details class="topic"><summary>${t.title}<div style="font:400 .75rem/1.3 'Space Mono',monospace;color:#aaa;margin-top:4px">${t.blurb}</div></summary><div class="body">${t.body}</div></details>`).join("");
+    wireChips(grid);return;
+  }
+  if(view==="kits"){
+    search.classList.add("hidden");grid.className="";grid.style.display="block";
+    grid.innerHTML=`<div class="panel" style="margin-bottom:12px"><div class="kicker">2022 YZ250F · planning art</div><h2>PART-NUMBER DIAGRAM</h2>
+    <div class="note ok"><strong>Part numbers only — not product photos.</strong> Use this diagram for BOM planning. Final Seller Central main image = real photos of the parts you ship (or keep a number-only card). AI photo mock is retired.</div>
+    <img src="yz250f-kit-part-number-card.png" alt="YZ250F 2022 Track-Day Service Kit part-number diagram" style="width:100%;max-width:720px;border:4px solid #fff;display:block;background:#fff;box-shadow:6px 6px 0 #fff"/>
+    <p class="lead" style="margin-top:10px">Includes Twin Air Powerflow <strong>152222C</strong> (Kyle’s bike) + OEM air as stock-cage option. Yamalube FS · OEM 5D3 filter · NGK LMAR9E-J.</p>
+    </div>
+    <div class="note ok"><strong>Sell on Amazon?</strong> FBM track-day kit. <strong>Quality bar:</strong> Yamalube FS, OEM oil filter, Twin Air or OEM air, NGK — no no-name junk.</div>
+    <div class="panel" style="margin:12px 0">
+      <div class="kicker">PRINTABLE ADD-ON · FREE APP STAYS OPEN</div>
+      <h2>TRACK-DAY PACK (PDF)</h2>
+      <p class="lead">Checklists · VERIFY torques · Power Tuner how-to · blank logs. Live map numbers stay in the Maps tab so this PDF doesn’t go stale.</p>
+      <div class="buy">
+        <a href="https://r3qqre-n1.myshopify.com/products/untitled-sep9_17-21-23" target="_blank" rel="noopener">Buy on Shopify · $9.99</a>
+        <a href="track-day-pack/YZ250F-Track-Day-Pack.pdf" target="_blank" rel="noopener">Preview PDF</a>
+      </div>
+      <div class="note ok">Live at <strong>$9.99</strong> (standard later <strong>$12.99</strong>). Free app stays ungated — PDF is the printable add-on only. No <code>.map</code> dumps.</div>
+      <div class="note" style="font-size:.75rem">We may earn a commission if you buy parts through Amazon links below — same price to you.</div>
+    </div>`+
+      KITS.map(k=>{
+        const rows=k.contents.map(([n,pn,u])=>`<tr><td>${n}</td><td><span class="pn">${pn}</span></td><td>${u?`<a href="${u}" target="_blank" rel="noopener">Amazon</a>`:"—"}</td></tr>`).join("");
+        const ex=(k.existing||[]).map(([n,u])=>`<a href="${u}" target="_blank" rel="noopener">${n}</a>`).join(" · ");
+        return `<details class="topic"><summary>${k.title}<div style="font:400 .75rem/1.3 'Space Mono',monospace;color:#aaa;margin-top:4px">${k.blurb}</div></summary><div class="body"><table><thead><tr><th>Include</th><th>PN</th><th>Link</th></tr></thead><tbody>${rows}</tbody></table>${ex?`<p style="margin-top:10px">Already on Amazon: ${ex}</p>`:""}<div class="note">${k.notes}</div></div></details>`;
+      }).join("");
+    return;
+  }
+  if(view==="schedule"){
+    search.classList.add("hidden");grid.className="grid";grid.style.display="";
+    grid.innerHTML=SCHEDULE.map(s=>`<button type="button" class="card" data-sched="${s.when}"><div class="kicker">Schedule</div><h3>${s.when}</h3><p>${s.jobIds.map(id=>byId[id]?.title||id).join(" · ")}</p><span class="tag">Open →</span></button>`).join("");
+    grid.querySelectorAll("[data-sched]").forEach(b=>b.onclick=()=>openSchedule(b.dataset.sched));return;
+  }
+
+
+  if(view==="maps"){
+    search.classList.add("hidden");grid.className="";grid.style.display="block";
+    grid.innerHTML=`
+      <div class="panel">
+        <div class="kicker">2022 YZ250F · Yamaha POWER TUNER</div>
+        <h2>MAPS</h2>
+        <p class="lead">${POWER_TUNER.note}</p>
+        <div class="buy">
+          <a href="https://library.ymcapps.net/library/om/contents/pdf/10/B7B-2819U-13_02.pdf" target="_blank" rel="noopener noreferrer">2022 Owner's Manual PDF (Yamaha)</a>
+          <a href="${POWER_TUNER.appIos}" target="_blank" rel="noopener">App Store</a>
+          <a href="${POWER_TUNER.appAndroid}" target="_blank" rel="noopener">Google Play</a>
+          <a href="${POWER_TUNER.yamahaProfiles}" target="_blank" rel="noopener">Yamaha profiles</a>
+        </div>
+        <div class="note ok"><strong>How to load:</strong> Phone on bike Wi‑Fi → Power Tuner → create/open map → set POSITION → enter FI &amp; IG → Upload → assign Map1/Map2. Sharing is in-app (.map binary) — this site is numbers + steps.</div>
+        ${MAPS_COPY.section_intro?`<p class="lead">${MAPS_COPY.section_intro}</p>`:""}
+        ${MAPS_COPY.starter_pair?`<div class="note ok"><strong>Starter pair:</strong> Map1 — ${MAPS_COPY.starter_pair.Map1}<br>Map2 — ${MAPS_COPY.starter_pair.Map2}</div>`:""}
+        ${MAPS_COPY.air_note?`<div class="note">${MAPS_COPY.air_note}</div>`:""}
+        ${MAPS_COPY.axis_warning?`<div class="note" style="border-color:#f5a623;color:#f5a623"><strong>POSITION:</strong> ${MAPS_COPY.axis_warning}</div>`:""}
+        <div class="note ok">Verified from Kyle screenshots (Sep 9): <strong>Smooth Linear</strong>, <strong>Loam / Deep Sand</strong>, <strong>Map10</strong> (Hard/Rich FI), <strong>Map11</strong> (= Smooth Linear). Also Yamaha Exciting Power, Keefer Free Feeling / Top End, TP Map 2019. Empty cards stay empty — no invented cells. Closed course · VERIFY on your bike.</div>
+      </div>
+      ${MAPS.map(m=>`
+        <details class="topic"><summary>${m.title}${m.status&&String(m.status).includes("verified")?` <span class="flag" style="border-color:#0f0;color:#0f0">VERIFIED</span>`:(m.fi?``:` <span class="flag">AWAITING</span>`)}<div style="font:400 .75rem/1.3 'Space Mono',monospace;color:#aaa;margin-top:4px">${m.blurb}</div></summary>
+        <div class="body">
+          <p><strong>When:</strong> ${m.when}</p>
+          ${m.cardTip?`<div class="note ok">${m.cardTip}</div>`:""}
+          ${m.slot?`<p><strong>Suggested slot:</strong> ${m.slot}</p>`:""}
+          <p><strong>Source:</strong> ${m.source}</p>
+          <p><strong>Year:</strong> ${m.yearNote}</p>
+          <p><strong>Load:</strong> ${m.how}</p>
+          ${m.external?`<div class="buy"><a href="${m.external}" target="_blank" rel="noopener">Open source</a></div>`:""}
+          ${m.downloadUrl?`<div class="buy"><a href="${m.downloadUrl}" download>Download .yptsjsnz</a>${m.downloadOfficial?` <a href="${m.downloadOfficial}" target="_blank" rel="noopener">Yamaha official</a>`:""}</div><p class="yz-copy-hint">Open/share the file into Power Tuner on your phone after download.</p>`:""}
+          ${m.screenshot?`<img src="${m.screenshot}" alt="Power Tuner screenshot" style="width:100%;max-width:420px;border:3px solid #fff;margin:10px 0"/>`:""}
+          ${mapGridHtml("FUEL (FI)", m.fi, m.th, m.fiRpm)}
+          ${mapGridHtml("IGNITION (IG)", m.ig, m.igTh||m.th, m.igRpm)}
+          <button type="button" class="yz-copy-btn" data-copy-map="${m.id}" data-label="Copy grid for Power Tuner">Copy grid for Power Tuner</button>
+          <p class="yz-copy-hint">Copies FI/IG + load notes — enter cells in Power Tuner (not a .map file).</p>
+        </div></details>`).join("")}`;
+    window.YZ_MAPS = {
+      maps: MAPS.map(m=>({
+        id:m.id, label:m.title, whenToUse:m.when, suggestedSlot:m.slot,
+        fiGrid:m.fi, igGrid:m.ig
+      }))
+    };
+    (function bindCopy(n){
+      if(window.YZCopyGrid){ window.YZCopyGrid.attachCopyButtons(grid, window.YZ_MAPS.maps); return; }
+      if(n<40) setTimeout(()=>bindCopy(n+1), 50);
+    })(0);
+    return;
+  }
+    if(view==="photos"){
+    search.classList.add("hidden");grid.className="";grid.style.display="block";
+    grid.innerHTML=`<div class="note ok"><strong>Kyle Hann</strong> — real track photos. This is your app.</div>
+    <div class="photo-grid">
+      <figure class="photo-card poster">
+        <img src="hero-kyle-full.png" alt="Kyle Hann mid-jump on YZ250F" style="aspect-ratio:9/16;object-fit:contain;background:#000" />
+        <figcaption class="cap"><h3>RIPPING</h3><p>Mid-air · blue rims · FOX-era kit. The shot that owns this workshop.</p>
+        <span class="badge">REAL PHOTO</span></figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="hero-kyle-framed.png" alt="Kyle Hann banner crop" style="aspect-ratio:1.31/1;object-fit:cover;filter:contrast(1.15) saturate(1.15)"/>
+        <figcaption class="cap"><h3>BANNER CROP</h3><p>Same jump, framed on you — this is the header frame.</p>
+        <span class="badge">POSTER CUT</span></figcaption>
+      </figure>
+    </div>
+    <div class="note" style="margin-top:14px">Drop more shots in later — I’ll add them here. No AI fake-Kyle; your face, your bike.</div>`;
+    return;
+  }
+
+  if(view==="specs"){
+    search.classList.add("hidden");grid.className="";grid.style.display="block";
+    grid.innerHTML=`<div class="panel"><h2>BIKE SPECS</h2><table><tbody>${BIKE_SPECS.map(([k,v])=>`<tr><td>${k}</td><td><strong>${v}</strong></td></tr>`).join("")}</tbody></table>
+    <div class="note ok">2022: wider 2.15″ rear + 110/90-19 MX33, lighter hub/chain, SSS damping update.</div></div>`;return;
+  }
+  search.classList.remove("hidden");grid.className="grid";grid.style.display="";
+  const items=view==="jobs"?JOBS:SYSTEMS;
+  const q=search.value.trim().toLowerCase();
+  const filtered=items.filter(i=>{
+    if(!q) return true;
+    const blob=[i.title,i.blurb,i.id,...(i.shop||[]).flatMap(s=>[s.name,s.pn||""]),...(i.torque||[]).map(t=>t.part)].join(" ").toLowerCase();
+    return blob.includes(q);
+  });
+  grid.innerHTML=filtered.map(i=>`<button type="button" class="card" data-open="${i.id}"><div class="kicker">${i.kind}</div><h3>${i.title}</h3><p>${i.blurb}</p>${i.tag?`<span class="tag">${i.tag}</span>`:""}</button>`).join("")||`<p style="color:#888">Nothing matches.</p>`;
+  wireChips(grid);
+}
+
+function wireChips(root){
+  root.querySelectorAll("[data-open]").forEach(b=>b.addEventListener("click",()=>openItem(b.dataset.open)));
+  root.querySelectorAll("[data-go-torque]").forEach(b=>b.addEventListener("click",()=>{
+    selectedTorque=b.dataset.goTorque;
+    document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("on",t.dataset.view==="torques"));
+    view="torques";render();
+  }));
+}
+
+function openSchedule(when){
+  const s=SCHEDULE.find(x=>x.when===when); if(!s) return;
+  detailPanel.innerHTML=`<div class="kicker">Schedule</div><h2>${s.when}</h2><div class="meta">${s.jobIds.map(id=>{const j=byId[id];return j?`<button type="button" class="chip" data-open="${id}">${j.title}</button>`:""}).join("")}</div>`;
+  wireChips(detailPanel);showDetail();
+}
+
+function openItem(id){
+  if(id==="torques"){view="torques";document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("on",t.dataset.view==="torques"));render();return;}
+  const item=byId[id]; if(!item) return;
+  if(item.kind==="system"){
+    detailPanel.innerHTML=`<div class="kicker">System</div><h2>${item.title}</h2><p class="lead">${item.blurb}</p>
+      ${item.specs?`<table><tbody>${item.specs.map(([k,v])=>`<tr><td>${k}</td><td><strong>${v}</strong></td></tr>`).join("")}</tbody></table>`:""}
+      <div class="section"><h3>RELATED</h3><div class="meta">${(item.related||[]).map(rid=>rid==="torques"?`<button type="button" class="chip" data-go-torque="drain">Torques →</button>`:(byId[rid]?`<button type="button" class="chip" data-open="${rid}">${byId[rid].title}</button>`:"")).join("")}</div></div>`;
+    wireChips(detailPanel);showDetail();return;
+  }
+  const torqueRows=(item.torque||[]).map(t=>`<tr><td>${t.part}${t.flag?` <span class="flag">VERIFY</span>`:""}</td><td><strong>${t.nm} Nm</strong></td><td>${t.ft} ft·lb</td><td style="color:#888">${t.src}</td></tr>`).join("");
+  const shopRows=(item.shop||[]).map(s=>`<tr><td><strong>${s.name}</strong><div style="color:#aaa;font-size:.75rem;margin-top:2px">${s.why||""}</div>${s.links&&s.links.length?buy(s.links):""}</td><td>${s.pn?`<span class="pn">${s.pn}</span>`:"—"}</td><td>${s.qty||"—"}</td></tr>`).join("");
+  detailPanel.innerHTML=`
+    <div class="kicker">Job</div><h2>${item.title}</h2><p class="lead">${item.blurb}</p>
+    ${item.interval?`<div class="note">${item.interval}</div>`:""}
+    ${item.tools?`<div class="section"><h3>TOOLS</h3><div class="tools">${item.tools.map(t=>`<span class="tool">${t}</span>`).join("")}</div></div>`:""}
+    ${item.capacity?`<div class="section"><h3>CAPACITIES</h3><table><tbody>${item.capacity.map(([k,v])=>`<tr><td>${k}</td><td><strong>${v}</strong></td></tr>`).join("")}</tbody></table></div>`:""}
+    ${shopRows?`<div class="section"><h3>PARTS CART</h3><table><thead><tr><th>Part</th><th>PN</th><th>Qty</th></tr></thead><tbody>${shopRows}</tbody></table></div>`:""}
+    ${torqueRows?`<div class="section"><h3>TORQUE</h3><table><thead><tr><th>Fastener</th><th>Nm</th><th>ft·lb</th><th>Source</th></tr></thead><tbody>${torqueRows}</tbody></table>
+      <div class="meta"><button type="button" class="chip" data-go-torque="drain">Open torque map →</button></div></div>`:""}
+    ${item.steps?`<div class="section"><h3>STEPS</h3><ol class="steps">${item.steps.map(s=>`<li>${s}</li>`).join("")}</ol></div>`:""}
+    <div class="section"><h3>RELATED</h3><div class="meta">${(item.related||[]).map(rid=>rid==="torques"?`<button type="button" class="chip" data-go-torque="drain">Torques →</button>`:(byId[rid]?`<button type="button" class="chip" data-open="${rid}">${byId[rid].title}</button>`:"")).join("")}</div></div>`;
+  wireChips(detailPanel);showDetail();
+}
+
+function renderTorque(){
+  const t=TORQUES.find(x=>x.id===selectedTorque)||TORQUES[0];
+  const dots=TORQUES.filter(b=>b.map!==false).map(b=>{
+    const active=b.id===selectedTorque;
+    const w=Math.max(110, b.label.length*7.2 + String(b.nm).length*7);
+    return `
+      <line class="leader" x1="${b.x}" y1="${b.y}" x2="${b.lx}" y2="${b.ly}" />
+      <rect class="callout" x="${b.lx-4}" y="${b.ly-14}" width="${w}" height="20" />
+      <text class="callout-text" x="${b.lx}" y="${b.ly}" dy="2">${b.label} · ${b.nm} Nm</text>
+      <circle class="bolt-ring" cx="${b.x}" cy="${b.y}" r="16" />
+      <circle class="bolt-dot${active?" active":""}" data-bolt="${b.id}" cx="${b.x}" cy="${b.y}" r="9" />`;
+  }).join("");
+
+  torqueView.innerHTML=`
+    <div class="note ok">Click a white bolt on the bike — or pick from the list. Values with <span class="flag">VERIFY</span> need your 2022 manual.</div>
+    <div class="tmap">
+      <div class="map-stage">
+        <svg viewBox="0 0 1000 560" role="img" aria-label="YZ250F torque map">
+          <!-- retro schematic bike facing left -->
+          <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter">
+            <!-- wheels -->
+            <circle cx="320" cy="380" r="95" />
+            <circle cx="320" cy="380" r="35" />
+            <circle cx="820" cy="380" r="95" />
+            <circle cx="820" cy="380" r="35" />
+            <!-- forks / triples -->
+            <path d="M400 100 L320 320" />
+            <path d="M420 100 L340 320" />
+            <rect x="385" y="95" width="50" height="18" fill="#000" />
+            <rect x="380" y="145" width="60" height="16" fill="#000" />
+            <!-- bars -->
+            <path d="M360 75 L480 65" />
+            <!-- frame -->
+            <path d="M420 160 L560 250 L700 250 L820 330" />
+            <path d="M560 250 L520 360 L700 300 Z" />
+            <path d="M700 250 L700 300 L820 330" />
+            <!-- swingarm -->
+            <path d="M600 310 L820 380" />
+            <path d="M600 330 L800 380" />
+            <!-- engine block -->
+            <rect x="480" y="280" width="120" height="90" fill="#000" />
+            <rect x="500" y="300" width="50" height="40" />
+            <!-- seat / tank silhouette -->
+            <path d="M450 160 C520 120,620 130,700 170 L680 210 C600 190,520 200,470 210 Z" fill="#000" />
+            <!-- rear fender -->
+            <path d="M720 200 L860 220 L840 260 L720 230 Z" fill="#000" />
+            <!-- front fender -->
+            <path d="M280 300 L360 280 L350 310 L290 320 Z" fill="#000" />
+            <!-- chain hint -->
+            <path d="M600 350 Q700 400 780 360" stroke-dasharray="8 6" stroke-width="2" />
+          </g>
+          <text x="40" y="52" fill="#fff" font-family="Bebas Neue,sans-serif" font-size="48">TORQUE MAP</text>
+          <text x="40" y="82" fill="#c8c8c8" font-family="Russo One,sans-serif" font-size="13" letter-spacing="3">2022 YZ250F · CLICK A BOLT</text>
+          ${dots}
+        </svg>
+      </div>
+      <aside class="torque-side" id="torqueSide">
+        <div class="kicker">Selected fastener</div>
+        <h2>${t.label}</h2>
+        <div class="nm">${t.nm} <small>Nm</small></div>
+        <p><strong>${t.ft} ft·lb</strong>${t.flag?` <span class="flag">VERIFY</span>`:""}</p>
+        <p class="lead">${t.note}</p>
+        <div class="meta">
+          <button type="button" class="chip" data-open="oil">Oil job</button>
+          <button type="button" class="chip" data-open="chain">Chain job</button>
+          <button type="button" class="chip" data-open="forks">Forks job</button>
+        </div>
+      </aside>
+    </div>
+    <div class="section"><h3>ALL FASTENERS — 2022 YZ250F</h3>
+      <p class="lead">Every service fastener below is labeled with Nm and ft·lb. Map pins show the main ones; table has the full set.</p>
+      <table><thead><tr><th>Fastener</th><th>Nm</th><th>ft·lb</th><th>Notes</th></tr></thead><tbody>
+      ${TORQUES.map(b=>`<tr style="cursor:pointer" data-bolt="${b.id}"><td><strong>${b.label}</strong>${b.flag?` <span class="flag">VERIFY</span>`:""}${b.map===false?` <span class="flag">LIST</span>`:""}</td><td><strong>${b.nm}</strong></td><td>${b.ft}</td><td>${b.note}</td></tr>`).join("")}
+      </tbody></table>
+      <div class="bolt-list" style="margin-top:12px">${TORQUES.map(b=>`<button type="button" class="${b.id===selectedTorque?"on":""}" data-bolt="${b.id}"><span class="nm-mini">${b.nm} Nm</span>${b.label}${b.flag?" · VERIFY":""}</button>`).join("")}</div>
+      <div class="note">High confidence (no VERIFY): oil drain 20 Nm, filter cover 10 Nm, spark plug 13 Nm. Axles use OSM lineage 115 / 135 Nm — verify in your 2022 manual. Ignore Motosport blog axle numbers.</div>
+    </div>`;
+
+  torqueView.querySelectorAll("[data-bolt]").forEach(el=>{
+    el.addEventListener("click",()=>{selectedTorque=el.dataset.bolt;renderTorque();});
+  });
+  wireChips(torqueView);
+}
+
+render();
+</script>
+<script type="module" src="maps/copy-grid.js"></script>
+<script src="pwa/register-sw.js"></script>
+</body>
+</html>

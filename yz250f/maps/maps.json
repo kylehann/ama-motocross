@@ -1,0 +1,1049 @@
+{
+  "bike": "2022 Yamaha YZ250F",
+  "system": {
+    "app": "Free Yamaha Power Tuner (iOS / Android)",
+    "connect": "Phone Wi\u2011Fi to bike CCU; password on CCU under left side panel (S/N area)",
+    "bar_switch": "Two slots: Map1 (light off) and Map2 (blue lit). Throttle closed to switch while riding.",
+    "stock_gotcha": "Factory often ships the same stock map in BOTH slots until you upload via the app \u2014 Map2 is useless until you load a second map.",
+    "share_reality": "App can share/email proprietary .map files between phones. Website cannot dump a true one-tap paste into the ECU. Best site UX: labeled cards + empty FI/IG 4\u00d74 templates + Copy checklist + load steps; optional screenshot slot for Kyle\u2019s real maps.",
+    "load_steps": [
+      "Download Power Tuner and connect to bike Wi\u2011Fi (password on CCU).",
+      "Map List \u2192 + \u2192 create/name the map.",
+      "Enter FI and IG values from the card (or paste from a shared .map file in-app).",
+      "Upload (up arrow) to Map1 or Map2.",
+      "Confirm on the bar switch: light off = Map1, blue = Map2."
+    ]
+  },
+  "disclaimer": "Not OEM warranty advice. Do not invent or trust unverified grid numbers. Paste Kyle\u2019s real Power Tuner screenshots / values before publishing numeric cells. Closed-course / race use only. Verify in Yamaha Power Tuner app after upload.",
+  "loadSteps": [
+    "Download Power Tuner and connect to bike Wi\u2011Fi (password on CCU).",
+    "Map List \u2192 + \u2192 create/name the map.",
+    "Enter FI and IG values from the card (or paste from a shared .map file in-app).",
+    "Upload (up arrow) to Map1 or Map2.",
+    "Confirm on the bar switch: light off = Map1, blue = Map2."
+  ],
+  "maps": [
+    {
+      "id": "stock-smooth",
+      "label": "Smooth Linear (Kyle)",
+      "whenToUse": "Default / learning / slippery \u2014 Kyle\u2019s saved Smooth Linear",
+      "riderNotes": "From Kyle Power Tuner screenshot. Last Sent Map2 07/11/2026. FI richer toward top; IG retarded for smoother delivery. Match POSITION axes exactly (FI TH 20/40/60/80 @ 5/7.5/10/12k; IG TH 15/30/50/70).",
+      "suggestedSlot": "Map1",
+      "sources": [
+        "Kyle Power Tuner screenshot 2026-09-09"
+      ],
+      "jobsLinks": [
+        "oil_change",
+        "air_filter"
+      ],
+      "photoSlot": null,
+      "fiGrid": [
+        [
+          2,
+          3,
+          3,
+          3
+        ],
+        [
+          2,
+          2,
+          3,
+          3
+        ],
+        [
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "igGrid": [
+        [
+          -2,
+          -3,
+          -3,
+          -4
+        ],
+        [
+          -1,
+          -2,
+          -2,
+          -3
+        ],
+        [
+          0,
+          0,
+          -2,
+          -3
+        ],
+        [
+          0,
+          0,
+          -1,
+          -2
+        ]
+      ],
+      "status": "verified_kyle_screenshot",
+      "fiPositionTH": [
+        80,
+        60,
+        40,
+        20
+      ],
+      "igPositionTH": [
+        70,
+        50,
+        30,
+        15
+      ],
+      "card_tip": "Reset here before you chase a new tune. FI/IG trims at 0 = stock baseline.",
+      "fiPositionRPM": [
+        5000,
+        7500,
+        10000,
+        12000
+      ],
+      "igPositionRPM": [
+        5000,
+        7500,
+        10000,
+        12000
+      ],
+      "fi": [
+        [
+          2,
+          3,
+          3,
+          3
+        ],
+        [
+          2,
+          2,
+          3,
+          3
+        ],
+        [
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "ig": [
+        [
+          -2,
+          -3,
+          -3,
+          -4
+        ],
+        [
+          -1,
+          -2,
+          -2,
+          -3
+        ],
+        [
+          0,
+          0,
+          -2,
+          -3
+        ],
+        [
+          0,
+          0,
+          -1,
+          -2
+        ]
+      ],
+      "values_status": "verified_kyle_screenshot"
+    },
+    {
+      "id": "yamaha-exciting-power",
+      "label": "Yamaha Exciting Power",
+      "whenToUse": "Official Yamaha profile \u2014 strong overall character for the YZ250F.",
+      "riderNotes": "Listed as 2021 YZ250F on Yamaha site; same-generation candidate for 2022 \u2014 confirm in Power Tuner when importing. Download .yptsjsnz then open/share in the app.",
+      "suggestedSlot": "Map2",
+      "sources": [
+        "Yamaha Motorsports Power Tuner Profiles",
+        "https://yamahamotorsports.com/power-tuner-app"
+      ],
+      "jobsLinks": [
+        "oil",
+        "air"
+      ],
+      "photoSlot": null,
+      "fiPositionTH": [
+        80,
+        60,
+        15,
+        5
+      ],
+      "fiPositionRPM": [
+        4500,
+        9500,
+        11500,
+        12000
+      ],
+      "igPositionTH": [
+        90,
+        60,
+        25,
+        10
+      ],
+      "igPositionRPM": [
+        4000,
+        8500,
+        10000,
+        13000
+      ],
+      "fiGrid": [
+        [
+          -2,
+          -1,
+          1,
+          1
+        ],
+        [
+          -2,
+          -1,
+          0,
+          1
+        ],
+        [
+          -1,
+          -2,
+          -1,
+          0
+        ],
+        [
+          -1,
+          -2,
+          0,
+          1
+        ]
+      ],
+      "igGrid": [
+        [
+          2,
+          3,
+          0,
+          -1
+        ],
+        [
+          2,
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          -1,
+          -1
+        ]
+      ],
+      "status": "verified_yamaha_profile_image",
+      "downloadUrl": "maps/downloads/exciting-power-21-yz250f.yptsjsnz",
+      "downloadOfficial": "https://yamahamotorsports.com/media/images/power_tuner/exciting-power-21-yz250f.yptsjsnz",
+      "card_tip": "Prefer the .yptsjsnz download into Power Tuner if your phone can open/share it; otherwise enter the grids with matching POSITION axes."
+    },
+    {
+      "id": "aggressive",
+      "label": "Map10 (Kyle) \u2014 Hard / Rich FI",
+      "whenToUse": "When you want more fuel hit with stock ignition timing (IG zeros)",
+      "riderNotes": "From Kyle Power Tuner screenshot \u201cMap10\u201d. FI rich mid\u2013top; IG flat zeros. Map11 in the same dump matches Smooth Linear exactly \u2014 not stored separately.",
+      "suggestedSlot": "Map2",
+      "sources": [
+        "Kyle Power Tuner screenshot 2026-09-09"
+      ],
+      "jobsLinks": [
+        "oil_change",
+        "air_filter",
+        "chain"
+      ],
+      "photoSlot": null,
+      "fiGrid": [
+        [
+          4,
+          5,
+          6,
+          6
+        ],
+        [
+          3,
+          4,
+          5,
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          4
+        ],
+        [
+          1,
+          1,
+          2,
+          3
+        ]
+      ],
+      "igGrid": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "status": "verified_kyle_screenshot",
+      "card_tip": "Quicker throttle than stock \u2014 the Map 2 most riders load first. Prefer Yamaha built-in preset or verified cells.",
+      "fiPositionTH": [
+        80,
+        60,
+        40,
+        20
+      ],
+      "fiPositionRPM": [
+        5000,
+        7500,
+        10000,
+        12000
+      ],
+      "igPositionTH": [
+        70,
+        50,
+        30,
+        15
+      ],
+      "igPositionRPM": [
+        5000,
+        7500,
+        10000,
+        12000
+      ],
+      "fi": [
+        [
+          4,
+          5,
+          6,
+          6
+        ],
+        [
+          3,
+          4,
+          5,
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          4
+        ],
+        [
+          1,
+          1,
+          2,
+          3
+        ]
+      ],
+      "ig": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "values_status": "verified_kyle_screenshot"
+    },
+    {
+      "id": "hard-pack",
+      "label": "Hard Pack",
+      "whenToUse": "Firm, slick hardpack \u2014 tractable drive, less wheelspin.",
+      "riderNotes": "Community Power Tuner style map; enter from trusted chart or your own tune \u2014 do not invent cells.",
+      "suggestedSlot": "Map2",
+      "sources": [],
+      "jobsLinks": [
+        "tires_check",
+        "chain"
+      ],
+      "photoSlot": null,
+      "fiGrid": null,
+      "igGrid": null,
+      "status": "empty_awaiting_kyle_or_verified_source",
+      "card_tip": "Tractable mid; less spin than Aggressive. Verified source only."
+    },
+    {
+      "id": "loamy",
+      "label": "Loam / Deep Sand (Kyle)",
+      "whenToUse": "Loam or deep sand needing more fuel and softer ignition",
+      "riderNotes": "From Kyle Power Tuner screenshot \u201cLoam / Deep Sand\u201d. FI heavily enriched at mid\u2013high throttle; IG retarded across the board. Match POSITION axes.",
+      "suggestedSlot": "Map2",
+      "sources": [
+        "Kyle Power Tuner screenshot 2026-09-09"
+      ],
+      "jobsLinks": [
+        "air_filter"
+      ],
+      "photoSlot": null,
+      "fiGrid": [
+        [
+          4,
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          4,
+          4,
+          4
+        ],
+        [
+          2,
+          2,
+          3,
+          3
+        ],
+        [
+          1,
+          2,
+          3,
+          3
+        ]
+      ],
+      "igGrid": [
+        [
+          -3,
+          -3,
+          -4,
+          -4
+        ],
+        [
+          -2,
+          -3,
+          -3,
+          -4
+        ],
+        [
+          -1,
+          -2,
+          -2,
+          -3
+        ],
+        [
+          -1,
+          -2,
+          -2,
+          -3
+        ]
+      ],
+      "status": "verified_kyle_screenshot",
+      "card_tip": "Harder mid hit so the tire can dig. Verified source only.",
+      "fiPositionTH": [
+        80,
+        60,
+        40,
+        20
+      ],
+      "fiPositionRPM": [
+        5000,
+        7500,
+        10000,
+        12000
+      ],
+      "igPositionTH": [
+        70,
+        50,
+        30,
+        15
+      ],
+      "igPositionRPM": [
+        5000,
+        7500,
+        10000,
+        12000
+      ],
+      "fi": [
+        [
+          4,
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          4,
+          4,
+          4
+        ],
+        [
+          2,
+          2,
+          3,
+          3
+        ],
+        [
+          1,
+          2,
+          3,
+          3
+        ]
+      ],
+      "ig": [
+        [
+          -3,
+          -3,
+          -4,
+          -4
+        ],
+        [
+          -2,
+          -3,
+          -3,
+          -4
+        ],
+        [
+          -1,
+          -2,
+          -2,
+          -3
+        ],
+        [
+          -1,
+          -2,
+          -2,
+          -3
+        ]
+      ],
+      "values_status": "verified_kyle_screenshot"
+    },
+    {
+      "id": "mud-slippery",
+      "label": "Mud / Slippery",
+      "whenToUse": "Wet, slick, muddy \u2014 softer delivery to cut spin.",
+      "riderNotes": "Pair with Stock/Smooth mindset; prioritize traction over punch.",
+      "suggestedSlot": "Map1 or Map2",
+      "sources": [],
+      "jobsLinks": [
+        "air_filter",
+        "chain"
+      ],
+      "photoSlot": null,
+      "fiGrid": null,
+      "igGrid": null,
+      "status": "empty_awaiting_kyle_or_verified_source",
+      "card_tip": "Softer delivery; don\u2019t stack Aggressive on ice-slick clay."
+    },
+    {
+      "id": "keefer-free-feeling",
+      "label": "Keefer Free Feeling",
+      "whenToUse": "Less engine braking, freer high-rpm feel, more balanced chassis off throttle.",
+      "riderNotes": "Keefer Free Feeling \u2014 different POSITION axes than Top End/Rev (80/60/40/20). Do not mix charts.",
+      "suggestedSlot": "Map2",
+      "sources": [
+        "Keefer Inc. 2023 optional maps \u2014 Free Feeling image"
+      ],
+      "jobsLinks": [
+        "oil",
+        "chain"
+      ],
+      "photoSlot": null,
+      "fiPositionTH": [
+        80,
+        60,
+        40,
+        20
+      ],
+      "fiPositionRPM": [
+        5000,
+        7500,
+        10000,
+        12000
+      ],
+      "igPositionTH": [
+        80,
+        60,
+        40,
+        20
+      ],
+      "igPositionRPM": [
+        5000,
+        7500,
+        10000,
+        12000
+      ],
+      "fiGrid": [
+        [
+          -2,
+          -3,
+          -2,
+          -1
+        ],
+        [
+          -2,
+          -2,
+          -3,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ]
+      ],
+      "igGrid": [
+        [
+          2,
+          3,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          -2
+        ]
+      ],
+      "status": "verified_keefer_screenshot",
+      "card_tip": "Less engine braking / freer mid-corner. Often run with stock 13/50. Axes are 80/60/40/20 \u2014 not the 15/5 Top End chart."
+    },
+    {
+      "id": "keefer-top-end-rev",
+      "label": "Keefer Top End / Rev (Mid-Top)",
+      "whenToUse": "More mid\u2013top pull through 2nd\u20134th; Yamaha R&D / Keefer Mid-Top End chart.",
+      "riderNotes": "Keefer 2022 baseline Mid-Top End and 2023 Top End/Rev show the same grids. Explicitly OK for 2022\u20132023 YZ250F.",
+      "suggestedSlot": "Map2",
+      "sources": [
+        "Keefer Inc. 2022 baseline + 2023 optional maps"
+      ],
+      "jobsLinks": [
+        "oil",
+        "chain"
+      ],
+      "photoSlot": "maps/keefer-map-1.jpeg",
+      "fiPositionTH": [
+        80,
+        60,
+        15,
+        5
+      ],
+      "fiPositionRPM": [
+        4500,
+        9500,
+        11500,
+        12000
+      ],
+      "igPositionTH": [
+        90,
+        60,
+        25,
+        10
+      ],
+      "igPositionRPM": [
+        4000,
+        8500,
+        10000,
+        13000
+      ],
+      "fiGrid": [
+        [
+          -2,
+          -3,
+          -1,
+          1
+        ],
+        [
+          -2,
+          -3,
+          -2,
+          1
+        ],
+        [
+          -1,
+          -2,
+          -1,
+          0
+        ],
+        [
+          -1,
+          -2,
+          0,
+          1
+        ]
+      ],
+      "igGrid": [
+        [
+          2,
+          3,
+          2,
+          -1
+        ],
+        [
+          2,
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          -1,
+          -1
+        ]
+      ],
+      "status": "verified_keefer_screenshot",
+      "card_tip": "This is the chart we first transcribed (was mislabeled Free Feeling). Match FI axes 80/60/15/5 and IG 90/60/25/10."
+    },
+    {
+      "id": "tp-map-2019",
+      "label": "TP Map 2019 (Travis Preston)",
+      "whenToUse": "Classic TP feel \u2014 2019-gen reference; try on 2022 only if Power Tuner accepts the file.",
+      "riderNotes": "Yamaha hosts tp-map-2019-yz250f.yptsjsnz. Racer X published a 2019-gen screenshot (not guaranteed identical to current Yamaha file). Prefer the official .yptsjsnz import.",
+      "suggestedSlot": "Map2",
+      "sources": [
+        "Yamaha Motorsports",
+        "Racer X 2018 TP map article (2019 bike)"
+      ],
+      "jobsLinks": [
+        "oil",
+        "air"
+      ],
+      "photoSlot": null,
+      "fiPositionTH": [
+        80,
+        60,
+        15,
+        5
+      ],
+      "fiPositionRPM": [
+        4500,
+        9500,
+        11500,
+        13000
+      ],
+      "igPositionTH": [
+        80,
+        60,
+        20,
+        10
+      ],
+      "igPositionRPM": [
+        4500,
+        8500,
+        10000,
+        13000
+      ],
+      "fiGrid": [
+        [
+          -2,
+          -3,
+          -2,
+          -1
+        ],
+        [
+          -2,
+          -3,
+          -3,
+          -3
+        ],
+        [
+          -1,
+          -2,
+          -2,
+          0
+        ],
+        [
+          -1,
+          -2,
+          0,
+          2
+        ]
+      ],
+      "igGrid": [
+        [
+          2,
+          3,
+          3,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          3
+        ],
+        [
+          2,
+          2,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          2,
+          2
+        ]
+      ],
+      "status": "verified_racerx_2019_gen_screenshot",
+      "downloadUrl": "maps/downloads/tp-map-2019-yz250f.yptsjsnz",
+      "downloadOfficial": "https://yamahamotorsports.com/media/images/power_tuner/tp-map-2019-yz250f.yptsjsnz",
+      "yearNote": "2019-generation \u2014 VERIFY on 2022 before race day",
+      "card_tip": "Download the Yamaha .yptsjsnz first; Racer X grids are for manual entry if import fails."
+    },
+    {
+      "id": "track-day",
+      "label": "Track Day",
+      "whenToUse": "Practice / track day: Map1 Stock-Smooth for warm-up, Map2 Aggressive or Keefer Free Feeling once up to temp.",
+      "riderNotes": "Link to track-day kit BOM + oil/air/chain Jobs checklist before you leave the truck.",
+      "suggestedSlot": "Map1 + Map2 combo",
+      "sources": [],
+      "jobsLinks": [
+        "oil_change",
+        "air_filter",
+        "chain",
+        "track_day_kit"
+      ],
+      "photoSlot": null,
+      "fiGrid": null,
+      "igGrid": null,
+      "status": "empty_combo_card_no_numeric_until_kyle_picks_pair",
+      "card_tip": "Map1 Stock warm-up \u00b7 Map2 Aggressive or Keefer when hot. Check oil/air/chain/kit first."
+    },
+    {
+      "id": "cool-morning",
+      "label": "Cool Morning",
+      "whenToUse": "Cold ambient / cool morning practice \u2014 slightly richer / smoother until the bike is fully warm (user preference).",
+      "riderNotes": "Template only until Kyle\u2019s real cool-weather map exists.",
+      "suggestedSlot": "Map1",
+      "sources": [],
+      "jobsLinks": [
+        "oil_change"
+      ],
+      "photoSlot": null,
+      "fiGrid": null,
+      "igGrid": null,
+      "status": "empty_awaiting_kyle",
+      "card_tip": "Template until Kyle\u2019s cool-weather map exists."
+    },
+    {
+      "id": "hot-afternoon",
+      "label": "Hot Afternoon",
+      "whenToUse": "Hot weather / thin air afternoon \u2014 lean toward maps that don\u2019t feel boggy when heat-soaked (user preference).",
+      "riderNotes": "Template only until Kyle\u2019s real hot-weather map exists.",
+      "suggestedSlot": "Map2",
+      "sources": [],
+      "jobsLinks": [
+        "coolant_check",
+        "air_filter"
+      ],
+      "photoSlot": null,
+      "fiGrid": null,
+      "igGrid": null,
+      "status": "empty_awaiting_kyle",
+      "card_tip": "Template until Kyle\u2019s hot-weather map exists."
+    },
+    {
+      "id": "kyle-map11",
+      "label": "Map11 (Kyle) = Smooth Linear",
+      "whenToUse": "Same numbers as Smooth Linear \u2014 Kyle\u2019s alternate save name",
+      "riderNotes": "Identical FI/IG to Smooth Linear in the Sep 9 screenshots. Use Smooth Linear card for copy.",
+      "sources": [
+        "Kyle Power Tuner screenshot 2026-09-09"
+      ],
+      "fiGrid": [
+        [
+          2,
+          3,
+          3,
+          3
+        ],
+        [
+          2,
+          2,
+          3,
+          3
+        ],
+        [
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "igGrid": [
+        [
+          -2,
+          -3,
+          -3,
+          -4
+        ],
+        [
+          -1,
+          -2,
+          -2,
+          -3
+        ],
+        [
+          0,
+          0,
+          -2,
+          -3
+        ],
+        [
+          0,
+          0,
+          -1,
+          -2
+        ]
+      ],
+      "fiPositionTH": [
+        80,
+        60,
+        40,
+        20
+      ],
+      "fiPositionRPM": [
+        5000,
+        7500,
+        10000,
+        12000
+      ],
+      "igPositionTH": [
+        70,
+        50,
+        30,
+        15
+      ],
+      "igPositionRPM": [
+        5000,
+        7500,
+        10000,
+        12000
+      ],
+      "status": "verified_kyle_screenshot_alias",
+      "jobsLinks": [],
+      "photoSlot": null
+    }
+  ],
+  "valuesPolicy": "Verified: Stock zeros, Yamaha Exciting Power (profile image), Keefer Free Feeling, Keefer Top End/Rev, TP 2019 Racer X screenshot (2019-gen caveat). Empty community labels remain null.",
+  "copy": {
+    "source": "maps/maps-copy.md (Apple)",
+    "section_intro": "Power Tuner maps for the 2022 YZ250F. Your bike holds two maps; the bar switch flips between them (throttle closed). Stock often ships the same map in both slots \u2014 Map 2 only gets useful after you load a second map. Copy grids \u2192 enter in Power Tuner \u2192 upload. Not a one-tap .map install.",
+    "starter_pair": {
+      "Map1": "Stock / Smooth \u2014 warm-up, slippery, learning",
+      "Map2": "Aggressive or Keefer Free Feeling \u2014 punch / freer chassis"
+    },
+    "air_note": "Kyle runs Twin Air Powerflow 152222C \u2014 maps assume a clean filter.",
+    "axis_warning": "Always match POSITION + RPM axes when copying charts (wrong scale makes a map feel dead)."
+  },
+  "downloads": {
+    "exciting_power": "maps/downloads/exciting-power-21-yz250f.yptsjsnz",
+    "tp_map_2019": "maps/downloads/tp-map-2019-yz250f.yptsjsnz",
+    "owners_manual_2022": "https://library.ymcapps.net/library/om/contents/pdf/10/B7B-2819U-13_02.pdf",
+    "owners_manual_official": "https://library.ymcapps.net/library/om/contents/pdf/10/B7B-2819U-13_02.pdf",
+    "note": "Yamaha .yptsjsnz files are proprietary Power Tuner maps \u2014 open/share via the app after download. Not ECU firmware."
+  },
+  "kyleScreenshotBatch": {
+    "date": "2026-09-09",
+    "files": [
+      "55b2a80f1aeb29d72a71793b42004bf73bdaff18f1d70bbbdc63053e8eff2bb9.png",
+      "8d88f59f0c013806f8c2edc72e98708ae4e9c2f1ad4bdb6436017fd527c4d25e.png"
+    ],
+    "maps": [
+      "Smooth Linear",
+      "Loam / Deep Sand",
+      "Map11 (= Smooth Linear)",
+      "Map10"
+    ]
+  }
+}

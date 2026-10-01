@@ -1,1781 +1,2523 @@
 {
- "generated": "2026-10-01",
- "siteTitle": "Dirt Bike Updates",
- "status": {
-  "asOf": "2026-10-01",
-  "items": [
-   {
-    "label": "AMA Pro Motocross",
-    "value": "2026 season complete",
-    "detail": "11 rounds finished Aug 29 at Ironman. 450 champ: Hunter Lawrence. 250 champ: Cole Davies.",
-    "source": {
-     "name": "Supercross.com – Race Schedule",
-     "url": "https://www.supercross.com/pages/schedule"
+  "generated": "2026-10-01",
+  "siteTitle": "Dirt Bike Updates",
+  "status": {
+    "asOf": "2026-10-01",
+    "items": [
+      {
+        "label": "AMA Pro Motocross",
+        "value": "2026 season complete",
+        "detail": "11 rounds finished Aug 29 at Ironman. 450 champ: Hunter Lawrence. 250 champ: Cole Davies.",
+        "source": {
+          "name": "Supercross.com – Race Schedule",
+          "url": "https://www.supercross.com/pages/schedule"
+        }
+      },
+      {
+        "label": "AMA Supercross",
+        "value": "2026 season complete",
+        "detail": "17 rounds, finale May 9 in Salt Lake City. 450SX champ: Ken Roczen.",
+        "source": {
+          "name": "Supercross.com – Race Schedule",
+          "url": "https://www.supercross.com/pages/schedule"
+        }
+      },
+      {
+        "label": "SMX World Championship",
+        "value": "2026 season complete",
+        "detail": "Final was Sep 26 in Ridgedale, MO. 450SMX: Jorge Prado. 250SMX: Levi Kitchen.",
+        "source": {
+          "name": "Racer X – SMX Final results",
+          "url": "https://racerxonline.com/2026/09/28/wake-up-call"
+        }
+      },
+      {
+        "label": "2027 Supercross",
+        "value": "17 rounds confirmed",
+        "detail": "AMA confirmed 17 rounds and released 2027 national numbers; the official dates/venues schedule was still not published as of Oct 1, 2026.",
+        "source": {
+          "name": "Racer X – 2027 numbers (Sep 29)",
+          "url": "https://racerxonline.com/2026/09/29/ama-releases-2027-ama-supercross-motocross-and-supermotocross-national-numbers"
+        }
+      }
+    ]
+  },
+  "nextEvent": {
+    "asOf": "2026-10-01",
+    "kicker": "Race weekend starts tomorrow",
+    "name": "Monster Energy FIM Motocross of Nations",
+    "note": "Not an AMA-sanctioned event — the next race on the calendar, with Team USA. No AMA-sanctioned race is scheduled in the sources checked until the 2027 season.",
+    "startDate": "2026-10-02",
+    "endDate": "2026-10-04",
+    "dateText": "Oct 2 – 4, 2026",
+    "location": "Circuit Raymond Demy, Ernée, France",
+    "graphic": "assets/mxon.svg",
+    "facts": [
+      "Team USA (#4–6): Julien Beaumer (MXGP, KTM), Levi Kitchen (MX2, Kawasaki), Cooper Webb (Open, Husqvarna) — manager Mike Pelletier. Final entry list updated Sep 29.",
+      "Hosts France (#7–9) are among the few leading nations with first-choice riders: Romain Febvre (MXGP), Mathis Valin (MX2), Tom Vialle (Open).",
+      "Defending champion Australia lines up Jed Beaton, Alex Larwood and Aaron Tanti — not the Lawrence brothers / Kyle Webster who won in 2025.",
+      "Sunday races (local): Race 1 MXGP+MX2 13:10, Race 2 MX2+Open 14:40, Race 3 Open+MXGP 16:08. Full live coverage on MXGP-TV.",
+      "Honda CR ELECTRIC PROTO (Trey Canard, Justin Brayton) and Yamaha YE-01 Racing Concept (Ben Townley, Milko Potisek) demo together Sat & Sun at 12:45 local."
+    ],
+    "sources": [
+      {
+        "name": "MXGP – All eyes on Ernée (Sep 30, 2026)",
+        "url": "https://www.mxgp.com/news/all-eyes-ern%C3%A9e-2026-monster-energy-fim-motocross-nations"
+      },
+      {
+        "name": "MXGPResults – official entry list (updated Sep 29, 2026)",
+        "url": "https://mxgpresults.com/mxon/teams"
+      },
+      {
+        "name": "MXGP – Honda & Yamaha EV demos (Sep 29, 2026)",
+        "url": "https://www.mxgp.com/news/honda-and-yamaha-stage-ev-motocross-demo-runs-monster-energy-fim-motocross-nations-ern%C3%A9e-0"
+      }
+    ],
+    "caveat": "An Aug 28 Pro Motocross article named Chance Hymas for Team USA; the final entry list (Sep 29) and MXGP preview (Sep 30) show Julien Beaumer instead."
+  },
+  "schedule": {
+    "asOf": "2026-10-01",
+    "upcoming": [
+      {
+        "date": "Oct 2 – 4, 2026",
+        "event": "Motocross of Nations",
+        "place": "Circuit Raymond Demy, Ernée, France",
+        "tag": "FIM · Team USA",
+        "source": {
+          "name": "MXGP",
+          "url": "https://www.mxgp.com/news/all-eyes-ern%C3%A9e-2026-monster-energy-fim-motocross-nations"
+        }
+      },
+      {
+        "date": "TBA",
+        "event": "2027 AMA Supercross (17 rounds)",
+        "place": "Official schedule not yet released",
+        "tag": "AMA SX",
+        "source": {
+          "name": "Racer X",
+          "url": "https://racerxonline.com/2026/09/29/ama-releases-2027-ama-supercross-motocross-and-supermotocross-national-numbers"
+        }
+      },
+      {
+        "date": "TBA",
+        "event": "2027 AMA Pro Motocross",
+        "place": "Not found in the sources checked",
+        "tag": "AMA MX",
+        "source": null
+      }
+    ],
+    "completed": {
+      "source": {
+        "name": "Supercross.com – Race Schedule",
+        "url": "https://www.supercross.com/pages/schedule"
+      },
+      "groups": [
+        {
+          "title": "2026 AMA Pro Motocross (11 rounds)",
+          "rows": [
+            [
+              "R1",
+              "May 30",
+              "Pala, CA",
+              "Fox Raceway"
+            ],
+            [
+              "R2",
+              "Jun 6",
+              "Rancho Cordova, CA",
+              "Hangtown Motocross Classic"
+            ],
+            [
+              "R3",
+              "Jun 13",
+              "Lakewood, CO",
+              "Thunder Valley Motocross Park"
+            ],
+            [
+              "R4",
+              "Jun 20",
+              "Mt. Morris, PA",
+              "High Point Raceway"
+            ],
+            [
+              "R5",
+              "Jul 4",
+              "Buchanan, MI",
+              "Redbud MX"
+            ],
+            [
+              "R6",
+              "Jul 11",
+              "Southwick, MA",
+              "The Wick 338"
+            ],
+            [
+              "R7",
+              "Jul 18",
+              "Millville, MN",
+              "Spring Creek MX Park"
+            ],
+            [
+              "R8",
+              "Jul 25",
+              "Washougal, WA",
+              "Washougal MX Park"
+            ],
+            [
+              "R9",
+              "Aug 15",
+              "New Berlin, NY",
+              "Unadilla MX"
+            ],
+            [
+              "R10",
+              "Aug 22",
+              "Mechanicsville, MD",
+              "Budds Creek Motocross Park"
+            ],
+            [
+              "R11",
+              "Aug 29",
+              "Crawfordsville, IN",
+              "Ironman Raceway"
+            ]
+          ]
+        },
+        {
+          "title": "2026 SMX Playoffs (3 rounds)",
+          "rows": [
+            [
+              "P1",
+              "Sep 12",
+              "Columbus, OH",
+              "Historic Crew Stadium"
+            ],
+            [
+              "P2",
+              "Sep 19",
+              "Carson, CA",
+              "Dignity Health Sports Park"
+            ],
+            [
+              "Final",
+              "Sep 26",
+              "Ridgedale, MO",
+              "Thunder Ridge Nature Arena"
+            ]
+          ]
+        },
+        {
+          "title": "2026 AMA Supercross (17 rounds)",
+          "rows": [
+            [
+              "R1",
+              "Jan 10",
+              "Anaheim, CA",
+              "Angel Stadium"
+            ],
+            [
+              "R2",
+              "Jan 17",
+              "San Diego, CA",
+              "Snapdragon Stadium"
+            ],
+            [
+              "R3",
+              "Jan 24",
+              "Anaheim, CA",
+              "Angel Stadium"
+            ],
+            [
+              "R4",
+              "Jan 31",
+              "Houston, TX",
+              "NRG Stadium"
+            ],
+            [
+              "R5",
+              "Feb 7",
+              "Glendale, AZ",
+              "State Farm Stadium"
+            ],
+            [
+              "R6",
+              "Feb 14",
+              "Seattle, WA",
+              "Lumen Field"
+            ],
+            [
+              "R7",
+              "Feb 21",
+              "Arlington, TX",
+              "AT&T Stadium"
+            ],
+            [
+              "R8",
+              "Feb 28",
+              "Daytona Beach, FL",
+              "Daytona International Speedway"
+            ],
+            [
+              "R9",
+              "Mar 7",
+              "Indianapolis, IN",
+              "Lucas Oil Stadium"
+            ],
+            [
+              "R10",
+              "Mar 21",
+              "Birmingham, AL",
+              "Protective Stadium"
+            ],
+            [
+              "R11",
+              "Mar 28",
+              "Detroit, MI",
+              "Ford Field"
+            ],
+            [
+              "R12",
+              "Apr 4",
+              "St. Louis, MO",
+              "The Dome at America's Center"
+            ],
+            [
+              "R13",
+              "Apr 11",
+              "Nashville, TN",
+              "Nissan Stadium"
+            ],
+            [
+              "R14",
+              "Apr 18",
+              "Cleveland, OH",
+              "Huntington Bank Field"
+            ],
+            [
+              "R15",
+              "Apr 25",
+              "Philadelphia, PA",
+              "Lincoln Financial Field"
+            ],
+            [
+              "R16",
+              "May 2",
+              "Denver, CO",
+              "Empower Field at Mile High"
+            ],
+            [
+              "R17",
+              "May 9",
+              "Salt Lake City, UT",
+              "Rice-Eccles Stadium"
+            ]
+          ]
+        }
+      ]
     }
-   },
-   {
-    "label": "AMA Supercross",
-    "value": "2026 season complete",
-    "detail": "17 rounds, finale May 9 in Salt Lake City. 450SX champ: Ken Roczen.",
-    "source": {
-     "name": "Supercross.com – Race Schedule",
-     "url": "https://www.supercross.com/pages/schedule"
+  },
+  "results": [
+    {
+      "id": "smx-final",
+      "name": "SMX World Championship Final",
+      "date": "Sep 26, 2026",
+      "venue": "Thunder Ridge Nature Arena, Ridgedale, MO",
+      "asOf": "2026-09-28",
+      "detailLabel": "Motos",
+      "source": {
+        "name": "Racer X – SMX Final results",
+        "url": "https://racerxonline.com/2026/09/28/wake-up-call"
+      },
+      "summary": "Triple-points finale. Haiden Deegan won the 450SMX overall (1-2) but Jorge Prado (5-1) clinched the 450SMX title by 7 points. Cole Davies swept the 250SMX (1-1) while Levi Kitchen (2-2) took the 250SMX title.",
+      "classes": {
+        "250": {
+          "label": "250SMX",
+          "rows": [
+            [
+              1,
+              "Cole Davies",
+              "Waitoki, New Zealand",
+              "1 - 1"
+            ],
+            [
+              2,
+              "Levi Kitchen",
+              "Washougal, WA",
+              "2 - 2"
+            ],
+            [
+              3,
+              "Landen Gordon",
+              "Murrieta, CA",
+              "6 - 3"
+            ],
+            [
+              4,
+              "Nate Thrasher",
+              "Livingston, TN",
+              "7 - 4"
+            ],
+            [
+              5,
+              "Pierce Brown",
+              "Sandy, UT",
+              "5 - 7"
+            ],
+            [
+              6,
+              "Julien Beaumer",
+              "Lake Havasu City, AZ",
+              "4 - 9"
+            ],
+            [
+              7,
+              "Ryder DiFrancesco",
+              "Bakersfield, CA",
+              "3 - 10"
+            ],
+            [
+              8,
+              "Daxton Bennick",
+              "Morganton, NC",
+              "10 - 6"
+            ],
+            [
+              9,
+              "Cameron McAdoo",
+              "Sioux City, IA",
+              "13 - 5"
+            ],
+            [
+              10,
+              "Caden Dudney",
+              "Des Moines, IA",
+              "8 - 11"
+            ]
+          ]
+        },
+        "450": {
+          "label": "450SMX",
+          "rows": [
+            [
+              1,
+              "Haiden Deegan",
+              "Temecula, CA",
+              "1 - 2"
+            ],
+            [
+              2,
+              "Jorge Prado",
+              "Lugo, Spain",
+              "5 - 1"
+            ],
+            [
+              3,
+              "Hunter Lawrence",
+              "Landsborough, Australia",
+              "3 - 3"
+            ],
+            [
+              4,
+              "Ken Roczen",
+              "Mattstedt, Germany",
+              "2 - 5"
+            ],
+            [
+              5,
+              "Cooper Webb",
+              "Newport, NC",
+              "4 - 4"
+            ],
+            [
+              6,
+              "R.J. Hampshire",
+              "Hudson, FL",
+              "6 - 6"
+            ],
+            [
+              7,
+              "Garrett Marchbanks",
+              "Coalville, UT",
+              "10 - 7"
+            ],
+            [
+              8,
+              "Jordon Smith",
+              "Belmont, NC",
+              "9 - 9"
+            ],
+            [
+              9,
+              "Malcolm Stewart",
+              "Haines City, FL",
+              "8 - 14"
+            ],
+            [
+              10,
+              "Aaron Plessinger",
+              "Hamilton, OH",
+              "7 - 15"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "ironman",
+      "name": "Ironman National (Pro Motocross finale, Round 11)",
+      "date": "Aug 29, 2026",
+      "venue": "Ironman Raceway, Crawfordsville, IN",
+      "asOf": "2026-08-29",
+      "detailLabel": "Motos",
+      "source": {
+        "name": "ProMotocross.com – Ironman results",
+        "url": "https://promotocross.com/2026/08/29/smx-round-28-results-ironman-national-finals-august-29-2026"
+      },
+      "summary": "Jorge Prado (1-1) won the 450 overall; Hunter Lawrence (8-4, 4th) beat brother Jett by 2 points for the 450 title. Julien Beaumer (2-1) won the 250 overall; Cole Davies (3-13, 7th) clinched the 250 title after Levi Kitchen's Moto 1 DNF.",
+      "classes": {
+        "250": {
+          "label": "250 Class",
+          "rows": [
+            [
+              1,
+              "Julien Beaumer",
+              "Lake Havasu City, AZ",
+              "2 - 1"
+            ],
+            [
+              2,
+              "Chance Hymas",
+              "Pocatello, ID",
+              "1 - 2"
+            ],
+            [
+              3,
+              "Ryder DiFrancesco",
+              "Bakersfield, CA",
+              "7 - 3"
+            ],
+            [
+              4,
+              "Landen Gordon",
+              "Murrieta, CA",
+              "5 - 6"
+            ],
+            [
+              5,
+              "Pierce Brown",
+              "Sandy, UT",
+              "6 - 7"
+            ],
+            [
+              6,
+              "Drew Adams",
+              "Chattanooga, TN",
+              "9 - 5"
+            ],
+            [
+              7,
+              "Cole Davies",
+              "Waitoki, New Zealand",
+              "3 - 13"
+            ],
+            [
+              8,
+              "Kayden Minear",
+              "Western Australia",
+              "8 - 8"
+            ],
+            [
+              9,
+              "Nate Thrasher",
+              "Livingston, TN",
+              "15 - 4"
+            ],
+            [
+              10,
+              "Michael Mosiman",
+              "Sebastopol, CA",
+              "10 - 9"
+            ]
+          ]
+        },
+        "450": {
+          "label": "450 Class",
+          "rows": [
+            [
+              1,
+              "Jorge Prado",
+              "Lugo, Spain",
+              "1 - 1"
+            ],
+            [
+              2,
+              "R.J. Hampshire",
+              "Hudson, FL",
+              "2 - 6"
+            ],
+            [
+              3,
+              "Cooper Webb",
+              "Newport, NC",
+              "3 - 8"
+            ],
+            [
+              4,
+              "Hunter Lawrence",
+              "Landsborough, Australia",
+              "8 - 4"
+            ],
+            [
+              5,
+              "Eli Tomac",
+              "Cortez, CO",
+              "7 - 5"
+            ],
+            [
+              6,
+              "Jett Lawrence",
+              "Landsborough, Australia",
+              "11 - 3"
+            ],
+            [
+              7,
+              "Garrett Marchbanks",
+              "Coalville, UT",
+              "6 - 7"
+            ],
+            [
+              8,
+              "Aaron Plessinger",
+              "Hamilton, OH",
+              "5 - 9"
+            ],
+            [
+              9,
+              "Haiden Deegan",
+              "Temecula, CA",
+              "16 - 2"
+            ],
+            [
+              10,
+              "Mikkel Haarup",
+              "Silkeborg, Denmark",
+              "4 - 14"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "slc",
+      "name": "Salt Lake City (Supercross Round 17 finale)",
+      "date": "May 9, 2026",
+      "venue": "Rice-Eccles Stadium, Salt Lake City, UT",
+      "asOf": "2026-05-11",
+      "detailLabel": "Race time",
+      "source": {
+        "name": "Racer X – Salt Lake City results",
+        "url": "https://racerxonline.com/2026/05/11/wake-up-call"
+      },
+      "summary": "Chase Sexton won the 450SX finale; Ken Roczen finished 5th, enough to win his first 450SX title by 3 points over Hunter Lawrence (7th). Cole Davies won the 250SX Showdown.",
+      "classes": {
+        "250": {
+          "label": "250SX Showdown",
+          "rows": [
+            [
+              1,
+              "Cole Davies",
+              "Waitoki, New Zealand",
+              "16:01.871"
+            ],
+            [
+              2,
+              "Levi Kitchen",
+              "Washougal, WA",
+              "16:04.316"
+            ],
+            [
+              3,
+              "Max Anstie",
+              "Newbury, England, UK",
+              "16:08.337"
+            ],
+            [
+              4,
+              "Haiden Deegan",
+              "Temecula, CA",
+              "16:16.593"
+            ],
+            [
+              5,
+              "Ryder DiFrancesco",
+              "Bakersfield, CA",
+              "16:26.512"
+            ],
+            [
+              6,
+              "Max Vohland",
+              "Sacramento, CA",
+              "16:29.954"
+            ],
+            [
+              7,
+              "Derek Kelley",
+              "Riverside, CA",
+              "16:31.413"
+            ],
+            [
+              8,
+              "Hunter Yoder",
+              "Menifee, CA",
+              "16:34.958"
+            ],
+            [
+              9,
+              "Landen Gordon",
+              "Murrieta, CA",
+              "16:36.293"
+            ],
+            [
+              10,
+              "Henry Miller",
+              "Rochester, MN",
+              "16:37.053"
+            ]
+          ]
+        },
+        "450": {
+          "label": "450SX",
+          "rows": [
+            [
+              1,
+              "Chase Sexton",
+              "La Moille, IL",
+              "21:10.489"
+            ],
+            [
+              2,
+              "Justin Cooper",
+              "Cold Spring Harbor, NY",
+              "21:12.585"
+            ],
+            [
+              3,
+              "Jorge Prado",
+              "Lugo, Spain",
+              "21:13.797"
+            ],
+            [
+              4,
+              "Cooper Webb",
+              "Newport, NC",
+              "21:14.409"
+            ],
+            [
+              5,
+              "Ken Roczen",
+              "Mattstedt, Germany",
+              "21:20.651"
+            ],
+            [
+              6,
+              "Justin Hill",
+              "Yoncalla, OR",
+              "21:24.752"
+            ],
+            [
+              7,
+              "Hunter Lawrence",
+              "Landsborough, Australia",
+              "21:26.304"
+            ],
+            [
+              8,
+              "Malcolm Stewart",
+              "Haines City, FL",
+              "21:33.304"
+            ],
+            [
+              9,
+              "Christian Craig",
+              "Temecula, CA",
+              "21:39.903"
+            ],
+            [
+              10,
+              "Dean Wilson",
+              "Scotland, UK",
+              "21:44.685"
+            ]
+          ]
+        }
+      }
     }
-   },
-   {
-    "label": "SMX World Championship",
-    "value": "2026 season complete",
-    "detail": "Final was Sep 26 in Ridgedale, MO. 450SMX: Jorge Prado. 250SMX: Levi Kitchen.",
-    "source": {
-     "name": "Racer X – SMX Final results",
-     "url": "https://racerxonline.com/2026/09/28/wake-up-call"
+  ],
+  "standings": [
+    {
+      "id": "mx",
+      "series": "Pro Motocross",
+      "title": "2026 AMA Pro Motocross – final",
+      "asOf": "2026-08-29",
+      "source": {
+        "name": "ProMotocross.com – Ironman results",
+        "url": "https://promotocross.com/2026/08/29/smx-round-28-results-ironman-national-finals-august-29-2026"
+      },
+      "note": "Final standings after Round 11 (Ironman).",
+      "classes": {
+        "250": {
+          "label": "250 Class",
+          "tables": [
+            {
+              "title": "",
+              "rows": [
+                [
+                  1,
+                  "Cole Davies",
+                  "Waitoki, New Zealand",
+                  407
+                ],
+                [
+                  2,
+                  "Julien Beaumer",
+                  "Lake Havasu City, AZ",
+                  369
+                ],
+                [
+                  3,
+                  "Levi Kitchen",
+                  "Washougal, WA",
+                  364
+                ],
+                [
+                  4,
+                  "Chance Hymas",
+                  "Pocatello, ID",
+                  364
+                ],
+                [
+                  5,
+                  "Ryder DiFrancesco",
+                  "Bakersfield, CA",
+                  326
+                ],
+                [
+                  6,
+                  "Kayden Minear",
+                  "Western Australia",
+                  297
+                ],
+                [
+                  7,
+                  "Carson Mumford",
+                  "Simi Valley, CA",
+                  244
+                ],
+                [
+                  8,
+                  "Jo Shimoda",
+                  "Suzuka City, Japan",
+                  194
+                ],
+                [
+                  9,
+                  "Michael Mosiman",
+                  "Sebastopol, CA",
+                  192
+                ],
+                [
+                  10,
+                  "Drew Adams",
+                  "Chattanooga, TN",
+                  181
+                ]
+              ]
+            }
+          ]
+        },
+        "450": {
+          "label": "450 Class",
+          "tables": [
+            {
+              "title": "",
+              "rows": [
+                [
+                  1,
+                  "Hunter Lawrence",
+                  "Landsborough, Australia",
+                  474
+                ],
+                [
+                  2,
+                  "Jett Lawrence",
+                  "Landsborough, Australia",
+                  472
+                ],
+                [
+                  3,
+                  "Haiden Deegan",
+                  "Temecula, CA",
+                  404
+                ],
+                [
+                  4,
+                  "Jorge Prado",
+                  "Lugo, Spain",
+                  401
+                ],
+                [
+                  5,
+                  "R.J. Hampshire",
+                  "Hudson, FL",
+                  346
+                ],
+                [
+                  6,
+                  "Garrett Marchbanks",
+                  "Coalville, UT",
+                  296
+                ],
+                [
+                  7,
+                  "Dylan Ferrandis",
+                  "Avignon, France",
+                  269
+                ],
+                [
+                  8,
+                  "Cooper Webb",
+                  "Newport, NC",
+                  264
+                ],
+                [
+                  9,
+                  "Mikkel Haarup",
+                  "Silkeborg, Denmark",
+                  246
+                ],
+                [
+                  10,
+                  "Justin Barcia",
+                  "Monroe, NY",
+                  226
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "smx",
+      "series": "SMX World Championship",
+      "title": "2026 SMX World Championship – final",
+      "asOf": "2026-09-28",
+      "source": {
+        "name": "Racer X – SMX Final results",
+        "url": "https://racerxonline.com/2026/09/28/wake-up-call"
+      },
+      "note": "Final standings after the 3-race Playoffs/Final (points shown are playoff points, not the regular-season qualifying points).",
+      "classes": {
+        "250": {
+          "label": "250SMX",
+          "tables": [
+            {
+              "title": "",
+              "rows": [
+                [
+                  1,
+                  "Levi Kitchen",
+                  "Washougal, WA",
+                  153
+                ],
+                [
+                  2,
+                  "Ryder DiFrancesco",
+                  "Bakersfield, CA",
+                  129
+                ],
+                [
+                  3,
+                  "Cole Davies",
+                  "Waitoki, New Zealand",
+                  128
+                ],
+                [
+                  4,
+                  "Julien Beaumer",
+                  "Lake Havasu City, AZ",
+                  119
+                ],
+                [
+                  5,
+                  "Landen Gordon",
+                  "Murrieta, CA",
+                  104
+                ],
+                [
+                  6,
+                  "Nate Thrasher",
+                  "Livingston, TN",
+                  99
+                ],
+                [
+                  7,
+                  "Daxton Bennick",
+                  "Morganton, NC",
+                  98
+                ],
+                [
+                  8,
+                  "Pierce Brown",
+                  "Sandy, UT",
+                  89
+                ],
+                [
+                  9,
+                  "Jo Shimoda",
+                  "Suzuka, Japan",
+                  85
+                ],
+                [
+                  10,
+                  "Kayden Minear",
+                  "Western Australia",
+                  84
+                ]
+              ]
+            }
+          ]
+        },
+        "450": {
+          "label": "450SMX",
+          "tables": [
+            {
+              "title": "",
+              "rows": [
+                [
+                  1,
+                  "Jorge Prado",
+                  "Lugo, Spain",
+                  158
+                ],
+                [
+                  2,
+                  "Haiden Deegan",
+                  "Temecula, CA",
+                  151
+                ],
+                [
+                  3,
+                  "Hunter Lawrence",
+                  "Landsborough, Australia",
+                  136
+                ],
+                [
+                  4,
+                  "Ken Roczen",
+                  "Mattstedt, Germany",
+                  128
+                ],
+                [
+                  5,
+                  "Cooper Webb",
+                  "Newport, NC",
+                  123
+                ],
+                [
+                  6,
+                  "Garrett Marchbanks",
+                  "Coalville, UT",
+                  103
+                ],
+                [
+                  7,
+                  "R.J. Hampshire",
+                  "Hudson, FL",
+                  99
+                ],
+                [
+                  8,
+                  "Jordon Smith",
+                  "Belmont, NC",
+                  87
+                ],
+                [
+                  9,
+                  "Malcolm Stewart",
+                  "Haines City, FL",
+                  83
+                ],
+                [
+                  10,
+                  "Aaron Plessinger",
+                  "Hamilton, OH",
+                  80
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "sx",
+      "series": "Supercross",
+      "title": "2026 AMA Supercross – final",
+      "asOf": "2026-05-11",
+      "source": {
+        "name": "Racer X – Salt Lake City results & standings",
+        "url": "https://racerxonline.com/2026/05/11/wake-up-call"
+      },
+      "note": "Final standings after Round 17 (Salt Lake City).",
+      "classes": {
+        "250": {
+          "label": "250SX East / West",
+          "tables": [
+            {
+              "title": "250SX East",
+              "rows": [
+                [
+                  1,
+                  "Cole Davies",
+                  "Waitoki, New Zealand",
+                  231
+                ],
+                [
+                  2,
+                  "Seth Hammaker",
+                  "Bainbridge, PA",
+                  180
+                ],
+                [
+                  3,
+                  "Daxton Bennick",
+                  "Morganton, NC",
+                  160
+                ],
+                [
+                  4,
+                  "Coty Schock",
+                  "Dover, DE",
+                  140
+                ],
+                [
+                  5,
+                  "Nate Thrasher",
+                  "Livingston, TN",
+                  137
+                ],
+                [
+                  6,
+                  "Devin Simonson",
+                  "Laurinburg, NC",
+                  124
+                ],
+                [
+                  7,
+                  "Henry Miller",
+                  "Rochester, MN",
+                  104
+                ],
+                [
+                  8,
+                  "Jo Shimoda",
+                  "Suzuka, Japan",
+                  100
+                ],
+                [
+                  9,
+                  "Derek Kelley",
+                  "Riverside, CA",
+                  94
+                ],
+                [
+                  10,
+                  "Nick Romano",
+                  "Bayside, NY",
+                  72
+                ]
+              ]
+            },
+            {
+              "title": "250SX West",
+              "rows": [
+                [
+                  1,
+                  "Haiden Deegan",
+                  "Temecula, CA",
+                  233
+                ],
+                [
+                  2,
+                  "Levi Kitchen",
+                  "Washougal, WA",
+                  177
+                ],
+                [
+                  3,
+                  "Max Anstie",
+                  "Newbury, England, UK",
+                  168
+                ],
+                [
+                  4,
+                  "Ryder DiFrancesco",
+                  "Bakersfield, CA",
+                  164
+                ],
+                [
+                  5,
+                  "Max Vohland",
+                  "Sacramento, CA",
+                  146
+                ],
+                [
+                  6,
+                  "Hunter Yoder",
+                  "Menifee, CA",
+                  121
+                ],
+                [
+                  7,
+                  "Cameron McAdoo",
+                  "Sioux City, IA",
+                  107
+                ],
+                [
+                  8,
+                  "Michael Mosiman",
+                  "Sebastopol, CA",
+                  107
+                ],
+                [
+                  9,
+                  "Parker Ross",
+                  "Herald, CA",
+                  90
+                ],
+                [
+                  10,
+                  "Lux Turner",
+                  "Gardnerville, NV",
+                  86
+                ]
+              ]
+            }
+          ]
+        },
+        "450": {
+          "label": "450SX",
+          "tables": [
+            {
+              "title": "",
+              "rows": [
+                [
+                  1,
+                  "Ken Roczen",
+                  "Mattstedt, Germany",
+                  349
+                ],
+                [
+                  2,
+                  "Hunter Lawrence",
+                  "Landsborough, Australia",
+                  346
+                ],
+                [
+                  3,
+                  "Cooper Webb",
+                  "Newport, NC",
+                  315
+                ],
+                [
+                  4,
+                  "Eli Tomac",
+                  "Cortez, CO",
+                  275
+                ],
+                [
+                  5,
+                  "Justin Cooper",
+                  "Cold Spring Harbor, NY",
+                  273
+                ],
+                [
+                  6,
+                  "Chase Sexton",
+                  "La Moille, IL",
+                  237
+                ],
+                [
+                  7,
+                  "Malcolm Stewart",
+                  "Haines City, FL",
+                  203
+                ],
+                [
+                  8,
+                  "Joey Savatgy",
+                  "Thomasville, GA",
+                  194
+                ],
+                [
+                  9,
+                  "Jorge Prado",
+                  "Lugo, Spain",
+                  189
+                ],
+                [
+                  10,
+                  "Justin Hill",
+                  "Yoncalla, OR",
+                  188
+                ]
+              ]
+            }
+          ]
+        }
+      }
     }
-   },
-   {
-    "label": "2027 Supercross",
-    "value": "17 rounds confirmed",
-    "detail": "AMA confirmed 17 rounds and released 2027 national numbers; the official dates/venues schedule was still not published as of Oct 1, 2026.",
-    "source": {
-     "name": "Racer X – 2027 numbers (Sep 29)",
-     "url": "https://racerxonline.com/2026/09/29/ama-releases-2027-ama-supercross-motocross-and-supermotocross-national-numbers"
+  ],
+  "news": [
+    {
+      "date": "2026-10-01",
+      "title": "Ernée prepares for the 79th Motocross of Nations as 33 nations arrive",
+      "summary": "Local reporting ahead of Friday’s start at Circuit Raymond Demy describes final volunteer setup for the 79th MXoN (Oct 2–4). Qualifying is Saturday; Nations races Sunday. (The paper cites 33 nations; the Sep 29 official entry list published 32 teams.)",
+      "source": {
+        "name": "Le Courrier de la Mayenne (Oct 1, 2026)",
+        "url": "https://www.lecourrierdelamayenne.fr/actualite-41500-motocross-des-nations-notre-commune-va-etre-l-ambassadrice-du-pays-comment-ernee-se-prepare-a-recevoir-l-evenement"
+      }
+    },
+    {
+      "date": "2026-09-30",
+      "title": "MXGP preview: all eyes on Ernée as Team USA races Beaumer, Kitchen and Webb",
+      "summary": "Official MXGP preview confirms Team USA’s final trio, France as home favorites, Australia defending without the Lawrences, and the full weekend timetable with Sunday’s three Nations races.",
+      "source": {
+        "name": "MXGP",
+        "url": "https://www.mxgp.com/news/all-eyes-ern%C3%A9e-2026-monster-energy-fim-motocross-nations"
+      }
+    },
+    {
+      "date": "2026-09-29",
+      "title": "Honda and Yamaha to stage EV motocross demos at MXoN Ernée",
+      "summary": "Honda’s CR ELECTRIC PROTO (Trey Canard, Justin Brayton) and Yamaha’s YE-01 Racing Concept (Ben Townley, Milko Potisek) will run side-by-side demonstration laps Saturday and Sunday at 12:45 local time.",
+      "source": {
+        "name": "MXGP",
+        "url": "https://www.mxgp.com/news/honda-and-yamaha-stage-ev-motocross-demo-runs-monster-energy-fim-motocross-nations-ern%C3%A9e-0"
+      }
+    },
+    {
+      "date": "2026-09-29",
+      "title": "AMA releases 2027 SX, MX and SMX numbers: new career numbers for Davies, DiFrancesco and Prado",
+      "summary": "Cole Davies takes #5, Ryder DiFrancesco #10 and Jorge Prado #61. The AMA also confirmed the 2027 Supercross season will have 17 rounds, with the official schedule still to come.",
+      "source": {
+        "name": "Racer X",
+        "url": "https://racerxonline.com/2026/09/29/ama-releases-2027-ama-supercross-motocross-and-supermotocross-national-numbers"
+      }
+    },
+    {
+      "date": "2026-09-28",
+      "title": "Monster Energy SMX World Championship crowns first-time champions",
+      "summary": "Jorge Prado became the first Spanish-born SMX World Champion (450SMX) and Levi Kitchen won the 250SMX title. Lachlan Turner won the first WMX Invitational.",
+      "source": {
+        "name": "SuperMotocross.com",
+        "url": "https://www.supermotocross.com/monster-energy-smx-world-championship-crowns-first-time-champions/"
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "title": "SMX Final recap: Ridgedale",
+      "summary": "Haiden Deegan won the 450SMX overall but Prado clinched the title by seven points; Kitchen finished 24 points clear of Ryder DiFrancesco in the 250SMX standings.",
+      "source": {
+        "name": "SuperMotocross.com",
+        "url": "https://www.supermotocross.com/smx-final-recap-ridgedale-sep-26-2026/"
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Dylan Ferrandis announces retirement",
+      "summary": "The Troy Lee Designs Red Bull Ducati rider said the SMX Final in Missouri would be his last race as a professional.",
+      "source": {
+        "name": "SuperMotocross.com",
+        "url": "https://www.supermotocross.com/dylan-ferrandis-announces-retirement/"
+      }
+    },
+    {
+      "date": "2026-09-02",
+      "title": "Jett Lawrence to undergo surgery, miss SMX postseason",
+      "summary": "The reigning three-time SMX World Champion did not defend his title, instead having a follow-up procedure on his previously repaired ankle.",
+      "source": {
+        "name": "ProMotocross.com",
+        "url": "https://promotocross.com/2026/09/02/jett-lawrence-to-undergo-surgery-miss-smx-postseason"
+      }
+    },
+    {
+      "date": "2026-08-31",
+      "title": "Eli Tomac confirms retirement following SMX postseason",
+      "summary": "The five-time Pro Motocross titleholder will step away following the SMX postseason.",
+      "source": {
+        "name": "ProMotocross.com",
+        "url": "https://promotocross.com/2026/08/31/eli-tomac-confirms-retirement-following-smx-postseason"
+      }
+    },
+    {
+      "date": "2026-08-31",
+      "title": "Hunter Lawrence and Cole Davies crowned 2026 Pro Motocross champions at Ironman",
+      "summary": "Hunter Lawrence won the 450 title 474–472 over Jett; Cole Davies won the 250 title with 407 points.",
+      "source": {
+        "name": "Supercross.com",
+        "url": "https://www.supercross.com/blogs/news/hunter-lawrence-and-cole-davies-crowned-2026-pro-motocross-champions-at-ironman"
+      }
     }
-   }
-  ]
- },
- "nextEvent": {
-  "asOf": "2026-10-01",
-  "kicker": "Race weekend starts tomorrow",
-  "name": "Monster Energy FIM Motocross of Nations",
-  "note": "Not an AMA-sanctioned event — the next race on the calendar, with Team USA. No AMA-sanctioned race is scheduled in the sources checked until the 2027 season.",
-  "startDate": "2026-10-02",
-  "endDate": "2026-10-04",
-  "dateText": "Oct 2 – 4, 2026",
-  "location": "Circuit Raymond Demy, Ernée, France",
-  "graphic": "assets/mxon.svg",
-  "facts": [
-   "Team USA (#4–6): Julien Beaumer (MXGP, KTM), Levi Kitchen (MX2, Kawasaki), Cooper Webb (Open, Husqvarna) — manager Mike Pelletier. Final entry list updated Sep 29.",
-   "Hosts France (#7–9) are among the few leading nations with first-choice riders: Romain Febvre (MXGP), Mathis Valin (MX2), Tom Vialle (Open).",
-   "Defending champion Australia lines up Jed Beaton, Alex Larwood and Aaron Tanti — not the Lawrence brothers / Kyle Webster who won in 2025.",
-   "Sunday races (local): Race 1 MXGP+MX2 13:10, Race 2 MX2+Open 14:40, Race 3 Open+MXGP 16:08. Full live coverage on MXGP-TV.",
-   "Honda CR ELECTRIC PROTO (Trey Canard, Justin Brayton) and Yamaha YE-01 Racing Concept (Ben Townley, Milko Potisek) demo together Sat & Sun at 12:45 local."
+  ],
+  "notFound": [
+    "Official 2027 AMA Supercross schedule (dates/venues) — AMA says it is coming; not published in the sources checked. (Supercross.com's schedule page still shows the 2026 calendar as of Oct 1, 2026.)",
+    "2027 AMA Pro Motocross schedule — not found.",
+    "An AMA-sanctioned race after Sep 26 — none found; the 2026 AMA SX / MX / SMX seasons are complete.",
+    "US broadcast channel for MXoN (beyond MXGP-TV live stream) — not found in the sources checked.",
+    "Brand-specific (Yamaha/Kawasaki/Suzuki/Honda) dirt-bike apparel sales — see brand panels; third-party Fox/Alpinestars gear sales are listed under Gear deals.",
+    "Replacement Yamaha / Kawasaki / Suzuki factory promotions for October after several Sep 30, 2026 incentives ended — not found on the manufacturer pages checked Oct 1."
   ],
   "sources": [
-   {
-    "name": "MXGP – All eyes on Ernée (Sep 30, 2026)",
-    "url": "https://www.mxgp.com/news/all-eyes-ern%C3%A9e-2026-monster-energy-fim-motocross-nations"
-   },
-   {
-    "name": "MXGPResults – official entry list (updated Sep 29, 2026)",
-    "url": "https://mxgpresults.com/mxon/teams"
-   },
-   {
-    "name": "MXGP – Honda & Yamaha EV demos (Sep 29, 2026)",
-    "url": "https://www.mxgp.com/news/honda-and-yamaha-stage-ev-motocross-demo-runs-monster-energy-fim-motocross-nations-ern%C3%A9e-0"
-   }
+    {
+      "name": "ProMotocross.com",
+      "url": "https://promotocross.com/"
+    },
+    {
+      "name": "Supercross.com",
+      "url": "https://www.supercross.com/pages/schedule"
+    },
+    {
+      "name": "SuperMotocross.com",
+      "url": "https://www.supermotocross.com/"
+    },
+    {
+      "name": "Racer X",
+      "url": "https://racerxonline.com/"
+    },
+    {
+      "name": "MXGP",
+      "url": "https://www.mxgp.com/"
+    },
+    {
+      "name": "MXGPResults",
+      "url": "https://mxgpresults.com/mxon/teams"
+    },
+    {
+      "name": "Yamaha Motorsports USA",
+      "url": "https://yamahamotorsports.com/"
+    },
+    {
+      "name": "Kawasaki Motors USA",
+      "url": "https://content2.kawasaki.com/"
+    },
+    {
+      "name": "Suzuki Cycles",
+      "url": "https://suzukicycles.com/"
+    },
+    {
+      "name": "American Honda Powersports",
+      "url": "https://powersports.honda.com/"
+    },
+    {
+      "name": "Fox Racing",
+      "url": "https://www.foxracing.com/deals/moto/"
+    },
+    {
+      "name": "Loretta Lynn's Ranch",
+      "url": "https://lorettalynn.com/pages/fall-ride-2026"
+    },
+    {
+      "name": "Alpinestars",
+      "url": "https://www.alpinestars.com/products/2026-fluid-apex-gear-set-1"
+    },
+    {
+      "name": "MXGP – EV demos",
+      "url": "https://www.mxgp.com/news/honda-and-yamaha-stage-ev-motocross-demo-runs-monster-energy-fim-motocross-nations-ern%C3%A9e-0"
+    }
   ],
-  "caveat": "An Aug 28 Pro Motocross article named Chance Hymas for Team USA; the final entry list (Sep 29) and MXGP preview (Sep 30) show Julien Beaumer instead."
- },
- "schedule": {
-  "asOf": "2026-10-01",
-  "upcoming": [
-   {
-    "date": "Oct 2 – 4, 2026",
-    "event": "Motocross of Nations",
-    "place": "Circuit Raymond Demy, Ernée, France",
-    "tag": "FIM · Team USA",
-    "source": {
-     "name": "MXGP",
-     "url": "https://www.mxgp.com/news/all-eyes-ern%C3%A9e-2026-monster-energy-fim-motocross-nations"
-    }
-   },
-   {
-    "date": "TBA",
-    "event": "2027 AMA Supercross (17 rounds)",
-    "place": "Official schedule not yet released",
-    "tag": "AMA SX",
-    "source": {
-     "name": "Racer X",
-     "url": "https://racerxonline.com/2026/09/29/ama-releases-2027-ama-supercross-motocross-and-supermotocross-national-numbers"
-    }
-   },
-   {
-    "date": "TBA",
-    "event": "2027 AMA Pro Motocross",
-    "place": "Not found in the sources checked",
-    "tag": "AMA MX",
-    "source": null
-   }
-  ],
-  "completed": {
-   "source": {
-    "name": "Supercross.com – Race Schedule",
-    "url": "https://www.supercross.com/pages/schedule"
-   },
-   "groups": [
-    {
-     "title": "2026 AMA Pro Motocross (11 rounds)",
-     "rows": [
-      [
-       "R1",
-       "May 30",
-       "Pala, CA",
-       "Fox Raceway"
-      ],
-      [
-       "R2",
-       "Jun 6",
-       "Rancho Cordova, CA",
-       "Hangtown Motocross Classic"
-      ],
-      [
-       "R3",
-       "Jun 13",
-       "Lakewood, CO",
-       "Thunder Valley Motocross Park"
-      ],
-      [
-       "R4",
-       "Jun 20",
-       "Mt. Morris, PA",
-       "High Point Raceway"
-      ],
-      [
-       "R5",
-       "Jul 4",
-       "Buchanan, MI",
-       "Redbud MX"
-      ],
-      [
-       "R6",
-       "Jul 11",
-       "Southwick, MA",
-       "The Wick 338"
-      ],
-      [
-       "R7",
-       "Jul 18",
-       "Millville, MN",
-       "Spring Creek MX Park"
-      ],
-      [
-       "R8",
-       "Jul 25",
-       "Washougal, WA",
-       "Washougal MX Park"
-      ],
-      [
-       "R9",
-       "Aug 15",
-       "New Berlin, NY",
-       "Unadilla MX"
-      ],
-      [
-       "R10",
-       "Aug 22",
-       "Mechanicsville, MD",
-       "Budds Creek Motocross Park"
-      ],
-      [
-       "R11",
-       "Aug 29",
-       "Crawfordsville, IN",
-       "Ironman Raceway"
-      ]
-     ]
-    },
-    {
-     "title": "2026 SMX Playoffs (3 rounds)",
-     "rows": [
-      [
-       "P1",
-       "Sep 12",
-       "Columbus, OH",
-       "Historic Crew Stadium"
-      ],
-      [
-       "P2",
-       "Sep 19",
-       "Carson, CA",
-       "Dignity Health Sports Park"
-      ],
-      [
-       "Final",
-       "Sep 26",
-       "Ridgedale, MO",
-       "Thunder Ridge Nature Arena"
-      ]
-     ]
-    },
-    {
-     "title": "2026 AMA Supercross (17 rounds)",
-     "rows": [
-      [
-       "R1",
-       "Jan 10",
-       "Anaheim, CA",
-       "Angel Stadium"
-      ],
-      [
-       "R2",
-       "Jan 17",
-       "San Diego, CA",
-       "Snapdragon Stadium"
-      ],
-      [
-       "R3",
-       "Jan 24",
-       "Anaheim, CA",
-       "Angel Stadium"
-      ],
-      [
-       "R4",
-       "Jan 31",
-       "Houston, TX",
-       "NRG Stadium"
-      ],
-      [
-       "R5",
-       "Feb 7",
-       "Glendale, AZ",
-       "State Farm Stadium"
-      ],
-      [
-       "R6",
-       "Feb 14",
-       "Seattle, WA",
-       "Lumen Field"
-      ],
-      [
-       "R7",
-       "Feb 21",
-       "Arlington, TX",
-       "AT&T Stadium"
-      ],
-      [
-       "R8",
-       "Feb 28",
-       "Daytona Beach, FL",
-       "Daytona International Speedway"
-      ],
-      [
-       "R9",
-       "Mar 7",
-       "Indianapolis, IN",
-       "Lucas Oil Stadium"
-      ],
-      [
-       "R10",
-       "Mar 21",
-       "Birmingham, AL",
-       "Protective Stadium"
-      ],
-      [
-       "R11",
-       "Mar 28",
-       "Detroit, MI",
-       "Ford Field"
-      ],
-      [
-       "R12",
-       "Apr 4",
-       "St. Louis, MO",
-       "The Dome at America's Center"
-      ],
-      [
-       "R13",
-       "Apr 11",
-       "Nashville, TN",
-       "Nissan Stadium"
-      ],
-      [
-       "R14",
-       "Apr 18",
-       "Cleveland, OH",
-       "Huntington Bank Field"
-      ],
-      [
-       "R15",
-       "Apr 25",
-       "Philadelphia, PA",
-       "Lincoln Financial Field"
-      ],
-      [
-       "R16",
-       "May 2",
-       "Denver, CO",
-       "Empower Field at Mile High"
-      ],
-      [
-       "R17",
-       "May 9",
-       "Salt Lake City, UT",
-       "Rice-Eccles Stadium"
-      ]
-     ]
-    }
-   ]
-  }
- },
- "results": [
-  {
-   "id": "smx-final",
-   "name": "SMX World Championship Final",
-   "date": "Sep 26, 2026",
-   "venue": "Thunder Ridge Nature Arena, Ridgedale, MO",
-   "asOf": "2026-09-28",
-   "detailLabel": "Motos",
-   "source": {
-    "name": "Racer X – SMX Final results",
-    "url": "https://racerxonline.com/2026/09/28/wake-up-call"
-   },
-   "summary": "Triple-points finale. Haiden Deegan won the 450SMX overall (1-2) but Jorge Prado (5-1) clinched the 450SMX title by 7 points. Cole Davies swept the 250SMX (1-1) while Levi Kitchen (2-2) took the 250SMX title.",
-   "classes": {
-    "250": {
-     "label": "250SMX",
-     "rows": [
-      [
-       1,
-       "Cole Davies",
-       "Waitoki, New Zealand",
-       "1 - 1"
-      ],
-      [
-       2,
-       "Levi Kitchen",
-       "Washougal, WA",
-       "2 - 2"
-      ],
-      [
-       3,
-       "Landen Gordon",
-       "Murrieta, CA",
-       "6 - 3"
-      ],
-      [
-       4,
-       "Nate Thrasher",
-       "Livingston, TN",
-       "7 - 4"
-      ],
-      [
-       5,
-       "Pierce Brown",
-       "Sandy, UT",
-       "5 - 7"
-      ],
-      [
-       6,
-       "Julien Beaumer",
-       "Lake Havasu City, AZ",
-       "4 - 9"
-      ],
-      [
-       7,
-       "Ryder DiFrancesco",
-       "Bakersfield, CA",
-       "3 - 10"
-      ],
-      [
-       8,
-       "Daxton Bennick",
-       "Morganton, NC",
-       "10 - 6"
-      ],
-      [
-       9,
-       "Cameron McAdoo",
-       "Sioux City, IA",
-       "13 - 5"
-      ],
-      [
-       10,
-       "Caden Dudney",
-       "Des Moines, IA",
-       "8 - 11"
-      ]
-     ]
-    },
-    "450": {
-     "label": "450SMX",
-     "rows": [
-      [
-       1,
-       "Haiden Deegan",
-       "Temecula, CA",
-       "1 - 2"
-      ],
-      [
-       2,
-       "Jorge Prado",
-       "Lugo, Spain",
-       "5 - 1"
-      ],
-      [
-       3,
-       "Hunter Lawrence",
-       "Landsborough, Australia",
-       "3 - 3"
-      ],
-      [
-       4,
-       "Ken Roczen",
-       "Mattstedt, Germany",
-       "2 - 5"
-      ],
-      [
-       5,
-       "Cooper Webb",
-       "Newport, NC",
-       "4 - 4"
-      ],
-      [
-       6,
-       "R.J. Hampshire",
-       "Hudson, FL",
-       "6 - 6"
-      ],
-      [
-       7,
-       "Garrett Marchbanks",
-       "Coalville, UT",
-       "10 - 7"
-      ],
-      [
-       8,
-       "Jordon Smith",
-       "Belmont, NC",
-       "9 - 9"
-      ],
-      [
-       9,
-       "Malcolm Stewart",
-       "Haines City, FL",
-       "8 - 14"
-      ],
-      [
-       10,
-       "Aaron Plessinger",
-       "Hamilton, OH",
-       "7 - 15"
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "ironman",
-   "name": "Ironman National (Pro Motocross finale, Round 11)",
-   "date": "Aug 29, 2026",
-   "venue": "Ironman Raceway, Crawfordsville, IN",
-   "asOf": "2026-08-29",
-   "detailLabel": "Motos",
-   "source": {
-    "name": "ProMotocross.com – Ironman results",
-    "url": "https://promotocross.com/2026/08/29/smx-round-28-results-ironman-national-finals-august-29-2026"
-   },
-   "summary": "Jorge Prado (1-1) won the 450 overall; Hunter Lawrence (8-4, 4th) beat brother Jett by 2 points for the 450 title. Julien Beaumer (2-1) won the 250 overall; Cole Davies (3-13, 7th) clinched the 250 title after Levi Kitchen's Moto 1 DNF.",
-   "classes": {
-    "250": {
-     "label": "250 Class",
-     "rows": [
-      [
-       1,
-       "Julien Beaumer",
-       "Lake Havasu City, AZ",
-       "2 - 1"
-      ],
-      [
-       2,
-       "Chance Hymas",
-       "Pocatello, ID",
-       "1 - 2"
-      ],
-      [
-       3,
-       "Ryder DiFrancesco",
-       "Bakersfield, CA",
-       "7 - 3"
-      ],
-      [
-       4,
-       "Landen Gordon",
-       "Murrieta, CA",
-       "5 - 6"
-      ],
-      [
-       5,
-       "Pierce Brown",
-       "Sandy, UT",
-       "6 - 7"
-      ],
-      [
-       6,
-       "Drew Adams",
-       "Chattanooga, TN",
-       "9 - 5"
-      ],
-      [
-       7,
-       "Cole Davies",
-       "Waitoki, New Zealand",
-       "3 - 13"
-      ],
-      [
-       8,
-       "Kayden Minear",
-       "Western Australia",
-       "8 - 8"
-      ],
-      [
-       9,
-       "Nate Thrasher",
-       "Livingston, TN",
-       "15 - 4"
-      ],
-      [
-       10,
-       "Michael Mosiman",
-       "Sebastopol, CA",
-       "10 - 9"
-      ]
-     ]
-    },
-    "450": {
-     "label": "450 Class",
-     "rows": [
-      [
-       1,
-       "Jorge Prado",
-       "Lugo, Spain",
-       "1 - 1"
-      ],
-      [
-       2,
-       "R.J. Hampshire",
-       "Hudson, FL",
-       "2 - 6"
-      ],
-      [
-       3,
-       "Cooper Webb",
-       "Newport, NC",
-       "3 - 8"
-      ],
-      [
-       4,
-       "Hunter Lawrence",
-       "Landsborough, Australia",
-       "8 - 4"
-      ],
-      [
-       5,
-       "Eli Tomac",
-       "Cortez, CO",
-       "7 - 5"
-      ],
-      [
-       6,
-       "Jett Lawrence",
-       "Landsborough, Australia",
-       "11 - 3"
-      ],
-      [
-       7,
-       "Garrett Marchbanks",
-       "Coalville, UT",
-       "6 - 7"
-      ],
-      [
-       8,
-       "Aaron Plessinger",
-       "Hamilton, OH",
-       "5 - 9"
-      ],
-      [
-       9,
-       "Haiden Deegan",
-       "Temecula, CA",
-       "16 - 2"
-      ],
-      [
-       10,
-       "Mikkel Haarup",
-       "Silkeborg, Denmark",
-       "4 - 14"
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "slc",
-   "name": "Salt Lake City (Supercross Round 17 finale)",
-   "date": "May 9, 2026",
-   "venue": "Rice-Eccles Stadium, Salt Lake City, UT",
-   "asOf": "2026-05-11",
-   "detailLabel": "Race time",
-   "source": {
-    "name": "Racer X – Salt Lake City results",
-    "url": "https://racerxonline.com/2026/05/11/wake-up-call"
-   },
-   "summary": "Chase Sexton won the 450SX finale; Ken Roczen finished 5th, enough to win his first 450SX title by 3 points over Hunter Lawrence (7th). Cole Davies won the 250SX Showdown.",
-   "classes": {
-    "250": {
-     "label": "250SX Showdown",
-     "rows": [
-      [
-       1,
-       "Cole Davies",
-       "Waitoki, New Zealand",
-       "16:01.871"
-      ],
-      [
-       2,
-       "Levi Kitchen",
-       "Washougal, WA",
-       "16:04.316"
-      ],
-      [
-       3,
-       "Max Anstie",
-       "Newbury, England, UK",
-       "16:08.337"
-      ],
-      [
-       4,
-       "Haiden Deegan",
-       "Temecula, CA",
-       "16:16.593"
-      ],
-      [
-       5,
-       "Ryder DiFrancesco",
-       "Bakersfield, CA",
-       "16:26.512"
-      ],
-      [
-       6,
-       "Max Vohland",
-       "Sacramento, CA",
-       "16:29.954"
-      ],
-      [
-       7,
-       "Derek Kelley",
-       "Riverside, CA",
-       "16:31.413"
-      ],
-      [
-       8,
-       "Hunter Yoder",
-       "Menifee, CA",
-       "16:34.958"
-      ],
-      [
-       9,
-       "Landen Gordon",
-       "Murrieta, CA",
-       "16:36.293"
-      ],
-      [
-       10,
-       "Henry Miller",
-       "Rochester, MN",
-       "16:37.053"
-      ]
-     ]
-    },
-    "450": {
-     "label": "450SX",
-     "rows": [
-      [
-       1,
-       "Chase Sexton",
-       "La Moille, IL",
-       "21:10.489"
-      ],
-      [
-       2,
-       "Justin Cooper",
-       "Cold Spring Harbor, NY",
-       "21:12.585"
-      ],
-      [
-       3,
-       "Jorge Prado",
-       "Lugo, Spain",
-       "21:13.797"
-      ],
-      [
-       4,
-       "Cooper Webb",
-       "Newport, NC",
-       "21:14.409"
-      ],
-      [
-       5,
-       "Ken Roczen",
-       "Mattstedt, Germany",
-       "21:20.651"
-      ],
-      [
-       6,
-       "Justin Hill",
-       "Yoncalla, OR",
-       "21:24.752"
-      ],
-      [
-       7,
-       "Hunter Lawrence",
-       "Landsborough, Australia",
-       "21:26.304"
-      ],
-      [
-       8,
-       "Malcolm Stewart",
-       "Haines City, FL",
-       "21:33.304"
-      ],
-      [
-       9,
-       "Christian Craig",
-       "Temecula, CA",
-       "21:39.903"
-      ],
-      [
-       10,
-       "Dean Wilson",
-       "Scotland, UK",
-       "21:44.685"
-      ]
-     ]
-    }
-   }
-  }
- ],
- "standings": [
-  {
-   "id": "mx",
-   "series": "Pro Motocross",
-   "title": "2026 AMA Pro Motocross – final",
-   "asOf": "2026-08-29",
-   "source": {
-    "name": "ProMotocross.com – Ironman results",
-    "url": "https://promotocross.com/2026/08/29/smx-round-28-results-ironman-national-finals-august-29-2026"
-   },
-   "note": "Final standings after Round 11 (Ironman).",
-   "classes": {
-    "250": {
-     "label": "250 Class",
-     "tables": [
+  "brands": {
+    "asOf": "2026-10-01",
+    "note": "Model, deal and event facts are from manufacturer press releases, manufacturer pages, dealer-hosted copies of manufacturer promotions and trade media. Prices are US MSRP unless stated. Graphics are original artwork made for this page (no logos or photos).",
+    "list": [
       {
-       "title": "",
-       "rows": [
-        [
-         1,
-         "Cole Davies",
-         "Waitoki, New Zealand",
-         407
+        "id": "yamaha",
+        "name": "Yamaha",
+        "color": "#1746c9",
+        "accent": "#7fb0ff",
+        "graphic": "assets/yamaha.svg",
+        "models": [
+          {
+            "title": "2027 WR450F – updated enduro flagship",
+            "text": "Yamaha’s 2027 WR450F page highlights a new light/compact high-revving 450cc engine with trail/enduro ECU settings, KYB suspension, 2.0 gal tank, 18-inch rear wheel and enduro equipment. Destination charge listed at $675; MSRP was not shown on the Yamaha page checked.",
+            "source": {
+              "name": "Yamaha Motorsports USA – 2027 WR450F",
+              "url": "https://yamahamotorsports.com/models/wr450f"
+            },
+            "asOf": "2026-10-01"
+          },
+          {
+            "title": "2027 YZ450F – carryover with a new rear brake",
+            "text": "Mechanically unchanged for 2027 apart from graphics and an all-new, more compact rear brake system that saves 180 g. $10,299 MSRP (Team Yamaha Blue, July); Monster Energy Edition $10,499 (August).",
+            "source": {
+              "name": "Yamaha Motorsports USA – 2027 YZ450F",
+              "url": "https://yamahamotorsports.com/models/yz450f"
+            },
+            "asOf": "2026-09-30"
+          },
+          {
+            "title": "2027 YZ450FX – the big redesign",
+            "text": "Reworked for smoother, more controllable power and comfort in technical cross-country terrain: new 51-tooth sprocket, hydraulic clutch with 15% lighter pull, frame updates, KYB suspension retune and Dunlop Geomax AT82 tires. $10,499 MSRP, available September.",
+            "source": {
+              "name": "Motocross Action – First Look 2027 YZ450F & YZ450FX",
+              "url": "https://motocrossactionmag.com/first-look-2027-yamaha-yz450f-yz450fx/"
+            },
+            "asOf": "2026-06-03"
+          },
+          {
+            "title": "2027 YZ250F – significant changes",
+            "text": "Yamaha's announcement leads with major changes to the YZ250F. $9,099 MSRP, available September. (Details of the changes are in the linked release.)",
+            "source": {
+              "name": "Racer X – Yamaha announces 2027 YZ lineup",
+              "url": "https://racerxonline.com/2026/06/03/yamaha-announces-2027-yz-lineup-led-by-significant-changes-to-yz250f"
+            },
+            "asOf": "2026-06-03"
+          }
         ],
-        [
-         2,
-         "Julien Beaumer",
-         "Lake Havasu City, AZ",
-         369
+        "events": [
+          {
+            "title": "YE-01 Racing Concept demo at Motocross of Nations",
+            "date": "Oct 3 – 4, 2026 (12:45 local)",
+            "place": "Ernée, France",
+            "text": "Yamaha will run the YE-01 Racing Concept (YZ450F chassis tech + Electric Motion power unit) in EV demo laps with Honda. Riders: Ben Townley and Milko Potisek.",
+            "source": {
+              "name": "MXGP – Honda & Yamaha EV demos",
+              "url": "https://www.mxgp.com/news/honda-and-yamaha-stage-ev-motocross-demo-runs-monster-energy-fim-motocross-nations-ern%C3%A9e-0"
+            },
+            "asOf": "2026-10-01"
+          },
+          {
+            "title": "Yamaha Learn to Ride: Dirt Discovery",
+            "date": "Oct 8 – 11, 2026",
+            "place": "Loretta Lynn's Ranch, Hurricane Mills, TN",
+            "text": "Two-hour learn-to-ride classes on 2027 TT-R bikes: kids 6–11 (Thu Oct 8, 9–11am), adults 12+ (Thu Oct 8, 1–3pm), women (Fri Oct 9, 9–11am). Seats are first-come and confirmed by Yamaha BLU CRU.",
+            "source": {
+              "name": "Yamaha Motorsports USA – Events",
+              "url": "https://yamahamotorsports.com/events.php?event_id=360"
+            },
+            "asOf": "2026-10-01"
+          },
+          {
+            "title": "The Fall Ride 2026 (Yamaha demo rides)",
+            "date": "Oct 8 – 11, 2026",
+            "place": "Loretta Lynn's Ranch, Hurricane Mills, TN",
+            "text": "Halloween-themed dirt bike/ATV trail ride: 20+ miles of trails, campfires, vendors, live music and demo rides of the latest Yamaha dirt bikes and SXS.",
+            "source": {
+              "name": "Loretta Lynn's Ranch – Fall Ride 2026",
+              "url": "https://lorettalynn.com/pages/fall-ride-2026"
+            },
+            "asOf": "2026-10-01"
+          }
         ],
-        [
-         3,
-         "Levi Kitchen",
-         "Washougal, WA",
-         364
+        "deals": [
+          {
+            "title": "Customer cash on select YZ models (ended)",
+            "text": "Dealer-hosted Yamaha promotion with customer cash tiers of up to $1,500 / $1,000 / $750 on select 2024–2026 YZ models was valid through 9/30/2026. As of Oct 1, 2026 the Yamaha USA finance-offers page did not show a replacement dirt-bike cash offer in the sources checked.",
+            "expires": "Ended Sep 30, 2026",
+            "source": {
+              "name": "Central Coast Yamaha – promotion details",
+              "url": "https://www.centralcoastyamaha.com/Promotion-Details-5d60e95f-2a6d-46f4-88e8-b49c009ccfb0"
+            },
+            "asOf": "2026-10-01"
+          }
         ],
-        [
-         4,
-         "Chance Hymas",
-         "Pocatello, ID",
-         364
+        "gear": [],
+        "notFound": [
+          "No active Yamaha-brand dirt-bike apparel sale found as of Oct 1, 2026.",
+          "A replacement Yamaha YZ customer-cash offer after Sep 30 was not found on Yamaha USA’s finance-offers page."
         ],
-        [
-         5,
-         "Ryder DiFrancesco",
-         "Bakersfield, CA",
-         326
-        ],
-        [
-         6,
-         "Kayden Minear",
-         "Western Australia",
-         297
-        ],
-        [
-         7,
-         "Carson Mumford",
-         "Simi Valley, CA",
-         244
-        ],
-        [
-         8,
-         "Jo Shimoda",
-         "Suzuka City, Japan",
-         194
-        ],
-        [
-         9,
-         "Michael Mosiman",
-         "Sebastopol, CA",
-         192
-        ],
-        [
-         10,
-         "Drew Adams",
-         "Chattanooga, TN",
-         181
-        ]
-       ]
-      }
-     ]
-    },
-    "450": {
-     "label": "450 Class",
-     "tables": [
-      {
-       "title": "",
-       "rows": [
-        [
-         1,
-         "Hunter Lawrence",
-         "Landsborough, Australia",
-         474
-        ],
-        [
-         2,
-         "Jett Lawrence",
-         "Landsborough, Australia",
-         472
-        ],
-        [
-         3,
-         "Haiden Deegan",
-         "Temecula, CA",
-         404
-        ],
-        [
-         4,
-         "Jorge Prado",
-         "Lugo, Spain",
-         401
-        ],
-        [
-         5,
-         "R.J. Hampshire",
-         "Hudson, FL",
-         346
-        ],
-        [
-         6,
-         "Garrett Marchbanks",
-         "Coalville, UT",
-         296
-        ],
-        [
-         7,
-         "Dylan Ferrandis",
-         "Avignon, France",
-         269
-        ],
-        [
-         8,
-         "Cooper Webb",
-         "Newport, NC",
-         264
-        ],
-        [
-         9,
-         "Mikkel Haarup",
-         "Silkeborg, Denmark",
-         246
-        ],
-        [
-         10,
-         "Justin Barcia",
-         "Monroe, NY",
-         226
-        ]
-       ]
-      }
-     ]
-    }
-   }
-  },
-  {
-   "id": "smx",
-   "series": "SMX World Championship",
-   "title": "2026 SMX World Championship – final",
-   "asOf": "2026-09-28",
-   "source": {
-    "name": "Racer X – SMX Final results",
-    "url": "https://racerxonline.com/2026/09/28/wake-up-call"
-   },
-   "note": "Final standings after the 3-race Playoffs/Final (points shown are playoff points, not the regular-season qualifying points).",
-   "classes": {
-    "250": {
-     "label": "250SMX",
-     "tables": [
-      {
-       "title": "",
-       "rows": [
-        [
-         1,
-         "Levi Kitchen",
-         "Washougal, WA",
-         153
-        ],
-        [
-         2,
-         "Ryder DiFrancesco",
-         "Bakersfield, CA",
-         129
-        ],
-        [
-         3,
-         "Cole Davies",
-         "Waitoki, New Zealand",
-         128
-        ],
-        [
-         4,
-         "Julien Beaumer",
-         "Lake Havasu City, AZ",
-         119
-        ],
-        [
-         5,
-         "Landen Gordon",
-         "Murrieta, CA",
-         104
-        ],
-        [
-         6,
-         "Nate Thrasher",
-         "Livingston, TN",
-         99
-        ],
-        [
-         7,
-         "Daxton Bennick",
-         "Morganton, NC",
-         98
-        ],
-        [
-         8,
-         "Pierce Brown",
-         "Sandy, UT",
-         89
-        ],
-        [
-         9,
-         "Jo Shimoda",
-         "Suzuka, Japan",
-         85
-        ],
-        [
-         10,
-         "Kayden Minear",
-         "Western Australia",
-         84
-        ]
-       ]
-      }
-     ]
-    },
-    "450": {
-     "label": "450SMX",
-     "tables": [
-      {
-       "title": "",
-       "rows": [
-        [
-         1,
-         "Jorge Prado",
-         "Lugo, Spain",
-         158
-        ],
-        [
-         2,
-         "Haiden Deegan",
-         "Temecula, CA",
-         151
-        ],
-        [
-         3,
-         "Hunter Lawrence",
-         "Landsborough, Australia",
-         136
-        ],
-        [
-         4,
-         "Ken Roczen",
-         "Mattstedt, Germany",
-         128
-        ],
-        [
-         5,
-         "Cooper Webb",
-         "Newport, NC",
-         123
-        ],
-        [
-         6,
-         "Garrett Marchbanks",
-         "Coalville, UT",
-         103
-        ],
-        [
-         7,
-         "R.J. Hampshire",
-         "Hudson, FL",
-         99
-        ],
-        [
-         8,
-         "Jordon Smith",
-         "Belmont, NC",
-         87
-        ],
-        [
-         9,
-         "Malcolm Stewart",
-         "Haines City, FL",
-         83
-        ],
-        [
-         10,
-         "Aaron Plessinger",
-         "Hamilton, OH",
-         80
-        ]
-       ]
-      }
-     ]
-    }
-   }
-  },
-  {
-   "id": "sx",
-   "series": "Supercross",
-   "title": "2026 AMA Supercross – final",
-   "asOf": "2026-05-11",
-   "source": {
-    "name": "Racer X – Salt Lake City results & standings",
-    "url": "https://racerxonline.com/2026/05/11/wake-up-call"
-   },
-   "note": "Final standings after Round 17 (Salt Lake City).",
-   "classes": {
-    "250": {
-     "label": "250SX East / West",
-     "tables": [
-      {
-       "title": "250SX East",
-       "rows": [
-        [
-         1,
-         "Cole Davies",
-         "Waitoki, New Zealand",
-         231
-        ],
-        [
-         2,
-         "Seth Hammaker",
-         "Bainbridge, PA",
-         180
-        ],
-        [
-         3,
-         "Daxton Bennick",
-         "Morganton, NC",
-         160
-        ],
-        [
-         4,
-         "Coty Schock",
-         "Dover, DE",
-         140
-        ],
-        [
-         5,
-         "Nate Thrasher",
-         "Livingston, TN",
-         137
-        ],
-        [
-         6,
-         "Devin Simonson",
-         "Laurinburg, NC",
-         124
-        ],
-        [
-         7,
-         "Henry Miller",
-         "Rochester, MN",
-         104
-        ],
-        [
-         8,
-         "Jo Shimoda",
-         "Suzuka, Japan",
-         100
-        ],
-        [
-         9,
-         "Derek Kelley",
-         "Riverside, CA",
-         94
-        ],
-        [
-         10,
-         "Nick Romano",
-         "Bayside, NY",
-         72
-        ]
-       ]
+        "ownerApp": {
+          "title": "YZ250F Owner App",
+          "url": "yz250f/",
+          "text": "Kyle's 2022 YZ250F workshop: maintenance jobs, torque specs, Power Tuner map cards with .yptsjsnz downloads, lubes & care, track-day service kit part numbers, schedule and bike specs. Installable as a phone app (PWA) and works offline after first load.",
+          "cta": "Open YZ250F app"
+        }
       },
       {
-       "title": "250SX West",
-       "rows": [
-        [
-         1,
-         "Haiden Deegan",
-         "Temecula, CA",
-         233
+        "id": "kawasaki",
+        "name": "Kawasaki",
+        "color": "#6cc24a",
+        "accent": "#d6ff9e",
+        "graphic": "assets/kawasaki.svg",
+        "models": [
+          {
+            "title": "2027 KX450F – new frame and swingarm",
+            "text": "The \"F\" returns to the name. New frame and swingarm with a longer wheelbase, revised suspension, intake/exhaust updates, full Brembo brakes and improved smartphone tuning. $10,299 MSRP, available late 2026. KX450FX: $10,599.",
+            "source": {
+              "name": "Kawasaki press release – 2027 KX450F / KX450FX (PDF)",
+              "url": "https://content2.kawasaki.com/ContentStorage/KMC/PressReleases/852/9aa2a00a-9ad6-40cf-976d-7aec1a904831.pdf"
+            },
+            "asOf": "2026-06-02"
+          },
+          {
+            "title": "2027 KX250F – more power, sharper focus",
+            "text": "Combustion chamber, exhaust length and silencer refinements, updated FI settings, larger-capacity clutch and revised suspension settings. $8,599 MSRP, available summer 2026. KX250FX: $8,699.",
+            "source": {
+              "name": "Kawasaki press release – 2027 KX250F / KX250FX (PDF)",
+              "url": "https://content2.kawasaki.com/ContentStorage/KMC/PressReleases/850/0afa7f39-bbbc-4c38-94bf-960a35f1d8b1.pdf"
+            },
+            "asOf": "2026-06-02"
+          },
+          {
+            "title": "New KX327 and KX327X two-strokes",
+            "text": "Kawasaki introduced an all-new fuel-injected 327cc two-stroke single in a chassis derived from the KX450F — first new Kawasaki 2-stroke over 250cc in more than two decades. US MSRP: KX327 $9,099; KX327X $9,699. Availability: late 2026.",
+            "source": {
+              "name": "Kawasaki Motors USA – KX327/KX327X press release",
+              "url": "https://content2.kawasaki.com/ContentStorage/KMC/PressReleases/851/e0db145b-9529-48d0-a70d-40c07e3223a6.pdf"
+            },
+            "asOf": "2026-10-01"
+          }
         ],
-        [
-         2,
-         "Levi Kitchen",
-         "Washougal, WA",
-         177
+        "events": [],
+        "deals": [
+          {
+            "title": "Factory off-road incentives up to $3,000 (ended)",
+            "text": "Dealer-hosted Kawasaki promotion with factory incentives up to $3,000 on select new unregistered off-road models plus low-APR financing was listed through 9/30/2026. A clear October replacement was not found in the sources checked on Oct 1.",
+            "expires": "Ended Sep 30, 2026",
+            "source": {
+              "name": "Long Island Kawasaki Yamaha – promotion details",
+              "url": "https://www.likawasaki.com/Promotion-Details-f01adb05-8f4b-4b7d-8f00-b1a10026113c"
+            },
+            "asOf": "2026-10-01"
+          }
         ],
-        [
-         3,
-         "Max Anstie",
-         "Newbury, England, UK",
-         168
-        ],
-        [
-         4,
-         "Ryder DiFrancesco",
-         "Bakersfield, CA",
-         164
-        ],
-        [
-         5,
-         "Max Vohland",
-         "Sacramento, CA",
-         146
-        ],
-        [
-         6,
-         "Hunter Yoder",
-         "Menifee, CA",
-         121
-        ],
-        [
-         7,
-         "Cameron McAdoo",
-         "Sioux City, IA",
-         107
-        ],
-        [
-         8,
-         "Michael Mosiman",
-         "Sebastopol, CA",
-         107
-        ],
-        [
-         9,
-         "Parker Ross",
-         "Herald, CA",
-         90
-        ],
-        [
-         10,
-         "Lux Turner",
-         "Gardnerville, NV",
-         86
+        "gear": [],
+        "notFound": [
+          "No US Kawasaki dirt-bike event found as of Oct 1, 2026.",
+          "No Kawasaki-brand dirt-bike apparel sale found.",
+          "A replacement Kawasaki factory off-road incentive after Sep 30 was not found in the sources checked."
         ]
-       ]
-      }
-     ]
-    },
-    "450": {
-     "label": "450SX",
-     "tables": [
+      },
       {
-       "title": "",
-       "rows": [
-        [
-         1,
-         "Ken Roczen",
-         "Mattstedt, Germany",
-         349
+        "id": "suzuki",
+        "name": "Suzuki",
+        "color": "#ffd500",
+        "accent": "#fff3a0",
+        "graphic": "assets/suzuki.svg",
+        "models": [
+          {
+            "title": "2027 RM-Z450 – new KYB suspension",
+            "text": "Replaces the Showa fork/BFRC shock with KYB suspension, plus lighter RK Excel wheels, slimmer subframe, revised exhaust internals and a new AMA/FIM-compliant silencer. $9,699 MSRP.",
+            "source": {
+              "name": "Powersports Business – Suzuki unveils first wave of 2027 models",
+              "url": "https://powersportsbusiness.com/top-stories/2026/07/09/suzuki-unveils-first-wave-of-2027-motorcycles-led-by-new-sv-7gx-sport-crossover-models/"
+            },
+            "asOf": "2026-07-09"
+          },
+          {
+            "title": "2027 RM-Z250 – updated settings, new rims and tires",
+            "text": "Updated KYB suspension settings, RK Excel rims, Dunlop Geomax MX34 tires and a revised exhaust. $8,499 MSRP.",
+            "source": {
+              "name": "Suzuki Cycles – 2027 RM-Z250",
+              "url": "https://suzukicycles.com/motocross/2027/rm-z250"
+            },
+            "asOf": "2026-10-01"
+          },
+          {
+            "title": "RM Army package: Roczen Championship Replica graphics",
+            "text": "Eligible new 2027 RM-Z250/RM-Z450 buyers get a Ken Roczen Championship Replica Graphics Kit and a Pro Circuit T-6 exhaust, celebrating Roczen's 2026 AMA Supercross title.",
+            "source": {
+              "name": "Dirt Bike Magazine – 2027 Suzuki motocross models",
+              "url": "https://dirtbikemagazine.com/2027-suzuki-motocross-models-announced/"
+            },
+            "asOf": "2026-07-09"
+          }
         ],
-        [
-         2,
-         "Hunter Lawrence",
-         "Landsborough, Australia",
-         346
+        "events": [],
+        "deals": [
+          {
+            "title": "Customer cash up to $2,000 + low-APR financing (ended)",
+            "text": "Dealer-hosted Suzuki promotion with up to $2,000 customer cash on select new unregistered models (not combinable with promotional financing) was listed through 9/30/2026. A clear October replacement was not found in the sources checked on Oct 1.",
+            "expires": "Ended Sep 30, 2026",
+            "source": {
+              "name": "Cycle Motion – Suzuki offers",
+              "url": "https://www.cyclemotioninc.com/Promotion-Details-0fb3caa6-9bf8-4fa1-8c8d-b0900095dd3f"
+            },
+            "asOf": "2026-10-01"
+          }
         ],
-        [
-         3,
-         "Cooper Webb",
-         "Newport, NC",
-         315
-        ],
-        [
-         4,
-         "Eli Tomac",
-         "Cortez, CO",
-         275
-        ],
-        [
-         5,
-         "Justin Cooper",
-         "Cold Spring Harbor, NY",
-         273
-        ],
-        [
-         6,
-         "Chase Sexton",
-         "La Moille, IL",
-         237
-        ],
-        [
-         7,
-         "Malcolm Stewart",
-         "Haines City, FL",
-         203
-        ],
-        [
-         8,
-         "Joey Savatgy",
-         "Thomasville, GA",
-         194
-        ],
-        [
-         9,
-         "Jorge Prado",
-         "Lugo, Spain",
-         189
-        ],
-        [
-         10,
-         "Justin Hill",
-         "Yoncalla, OR",
-         188
+        "gear": [],
+        "notFound": [
+          "No US Suzuki dirt-bike event found as of Oct 1, 2026.",
+          "No Suzuki-brand dirt-bike apparel sale found (the RM Army graphics kit is tied to a bike purchase).",
+          "A replacement Suzuki customer-cash offer after Sep 30 was not found in the sources checked."
         ]
-       ]
+      },
+      {
+        "id": "honda",
+        "name": "Honda",
+        "color": "#e60012",
+        "accent": "#ff8a93",
+        "graphic": "assets/honda.svg",
+        "models": [
+          {
+            "title": "2027 CRF450R – all-new engine, frame and suspension",
+            "text": "Honda calls it a ground-up update: new 450cc Unicam engine, new frame with slightly more rake and a longer wheelbase, footpegs moved back 5 mm, new suspension and new look, plus a limited CRF450R HRC Works Edition. US MSRP $10,099 plus $600 destination.",
+            "source": {
+              "name": "American Honda – CRF450R",
+              "url": "https://powersports.honda.com/motorcycle/motocross/crf450r"
+            },
+            "asOf": "2026-10-01"
+          },
+          {
+            "title": "2027 CRF250R – new graphics, HRC Works Edition rename",
+            "text": "The CRF250R and CRF250RX get the new HRC family graphics after their major 2025 overhaul; the CRF250RWE is renamed CRF250R HRC-WE.",
+            "source": {
+              "name": "Honda Europe press release – 27YM CRF250R (May 28, 2026)",
+              "url": "https://hondanews.eu/eu/en/motorcycles/media/pressreleases/574847"
+            },
+            "asOf": "2026-05-28"
+          },
+          {
+            "title": "Price source for the 2027 CRF450R",
+            "text": "The $10,099 MSRP and $600 destination figure comes from the spec listing below, not a Honda page we could read directly.",
+            "source": {
+              "name": "Motorcycle.com – 2027 Honda CRF450R",
+              "url": "https://www.motorcycle.com/specs/honda/off-road/2027/crf/450r/detail.html"
+            },
+            "asOf": "2026-10-01"
+          }
+        ],
+        "events": [
+          {
+            "title": "CR ELECTRIC PROTO demo at Motocross of Nations",
+            "date": "Oct 3 – 4, 2026 (12:45 local)",
+            "place": "Ernée, France",
+            "text": "Honda’s CR ELECTRIC PROTO will demo alongside Yamaha’s YE-01. Riders: Trey Canard and Justin Brayton. The prototype previously raced in the 2024 FIM E-Xplorer World Cup with Team HRC.",
+            "source": {
+              "name": "MXGP – Honda & Yamaha EV demos",
+              "url": "https://www.mxgp.com/news/honda-and-yamaha-stage-ev-motocross-demo-runs-monster-energy-fim-motocross-nations-ern%C3%A9e-0"
+            },
+            "asOf": "2026-10-01"
+          }
+        ],
+        "deals": [
+          {
+            "title": "$1,500 Bonus Bucks on select CRF450R (financing offer ended)",
+            "text": "$1,500 Bonus Bucks (accessories, HondaCare or down payment) on new, unregistered 2026 and 2025 CRF450R models was listed through Nov 30, 2026. The accompanying Honda Financial Services 3.99% APR for 36 months offer was listed through Sep 30, 2026 and is treated as ended unless a dealer confirms otherwise.",
+            "expires": "Bonus Bucks listed to Nov 30, 2026; 3.99% APR ended Sep 30, 2026",
+            "source": {
+              "name": "Track N' Trail Honda Suzuki – Honda promotion",
+              "url": "https://www.trackntrail.net/Promotion-Details-c0803d53-c96d-4f76-b7eb-b45c00f52f90"
+            },
+            "asOf": "2026-10-01"
+          }
+        ],
+        "gear": [],
+        "notFound": [
+          "No US Honda dirt-bike event found as of Oct 1, 2026 (MXoN EV demo is in France).",
+          "No Honda-brand dirt-bike apparel sale found."
+        ]
       }
-     ]
-    }
-   }
-  }
- ],
- "news": [
-  {
-   "date": "2026-10-01",
-   "title": "Ernée prepares for the 79th Motocross of Nations as 33 nations arrive",
-   "summary": "Local reporting ahead of Friday’s start at Circuit Raymond Demy describes final volunteer setup for the 79th MXoN (Oct 2–4). Qualifying is Saturday; Nations races Sunday. (The paper cites 33 nations; the Sep 29 official entry list published 32 teams.)",
-   "source": {
-    "name": "Le Courrier de la Mayenne (Oct 1, 2026)",
-    "url": "https://www.lecourrierdelamayenne.fr/actualite-41500-motocross-des-nations-notre-commune-va-etre-l-ambassadrice-du-pays-comment-ernee-se-prepare-a-recevoir-l-evenement"
-   }
-  },
-  {
-   "date": "2026-09-30",
-   "title": "MXGP preview: all eyes on Ernée as Team USA races Beaumer, Kitchen and Webb",
-   "summary": "Official MXGP preview confirms Team USA’s final trio, France as home favorites, Australia defending without the Lawrences, and the full weekend timetable with Sunday’s three Nations races.",
-   "source": {
-    "name": "MXGP",
-    "url": "https://www.mxgp.com/news/all-eyes-ern%C3%A9e-2026-monster-energy-fim-motocross-nations"
-   }
-  },
-  {
-   "date": "2026-09-29",
-   "title": "Honda and Yamaha to stage EV motocross demos at MXoN Ernée",
-   "summary": "Honda’s CR ELECTRIC PROTO (Trey Canard, Justin Brayton) and Yamaha’s YE-01 Racing Concept (Ben Townley, Milko Potisek) will run side-by-side demonstration laps Saturday and Sunday at 12:45 local time.",
-   "source": {
-    "name": "MXGP",
-    "url": "https://www.mxgp.com/news/honda-and-yamaha-stage-ev-motocross-demo-runs-monster-energy-fim-motocross-nations-ern%C3%A9e-0"
-   }
-  },
-  {
-   "date": "2026-09-29",
-   "title": "AMA releases 2027 SX, MX and SMX numbers: new career numbers for Davies, DiFrancesco and Prado",
-   "summary": "Cole Davies takes #5, Ryder DiFrancesco #10 and Jorge Prado #61. The AMA also confirmed the 2027 Supercross season will have 17 rounds, with the official schedule still to come.",
-   "source": {
-    "name": "Racer X",
-    "url": "https://racerxonline.com/2026/09/29/ama-releases-2027-ama-supercross-motocross-and-supermotocross-national-numbers"
-   }
-  },
-  {
-   "date": "2026-09-28",
-   "title": "Monster Energy SMX World Championship crowns first-time champions",
-   "summary": "Jorge Prado became the first Spanish-born SMX World Champion (450SMX) and Levi Kitchen won the 250SMX title. Lachlan Turner won the first WMX Invitational.",
-   "source": {
-    "name": "SuperMotocross.com",
-    "url": "https://www.supermotocross.com/monster-energy-smx-world-championship-crowns-first-time-champions/"
-   }
-  },
-  {
-   "date": "2026-09-27",
-   "title": "SMX Final recap: Ridgedale",
-   "summary": "Haiden Deegan won the 450SMX overall but Prado clinched the title by seven points; Kitchen finished 24 points clear of Ryder DiFrancesco in the 250SMX standings.",
-   "source": {
-    "name": "SuperMotocross.com",
-    "url": "https://www.supermotocross.com/smx-final-recap-ridgedale-sep-26-2026/"
-   }
-  },
-  {
-   "date": "2026-09-22",
-   "title": "Dylan Ferrandis announces retirement",
-   "summary": "The Troy Lee Designs Red Bull Ducati rider said the SMX Final in Missouri would be his last race as a professional.",
-   "source": {
-    "name": "SuperMotocross.com",
-    "url": "https://www.supermotocross.com/dylan-ferrandis-announces-retirement/"
-   }
-  },
-  {
-   "date": "2026-09-02",
-   "title": "Jett Lawrence to undergo surgery, miss SMX postseason",
-   "summary": "The reigning three-time SMX World Champion did not defend his title, instead having a follow-up procedure on his previously repaired ankle.",
-   "source": {
-    "name": "ProMotocross.com",
-    "url": "https://promotocross.com/2026/09/02/jett-lawrence-to-undergo-surgery-miss-smx-postseason"
-   }
-  },
-  {
-   "date": "2026-08-31",
-   "title": "Eli Tomac confirms retirement following SMX postseason",
-   "summary": "The five-time Pro Motocross titleholder will step away following the SMX postseason.",
-   "source": {
-    "name": "ProMotocross.com",
-    "url": "https://promotocross.com/2026/08/31/eli-tomac-confirms-retirement-following-smx-postseason"
-   }
-  },
-  {
-   "date": "2026-08-31",
-   "title": "Hunter Lawrence and Cole Davies crowned 2026 Pro Motocross champions at Ironman",
-   "summary": "Hunter Lawrence won the 450 title 474–472 over Jett; Cole Davies won the 250 title with 407 points.",
-   "source": {
-    "name": "Supercross.com",
-    "url": "https://www.supercross.com/blogs/news/hunter-lawrence-and-cole-davies-crowned-2026-pro-motocross-champions-at-ironman"
-   }
-  }
- ],
- "notFound": [
-  "Official 2027 AMA Supercross schedule (dates/venues) — AMA says it is coming; not published in the sources checked. (Supercross.com's schedule page still shows the 2026 calendar as of Oct 1, 2026.)",
-  "2027 AMA Pro Motocross schedule — not found.",
-  "An AMA-sanctioned race after Sep 26 — none found; the 2026 AMA SX / MX / SMX seasons are complete.",
-  "US broadcast channel for MXoN (beyond MXGP-TV live stream) — not found in the sources checked.",
-  "Brand-specific (Yamaha/Kawasaki/Suzuki/Honda) dirt-bike apparel sales — see brand panels; third-party Fox/Alpinestars gear sales are listed under Gear deals.",
-  "Replacement Yamaha / Kawasaki / Suzuki factory promotions for October after several Sep 30, 2026 incentives ended — not found on the manufacturer pages checked Oct 1."
- ],
- "sources": [
-  {
-   "name": "ProMotocross.com",
-   "url": "https://promotocross.com/"
-  },
-  {
-   "name": "Supercross.com",
-   "url": "https://www.supercross.com/pages/schedule"
-  },
-  {
-   "name": "SuperMotocross.com",
-   "url": "https://www.supermotocross.com/"
-  },
-  {
-   "name": "Racer X",
-   "url": "https://racerxonline.com/"
-  },
-  {
-   "name": "MXGP",
-   "url": "https://www.mxgp.com/"
-  },
-  {
-   "name": "MXGPResults",
-   "url": "https://mxgpresults.com/mxon/teams"
-  },
-  {
-   "name": "Yamaha Motorsports USA",
-   "url": "https://yamahamotorsports.com/"
-  },
-  {
-   "name": "Kawasaki Motors USA",
-   "url": "https://content2.kawasaki.com/"
-  },
-  {
-   "name": "Suzuki Cycles",
-   "url": "https://suzukicycles.com/"
-  },
-  {
-   "name": "American Honda Powersports",
-   "url": "https://powersports.honda.com/"
-  },
-  {
-   "name": "Fox Racing",
-   "url": "https://www.foxracing.com/deals/moto/"
-  },
-  {
-   "name": "Loretta Lynn's Ranch",
-   "url": "https://lorettalynn.com/pages/fall-ride-2026"
-  },
-  {
-   "name": "Alpinestars",
-   "url": "https://www.alpinestars.com/products/2026-fluid-apex-gear-set-1"
-  },
-  {
-   "name": "MXGP – EV demos",
-   "url": "https://www.mxgp.com/news/honda-and-yamaha-stage-ev-motocross-demo-runs-monster-energy-fim-motocross-nations-ern%C3%A9e-0"
-  }
- ],
- "brands": {
-  "asOf": "2026-10-01",
-  "note": "Model, deal and event facts are from manufacturer press releases, manufacturer pages, dealer-hosted copies of manufacturer promotions and trade media. Prices are US MSRP unless stated. Graphics are original artwork made for this page (no logos or photos).",
-  "list": [
-   {
-    "id": "yamaha",
-    "name": "Yamaha",
-    "color": "#1746c9",
-    "accent": "#7fb0ff",
-    "graphic": "assets/yamaha.svg",
-    "models": [
-     {
-      "title": "2027 WR450F – updated enduro flagship",
-      "text": "Yamaha’s 2027 WR450F page highlights a new light/compact high-revving 450cc engine with trail/enduro ECU settings, KYB suspension, 2.0 gal tank, 18-inch rear wheel and enduro equipment. Destination charge listed at $675; MSRP was not shown on the Yamaha page checked.",
-      "source": {
-       "name": "Yamaha Motorsports USA – 2027 WR450F",
-       "url": "https://yamahamotorsports.com/models/wr450f"
-      },
-      "asOf": "2026-10-01"
-     },
-     {
-      "title": "2027 YZ450F – carryover with a new rear brake",
-      "text": "Mechanically unchanged for 2027 apart from graphics and an all-new, more compact rear brake system that saves 180 g. $10,299 MSRP (Team Yamaha Blue, July); Monster Energy Edition $10,499 (August).",
-      "source": {
-       "name": "Yamaha Motorsports USA – 2027 YZ450F",
-       "url": "https://yamahamotorsports.com/models/yz450f"
-      },
-      "asOf": "2026-09-30"
-     },
-     {
-      "title": "2027 YZ450FX – the big redesign",
-      "text": "Reworked for smoother, more controllable power and comfort in technical cross-country terrain: new 51-tooth sprocket, hydraulic clutch with 15% lighter pull, frame updates, KYB suspension retune and Dunlop Geomax AT82 tires. $10,499 MSRP, available September.",
-      "source": {
-       "name": "Motocross Action – First Look 2027 YZ450F & YZ450FX",
-       "url": "https://motocrossactionmag.com/first-look-2027-yamaha-yz450f-yz450fx/"
-      },
-      "asOf": "2026-06-03"
-     },
-     {
-      "title": "2027 YZ250F – significant changes",
-      "text": "Yamaha's announcement leads with major changes to the YZ250F. $9,099 MSRP, available September. (Details of the changes are in the linked release.)",
-      "source": {
-       "name": "Racer X – Yamaha announces 2027 YZ lineup",
-       "url": "https://racerxonline.com/2026/06/03/yamaha-announces-2027-yz-lineup-led-by-significant-changes-to-yz250f"
-      },
-      "asOf": "2026-06-03"
-     }
     ],
-    "events": [
-     {
-      "title": "YE-01 Racing Concept demo at Motocross of Nations",
-      "date": "Oct 3 – 4, 2026 (12:45 local)",
-      "place": "Ernée, France",
-      "text": "Yamaha will run the YE-01 Racing Concept (YZ450F chassis tech + Electric Motion power unit) in EV demo laps with Honda. Riders: Ben Townley and Milko Potisek.",
+    "gearDeals": {
+      "title": "Riding gear sales (not brand-specific)",
+      "asOf": "2026-10-01",
+      "note": "Prices are as shown on the retailer's page when checked; they change often. Fox's sale page did not show an end date. Alpinestars discount % varies by set.",
+      "items": [
+        {
+          "name": "Fox V3 RS Carbon Solid Helmet",
+          "was": "$599.95",
+          "now": "$419.99",
+          "url": "https://www.foxracing.com/product/v3-rs-carbon-solid-helmet/VG-31361-206.html"
+        },
+        {
+          "name": "Fox V3 RS Acric Helmet",
+          "was": "$649.95",
+          "now": "$454.99",
+          "url": "https://www.foxracing.com/product/v3-rs-acric-helmet/VG-32995-922.html"
+        },
+        {
+          "name": "Fox Youth V3 Impression Helmet",
+          "was": "$369.95",
+          "now": "$258.99",
+          "url": "https://www.foxracing.com/product/youth-v3-impression-helmet/VG-36117-330.html"
+        },
+        {
+          "name": "Fox V1 Digi Image Helmet",
+          "was": "$229.95",
+          "now": "$160.99",
+          "url": "https://www.foxracing.com/product/v1-digi-image-helmet/VG-33531-285.html"
+        },
+        {
+          "name": "Fox V1 Lean Helmet",
+          "was": "$229.95",
+          "now": "$160.98",
+          "url": "https://www.foxracing.com/product/v1-lean-helmet/VG-32999-001.html"
+        },
+        {
+          "name": "Fox Airframe Pro Jacket CE Chest Guard",
+          "was": "$329.95",
+          "now": "$230.98",
+          "url": "https://www.foxracing.com/product/airframe-pro-jacket-ce-chest-guard/VG-19909-001.html"
+        },
+        {
+          "name": "Fox 180 Flow Pants",
+          "was": "$129.95",
+          "now": "$90.99",
+          "url": "https://www.foxracing.com/product/180-flow-pants/VG-33703-077.html"
+        },
+        {
+          "name": "Fox 180 Digi Image Gloves",
+          "was": "$29.95",
+          "now": "$20.98",
+          "url": "https://www.foxracing.com/product/180-digi-image-gloves/VG-33519-285.html"
+        },
+        {
+          "name": "Alpinestars 2026 Fluid Apex Gear Set",
+          "was": "$151.90",
+          "now": "$113.92",
+          "url": "https://www.alpinestars.com/products/2026-fluid-apex-gear-set-1"
+        }
+      ],
       "source": {
-       "name": "MXGP – Honda & Yamaha EV demos",
-       "url": "https://www.mxgp.com/news/honda-and-yamaha-stage-ev-motocross-demo-runs-monster-energy-fim-motocross-nations-ern%C3%A9e-0"
+        "name": "Fox Racing dirt bike sale + Alpinestars Fluid Apex",
+        "url": "https://www.foxracing.com/legacy-drops/moto/"
       },
-      "asOf": "2026-10-01"
-     },
-     {
-      "title": "Yamaha Learn to Ride: Dirt Discovery",
-      "date": "Oct 8 – 11, 2026",
-      "place": "Loretta Lynn's Ranch, Hurricane Mills, TN",
-      "text": "Two-hour learn-to-ride classes on 2027 TT-R bikes: kids 6–11 (Thu Oct 8, 9–11am), adults 12+ (Thu Oct 8, 1–3pm), women (Fri Oct 9, 9–11am). Seats are first-come and confirmed by Yamaha BLU CRU.",
-      "source": {
-       "name": "Yamaha Motorsports USA – Events",
-       "url": "https://yamahamotorsports.com/events.php?event_id=360"
+      "extraSources": [
+        {
+          "name": "Alpinestars – 2026 Fluid Apex Gear Set",
+          "url": "https://www.alpinestars.com/products/2026-fluid-apex-gear-set-1"
+        }
+      ]
+    }
+  },
+  "gear": {
+    "title": "Gear deals",
+    "asOf": "2026-10-01",
+    "note": "Prices and discounts are as shown on each store's product page on the date checked; stock, sizes and colors vary and prices change often. No end dates were stated on any of these pages. Every item links to the actual product page.",
+    "categories": [
+      "Helmets",
+      "Boots",
+      "Gloves",
+      "Jersey/Pants",
+      "Goggles",
+      "Protection",
+      "Other"
+    ],
+    "sources": [
+      {
+        "name": "Fox Racing dirt bike sale",
+        "url": "https://www.foxracing.com/legacy-drops/moto/"
       },
-      "asOf": "2026-10-01"
-     },
-     {
-      "title": "The Fall Ride 2026 (Yamaha demo rides)",
-      "date": "Oct 8 – 11, 2026",
-      "place": "Loretta Lynn's Ranch, Hurricane Mills, TN",
-      "text": "Halloween-themed dirt bike/ATV trail ride: 20+ miles of trails, campfires, vendors, live music and demo rides of the latest Yamaha dirt bikes and SXS.",
-      "source": {
-       "name": "Loretta Lynn's Ranch – Fall Ride 2026",
-       "url": "https://lorettalynn.com/pages/fall-ride-2026"
+      {
+        "name": "BTO Sports riding gear sale",
+        "url": "https://www.btosports.com/collections/shop-all-riding-gear-sale"
       },
-      "asOf": "2026-10-01"
-     }
+      {
+        "name": "MotoSport Fly Racing clearance",
+        "url": "https://www.motosport.com/dirtbike/fly-racing-riding-gear-clearance"
+      },
+      {
+        "name": "Motorcycle Closeouts – Big MX Sale",
+        "url": "https://motorcyclecloseouts.com/hot-deals/warehouse-sale/big-mx-sale/"
+      }
     ],
     "deals": [
-     {
-      "title": "Customer cash on select YZ models (ended)",
-      "text": "Dealer-hosted Yamaha promotion with customer cash tiers of up to $1,500 / $1,000 / $750 on select 2024–2026 YZ models was valid through 9/30/2026. As of Oct 1, 2026 the Yamaha USA finance-offers page did not show a replacement dirt-bike cash offer in the sources checked.",
-      "expires": "Ended Sep 30, 2026",
-      "source": {
-       "name": "Central Coast Yamaha – promotion details",
-       "url": "https://www.centralcoastyamaha.com/Promotion-Details-5d60e95f-2a6d-46f4-88e8-b49c009ccfb0"
+      {
+        "item": "Fox V3 RS Carbon Solid Helmet",
+        "category": "Helmets",
+        "brand": "Fox Racing",
+        "store": "Fox Racing (foxracing.com)",
+        "now": "$419.99",
+        "url": "https://www.foxracing.com/product/v3-rs-carbon-solid-helmet/VG-31361-206.html",
+        "asOf": "2026-10-01",
+        "was": "$599.95",
+        "percentOff": 30,
+        "endDate": null
       },
-      "asOf": "2026-10-01"
-     }
+      {
+        "item": "Fox V3 RS Acric Helmet",
+        "category": "Helmets",
+        "brand": "Fox Racing",
+        "store": "Fox Racing (foxracing.com)",
+        "now": "$454.99",
+        "url": "https://www.foxracing.com/product/v3-rs-acric-helmet/VG-32995-922.html",
+        "asOf": "2026-10-01",
+        "was": "$649.95",
+        "percentOff": 30,
+        "endDate": null
+      },
+      {
+        "item": "Fox Youth V3 Impression Helmet",
+        "category": "Helmets",
+        "brand": "Fox Racing",
+        "store": "Fox Racing (foxracing.com)",
+        "now": "$258.99",
+        "url": "https://www.foxracing.com/product/youth-v3-impression-helmet/VG-36117-330.html",
+        "asOf": "2026-10-01",
+        "was": "$369.95",
+        "percentOff": 30,
+        "endDate": null
+      },
+      {
+        "item": "Fox V1 Digi Image Helmet",
+        "category": "Helmets",
+        "brand": "Fox Racing",
+        "store": "Fox Racing (foxracing.com)",
+        "now": "$160.99",
+        "url": "https://www.foxracing.com/product/v1-digi-image-helmet/VG-33531-285.html",
+        "asOf": "2026-10-01",
+        "was": "$229.95",
+        "percentOff": 30,
+        "endDate": null
+      },
+      {
+        "item": "Fox V1 Lean Helmet",
+        "category": "Helmets",
+        "brand": "Fox Racing",
+        "store": "Fox Racing (foxracing.com)",
+        "now": "$160.98",
+        "url": "https://www.foxracing.com/product/v1-lean-helmet/VG-32999-001.html",
+        "asOf": "2026-10-01",
+        "was": "$229.95",
+        "percentOff": 30,
+        "endDate": null
+      },
+      {
+        "item": "Fox Airframe Pro Jacket CE Chest Guard",
+        "category": "Protection",
+        "brand": "Fox Racing",
+        "store": "Fox Racing (foxracing.com)",
+        "now": "$230.98",
+        "url": "https://www.foxracing.com/product/airframe-pro-jacket-ce-chest-guard/VG-19909-001.html",
+        "asOf": "2026-10-01",
+        "was": "$329.95",
+        "percentOff": 30,
+        "endDate": null
+      },
+      {
+        "item": "Fox 180 Flow Pants",
+        "category": "Jersey/Pants",
+        "brand": "Fox Racing",
+        "store": "Fox Racing (foxracing.com)",
+        "now": "$90.99",
+        "url": "https://www.foxracing.com/product/180-flow-pants/VG-33703-077.html",
+        "asOf": "2026-10-01",
+        "was": "$129.95",
+        "percentOff": 30,
+        "endDate": null
+      },
+      {
+        "item": "Fox 180 Digi Image Gloves",
+        "category": "Gloves",
+        "brand": "Fox Racing",
+        "store": "Fox Racing (foxracing.com)",
+        "now": "$20.98",
+        "url": "https://www.foxracing.com/product/180-digi-image-gloves/VG-33519-285.html",
+        "asOf": "2026-10-01",
+        "was": "$29.95",
+        "percentOff": 30,
+        "endDate": null
+      },
+      {
+        "item": "Fox Main Drive Goggles",
+        "category": "Goggles",
+        "brand": "Fox Racing",
+        "store": "Fox Racing (foxracing.com)",
+        "now": "$38.99",
+        "url": "https://www.foxracing.com/product/main-drive-goggles/VG-33523-001.html",
+        "asOf": "2026-10-01",
+        "was": "$54.95",
+        "percentOff": 29,
+        "endDate": null
+      },
+      {
+        "item": "Fox Comp X Off Road Boots",
+        "category": "Boots",
+        "brand": "Fox Racing",
+        "store": "Fox Racing (foxracing.com)",
+        "now": "$263.99",
+        "url": "https://www.foxracing.com/product/comp-x-off-road-boots/VG-30078-035.html",
+        "asOf": "2026-10-01",
+        "was": "$309.95",
+        "percentOff": 15,
+        "endDate": null
+      },
+      {
+        "item": "Fox Ranger Drive Jersey",
+        "category": "Jersey/Pants",
+        "brand": "Fox Racing",
+        "store": "Fox Racing (foxracing.com)",
+        "now": "$59.99",
+        "url": "https://www.foxracing.com/product/ranger-drive-jersey/VG-33538-407.html",
+        "asOf": "2026-10-01",
+        "was": "$84.95",
+        "percentOff": 29,
+        "endDate": null
+      },
+      {
+        "item": "Fox Ranger Off-Road Jersey",
+        "category": "Jersey/Pants",
+        "brand": "Fox Racing",
+        "store": "Fox Racing (foxracing.com)",
+        "now": "$52.99",
+        "url": "https://www.foxracing.com/product/ranger-off-road-jersey/VG-33012-001.html",
+        "asOf": "2026-10-01",
+        "was": "$74.95",
+        "percentOff": 29,
+        "endDate": null
+      },
+      {
+        "item": "Fox Ranger Off-Road Packable Rain Jacket",
+        "category": "Other",
+        "brand": "Fox Racing",
+        "store": "Fox Racing (foxracing.com)",
+        "now": "$108.99",
+        "url": "https://www.foxracing.com/product/ranger-off-road-packable-rain-jacket/VG-33736-001.html",
+        "asOf": "2026-10-01",
+        "was": "$154.95",
+        "percentOff": 30,
+        "endDate": null
+      },
+      {
+        "item": "Fox Ranger Off-Road Wind Vest",
+        "category": "Other",
+        "brand": "Fox Racing",
+        "store": "Fox Racing (foxracing.com)",
+        "now": "$97.99",
+        "url": "https://www.foxracing.com/product/ranger-off-road-wind-vest/VG-33737-001.html",
+        "asOf": "2026-10-01",
+        "was": "$139.95",
+        "percentOff": 30,
+        "endDate": null
+      },
+      {
+        "item": "Fox V3 RS Carbon Solid Helmet",
+        "category": "Helmets",
+        "brand": "Fox Racing",
+        "store": "BTO Sports",
+        "now": "$349.99",
+        "url": "https://www.btosports.com/products/fox-racing-v3-rs-carbon-solid-helmet",
+        "asOf": "2026-10-01",
+        "was": "$599.95",
+        "percentOff": 42,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Bell Moto-9S Flex Helmet",
+        "category": "Helmets",
+        "brand": "Bell",
+        "store": "BTO Sports",
+        "now": "$189.99",
+        "url": "https://www.btosports.com/products/bell-moto-9s-flex-helmet",
+        "asOf": "2026-10-01",
+        "was": "$579.95",
+        "percentOff": 67,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Troy Lee Designs SE5 Composite Team Matte Helmet",
+        "category": "Helmets",
+        "brand": "Troy Lee Designs",
+        "store": "BTO Sports",
+        "now": "$274.50",
+        "url": "https://www.btosports.com/products/troy-lee-designs-se5-composite-team-matte-helmet",
+        "asOf": "2026-10-01",
+        "was": "$549.00",
+        "percentOff": 50,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Fly Racing Formula CP Slice Helmet",
+        "category": "Helmets",
+        "brand": "Fly Racing",
+        "store": "BTO Sports",
+        "now": "$217.46",
+        "url": "https://www.btosports.com/products/fly-racing-formula-cp-slice-helmet",
+        "asOf": "2026-10-01",
+        "was": "$289.95",
+        "percentOff": 25,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Leatt V26 Moto 8.5 Helmet Kit",
+        "category": "Helmets",
+        "brand": "Leatt",
+        "store": "BTO Sports",
+        "now": "$384.30",
+        "url": "https://www.btosports.com/products/leatt-v26-moto-8-5-helmet-kit",
+        "asOf": "2026-10-01",
+        "was": "$549.00",
+        "percentOff": 30,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Alpinestars S-M10 TLD Edition 25 Helmet",
+        "category": "Helmets",
+        "brand": "Alpinestars",
+        "store": "BTO Sports",
+        "now": "$493.69",
+        "url": "https://www.btosports.com/products/alpinestars-s-m10-tld-edition-25-helmet",
+        "asOf": "2026-10-01",
+        "was": "$919.95",
+        "percentOff": 46,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Fox V1 Digi Image Helmet",
+        "category": "Helmets",
+        "brand": "Fox Racing",
+        "store": "BTO Sports",
+        "now": "$137.97",
+        "url": "https://www.btosports.com/products/fox-racing-v1-digi-image-helmet",
+        "asOf": "2026-10-01",
+        "was": "$229.95",
+        "percentOff": 40,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Bell Moto 9 MIPS Helmet (Youth)",
+        "category": "Helmets",
+        "brand": "Bell",
+        "store": "BTO Sports",
+        "now": "$139.99",
+        "url": "https://www.btosports.com/products/bell-moto-9-mips-helmet-youth",
+        "asOf": "2026-10-01",
+        "was": "$279.95",
+        "percentOff": 50,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Alpinestars Tech 10 Boots",
+        "category": "Boots",
+        "brand": "Alpinestars",
+        "store": "BTO Sports",
+        "now": "$539.95",
+        "url": "https://www.btosports.com/products/alpinestars-tech-10-boots",
+        "asOf": "2026-10-01",
+        "was": "$699.95",
+        "percentOff": 23,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Leatt 5.5 FlexLock Enduro Boots",
+        "category": "Boots",
+        "brand": "Leatt",
+        "store": "BTO Sports",
+        "now": "$274.50",
+        "url": "https://www.btosports.com/products/leatt-5-5-flexlock-enduro-boots",
+        "asOf": "2026-10-01",
+        "was": "$549.00",
+        "percentOff": 50,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Leatt 4.5 Boots",
+        "category": "Boots",
+        "brand": "Leatt",
+        "store": "BTO Sports",
+        "now": "$307.30",
+        "url": "https://www.btosports.com/products/leatt-4-5-boots",
+        "asOf": "2026-10-01",
+        "was": "$439.00",
+        "percentOff": 30,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Sidi Crossair Boots",
+        "category": "Boots",
+        "brand": "Sidi",
+        "store": "BTO Sports",
+        "now": "$299.99",
+        "url": "https://www.btosports.com/products/sidi-crossair-boots",
+        "asOf": "2026-10-01",
+        "was": "$499.99",
+        "percentOff": 40,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Fox Comp Boots",
+        "category": "Boots",
+        "brand": "Fox Racing",
+        "store": "BTO Sports",
+        "now": "$254.99",
+        "url": "https://www.btosports.com/products/fox-racing-2025-comp-boots",
+        "asOf": "2026-10-01",
+        "was": "$299.95",
+        "percentOff": 15,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Fox 180 Ballast Glove",
+        "category": "Gloves",
+        "brand": "Fox Racing",
+        "store": "BTO Sports",
+        "now": "$17.97",
+        "url": "https://www.btosports.com/products/fox-racing-180-ballast-glove",
+        "asOf": "2026-10-01",
+        "was": "$29.95",
+        "percentOff": 40,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Fly Racing Lite Glove",
+        "category": "Gloves",
+        "brand": "Fly Racing",
+        "store": "BTO Sports",
+        "now": "$14.97",
+        "url": "https://www.btosports.com/products/fly-racing-lite-glove-1",
+        "asOf": "2026-10-01",
+        "was": "$24.95",
+        "percentOff": 40,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Troy Lee Designs Air Gloves",
+        "category": "Gloves",
+        "brand": "Troy Lee Designs",
+        "store": "BTO Sports",
+        "now": "$24.60",
+        "url": "https://www.btosports.com/products/troy-lee-designs-air-gloves",
+        "asOf": "2026-10-01",
+        "was": "$41.00",
+        "percentOff": 40,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Leatt Moto 1.5 GripR Gloves",
+        "category": "Gloves",
+        "brand": "Leatt",
+        "store": "BTO Sports",
+        "now": "$16.99",
+        "url": "https://www.btosports.com/products/leatt-moto-1-5-gripr-gloves-1",
+        "asOf": "2026-10-01",
+        "was": "$38.49",
+        "percentOff": 56,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Fox Bomber Gloves",
+        "category": "Gloves",
+        "brand": "Fox Racing",
+        "store": "BTO Sports",
+        "now": "$41.97",
+        "url": "https://www.btosports.com/products/fox-racing-bomber-gloves",
+        "asOf": "2026-10-01",
+        "was": "$69.95",
+        "percentOff": 40,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Fox Airspace Drive Goggles",
+        "category": "Goggles",
+        "brand": "Fox Racing",
+        "store": "BTO Sports",
+        "now": "$73.99",
+        "url": "https://www.btosports.com/products/fox-racing-airspace-drive-goggles",
+        "asOf": "2026-10-01",
+        "was": "$104.95",
+        "percentOff": 29,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Leatt Velocity 5.5 Iriz Goggle",
+        "category": "Goggles",
+        "brand": "Leatt",
+        "store": "BTO Sports",
+        "now": "from $69.99",
+        "url": "https://www.btosports.com/products/leatt-velocity-5-5-iriz-goggle",
+        "asOf": "2026-10-01",
+        "was": "$99.99",
+        "percentOff": 30,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Fly Racing Zone Elite Goggle",
+        "category": "Goggles",
+        "brand": "Fly Racing",
+        "store": "BTO Sports",
+        "now": "$77.97",
+        "url": "https://www.btosports.com/products/fly-racing-zone-elite-goggle",
+        "asOf": "2026-10-01",
+        "was": "$129.95",
+        "percentOff": 40,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Leatt Velocity 4.5 SNZ Goggle",
+        "category": "Goggles",
+        "brand": "Leatt",
+        "store": "BTO Sports",
+        "now": "$38.99",
+        "url": "https://www.btosports.com/products/leatt-velocity-4-5-snz-goggle",
+        "asOf": "2026-10-01",
+        "was": "$59.99",
+        "percentOff": 35,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Atlas Vision Neck Brace",
+        "category": "Protection",
+        "brand": "Atlas",
+        "store": "BTO Sports",
+        "now": "$79.99",
+        "url": "https://www.btosports.com/products/atlas-vision-neck-brace",
+        "asOf": "2026-10-01",
+        "was": "$199.99",
+        "percentOff": 60,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Fox Airframe Pro Jacket, CE",
+        "category": "Protection",
+        "brand": "Fox Racing",
+        "store": "BTO Sports",
+        "now": "$230.99",
+        "url": "https://www.btosports.com/products/fox-racing-airframe-pro-jacket-ce",
+        "asOf": "2026-10-01",
+        "was": "$329.95",
+        "percentOff": 30,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Pod MX K4 2.0 Dangerboy Limited Edition 2 Knee Brace (Pair)",
+        "category": "Protection",
+        "brand": "Pod MX",
+        "store": "BTO Sports",
+        "now": "$439.96",
+        "url": "https://www.btosports.com/products/pod-mx-dngr1-haiden-deegan-limited-edition-k4-2-0-le-danger-boy-knee-brace-pair",
+        "asOf": "2026-10-01",
+        "was": "$549.95",
+        "percentOff": 20,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Leatt 3DF Hybrid Elbow Guard",
+        "category": "Protection",
+        "brand": "Leatt",
+        "store": "BTO Sports",
+        "now": "$44.99",
+        "url": "https://www.btosports.com/products/leatt-3df-hybrid-elbow-guard-1",
+        "asOf": "2026-10-01",
+        "was": "$99.99",
+        "percentOff": 55,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Troy Lee Designs Stage Knee Guard",
+        "category": "Protection",
+        "brand": "Troy Lee Designs",
+        "store": "BTO Sports",
+        "now": "$67.20",
+        "url": "https://www.btosports.com/products/troy-lee-designs-stage-knee-guard",
+        "asOf": "2026-10-01",
+        "was": "$112.00",
+        "percentOff": 40,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Leatt 4.5 Junior Chest Protector",
+        "category": "Protection",
+        "brand": "Leatt",
+        "store": "BTO Sports",
+        "now": "$84.99",
+        "url": "https://www.btosports.com/products/leatt-4-5-junior-chest-protector",
+        "asOf": "2026-10-01",
+        "was": "$159.00",
+        "percentOff": 47,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Leatt Fusion 3.0 SNX",
+        "category": "Protection",
+        "brand": "Leatt",
+        "store": "BTO Sports",
+        "now": "$361.20",
+        "url": "https://www.btosports.com/products/leatt-fusion-3-0-snx",
+        "asOf": "2026-10-01",
+        "was": "$516.00",
+        "percentOff": 30,
+        "endDate": null,
+        "note": "Price shown is for in-stock variants; sizes/colors can differ."
+      },
+      {
+        "item": "Fly Racing 2026 Kinetic Jersey/Pant Combo",
+        "category": "Jersey/Pants",
+        "brand": "Fly Racing",
+        "store": "BTO Sports",
+        "now": "$132.99",
+        "url": "https://www.btosports.com/products/fly-racing-2026-kinetic-jersey-pant-combo",
+        "asOf": "2026-10-01",
+        "was": "$189.90",
+        "percentOff": 30,
+        "endDate": null
+      },
+      {
+        "item": "Alpinestars Fluid Haul Jersey/Pant Combo",
+        "category": "Jersey/Pants",
+        "brand": "Alpinestars",
+        "store": "BTO Sports",
+        "now": "$109.99",
+        "url": "https://www.btosports.com/products/alpinestars-fluid-haul-jersey-pant-combo",
+        "asOf": "2026-10-01",
+        "was": "$146.90",
+        "percentOff": 25,
+        "endDate": null
+      },
+      {
+        "item": "Fox Flexair Energy Jersey/Pant Combo",
+        "category": "Jersey/Pants",
+        "brand": "Fox Racing",
+        "store": "BTO Sports",
+        "now": "$199.98",
+        "url": "https://www.btosports.com/products/fox-racing-flexair-energy-jersey-pant-combo",
+        "asOf": "2026-10-01",
+        "was": "$284.90",
+        "percentOff": 30,
+        "endDate": null
+      },
+      {
+        "item": "Leatt 2026 Moto 8.5 Composite Helmet with 5.5 Velocity Goggles",
+        "category": "Helmets",
+        "brand": "Leatt",
+        "store": "MotoSport",
+        "now": "$384.30",
+        "url": "https://www.motosport.com/leatt-2026-moto-85-composite-helmet-with-55-velocity-goggles",
+        "asOf": "2026-10-01",
+        "was": "$549.00",
+        "percentOff": 30,
+        "endDate": null
+      },
+      {
+        "item": "O'Neal 2026 Hardwear Combo – Swipe (jersey, pants, gloves)",
+        "category": "Jersey/Pants",
+        "brand": "O'Neal",
+        "store": "MotoSport",
+        "now": "$193.97",
+        "url": "https://www.motosport.com/oneal-2026-hardwear-combo-swipe",
+        "asOf": "2026-10-01",
+        "was": "$284.97",
+        "percentOff": 32,
+        "endDate": null
+      },
+      {
+        "item": "Fly Racing 2026 Kinetic Combo (jersey, pants, gloves)",
+        "category": "Jersey/Pants",
+        "brand": "Fly Racing",
+        "store": "MotoSport",
+        "now": "$144.90",
+        "url": "https://www.motosport.com/fly-racing-2026-kinetic-combo",
+        "asOf": "2026-10-01",
+        "was": "$189.90",
+        "percentOff": 24,
+        "endDate": null
+      },
+      {
+        "item": "Alpinestars Tech 10 Boots (Black/Red Fluo)",
+        "category": "Boots",
+        "brand": "Alpinestars",
+        "store": "Alpinestars (alpinestars.com)",
+        "now": "$629.95",
+        "url": "https://www.alpinestars.com/products/tech-10-boots-black-red-fluo",
+        "asOf": "2026-10-01",
+        "was": "$699.95",
+        "percentOff": 10,
+        "endDate": null
+      },
+      {
+        "item": "Alpinestars 2026 Fluid Apex Gear Set",
+        "category": "Jersey/Pants",
+        "brand": "Alpinestars",
+        "store": "Alpinestars (alpinestars.com)",
+        "now": "$113.92",
+        "url": "https://www.alpinestars.com/products/2026-fluid-apex-gear-set-1",
+        "asOf": "2026-10-01",
+        "was": "$151.90",
+        "percentOff": 25,
+        "endDate": null
+      },
+      {
+        "item": "Leatt 4.5 Neck Brace – Camo",
+        "category": "Protection",
+        "brand": "Leatt",
+        "store": "Motorcycle Closeouts",
+        "now": "$139.95",
+        "url": "https://motorcyclecloseouts.com/leatt-4-5-camo-neck-brace/",
+        "asOf": "2026-10-01",
+        "was": "$349.95",
+        "percentOff": 60,
+        "endDate": null
+      },
+      {
+        "item": "Fly Racing Lite 2026 Pants",
+        "category": "Jersey/Pants",
+        "brand": "Fly Racing",
+        "store": "Motorcycle Closeouts",
+        "now": "$119.95",
+        "url": "https://motorcyclecloseouts.com/fly-racing-lite-2026-pants/",
+        "asOf": "2026-10-01",
+        "was": "$199.95",
+        "percentOff": 40,
+        "endDate": null
+      },
+      {
+        "item": "Fly Racing Kinetic 2026 Jersey",
+        "category": "Jersey/Pants",
+        "brand": "Fly Racing",
+        "store": "Motorcycle Closeouts",
+        "now": "$26.95",
+        "url": "https://motorcyclecloseouts.com/fly-racing-kinetic-2026-jersey/",
+        "asOf": "2026-10-01",
+        "was": "$44.95",
+        "percentOff": 40,
+        "endDate": null
+      },
+      {
+        "item": "Fly Racing Kinetic DBK Pants MX26 (closeout)",
+        "category": "Jersey/Pants",
+        "brand": "Fly Racing",
+        "store": "MX Locker",
+        "now": "$123.95",
+        "url": "https://mxlocker.com/product/fly-racing-kinetic-dbk-pants-mx26-flhne",
+        "asOf": "2026-10-01",
+        "endDate": null,
+        "note": "Listed as a closeout; no 'was' price shown on the page."
+      }
     ],
-    "gear": [],
     "notFound": [
-     "No active Yamaha-brand dirt-bike apparel sale found as of Oct 1, 2026.",
-     "A replacement Yamaha YZ customer-cash offer after Sep 30 was not found on Yamaha USA’s finance-offers page."
+      "No end dates were published for any listed deal.",
+      "RevZilla, MotoSport clearance category pages, Rocky Mountain ATV/MC, Chaparral, Dennis Kirk, Troy Lee Designs, Fly Racing, Answer and Thor official sale pages blocked automated checks, returned errors or showed no verifiable sale, so only individually verified product pages from those brands (via other stores) are listed.",
+      "No Yamaha, Kawasaki, Suzuki or Honda branded riding-apparel sale was found."
     ]
-   },
-   {
-    "id": "kawasaki",
-    "name": "Kawasaki",
-    "color": "#6cc24a",
-    "accent": "#d6ff9e",
-    "graphic": "assets/kawasaki.svg",
-    "models": [
-     {
-      "title": "2027 KX450F – new frame and swingarm",
-      "text": "The \"F\" returns to the name. New frame and swingarm with a longer wheelbase, revised suspension, intake/exhaust updates, full Brembo brakes and improved smartphone tuning. $10,299 MSRP, available late 2026. KX450FX: $10,599.",
-      "source": {
-       "name": "Kawasaki press release – 2027 KX450F / KX450FX (PDF)",
-       "url": "https://content2.kawasaki.com/ContentStorage/KMC/PressReleases/852/9aa2a00a-9ad6-40cf-976d-7aec1a904831.pdf"
-      },
-      "asOf": "2026-06-02"
-     },
-     {
-      "title": "2027 KX250F – more power, sharper focus",
-      "text": "Combustion chamber, exhaust length and silencer refinements, updated FI settings, larger-capacity clutch and revised suspension settings. $8,599 MSRP, available summer 2026. KX250FX: $8,699.",
-      "source": {
-       "name": "Kawasaki press release – 2027 KX250F / KX250FX (PDF)",
-       "url": "https://content2.kawasaki.com/ContentStorage/KMC/PressReleases/850/0afa7f39-bbbc-4c38-94bf-960a35f1d8b1.pdf"
-      },
-      "asOf": "2026-06-02"
-     },
-     {
-      "title": "New KX327 and KX327X two-strokes",
-      "text": "Kawasaki introduced an all-new fuel-injected 327cc two-stroke single in a chassis derived from the KX450F — first new Kawasaki 2-stroke over 250cc in more than two decades. US MSRP: KX327 $9,099; KX327X $9,699. Availability: late 2026.",
-      "source": {
-       "name": "Kawasaki Motors USA – KX327/KX327X press release",
-       "url": "https://content2.kawasaki.com/ContentStorage/KMC/PressReleases/851/e0db145b-9529-48d0-a70d-40c07e3223a6.pdf"
-      },
-      "asOf": "2026-10-01"
-     }
-    ],
-    "events": [],
-    "deals": [
-     {
-      "title": "Factory off-road incentives up to $3,000 (ended)",
-      "text": "Dealer-hosted Kawasaki promotion with factory incentives up to $3,000 on select new unregistered off-road models plus low-APR financing was listed through 9/30/2026. A clear October replacement was not found in the sources checked on Oct 1.",
-      "expires": "Ended Sep 30, 2026",
-      "source": {
-       "name": "Long Island Kawasaki Yamaha – promotion details",
-       "url": "https://www.likawasaki.com/Promotion-Details-f01adb05-8f4b-4b7d-8f00-b1a10026113c"
-      },
-      "asOf": "2026-10-01"
-     }
-    ],
-    "gear": [],
-    "notFound": [
-     "No US Kawasaki dirt-bike event found as of Oct 1, 2026.",
-     "No Kawasaki-brand dirt-bike apparel sale found.",
-     "A replacement Kawasaki factory off-road incentive after Sep 30 was not found in the sources checked."
-    ]
-   },
-   {
-    "id": "suzuki",
-    "name": "Suzuki",
-    "color": "#ffd500",
-    "accent": "#fff3a0",
-    "graphic": "assets/suzuki.svg",
-    "models": [
-     {
-      "title": "2027 RM-Z450 – new KYB suspension",
-      "text": "Replaces the Showa fork/BFRC shock with KYB suspension, plus lighter RK Excel wheels, slimmer subframe, revised exhaust internals and a new AMA/FIM-compliant silencer. $9,699 MSRP.",
-      "source": {
-       "name": "Powersports Business – Suzuki unveils first wave of 2027 models",
-       "url": "https://powersportsbusiness.com/top-stories/2026/07/09/suzuki-unveils-first-wave-of-2027-motorcycles-led-by-new-sv-7gx-sport-crossover-models/"
-      },
-      "asOf": "2026-07-09"
-     },
-     {
-      "title": "2027 RM-Z250 – updated settings, new rims and tires",
-      "text": "Updated KYB suspension settings, RK Excel rims, Dunlop Geomax MX34 tires and a revised exhaust. $8,499 MSRP.",
-      "source": {
-       "name": "Suzuki Cycles – 2027 RM-Z250",
-       "url": "https://suzukicycles.com/motocross/2027/rm-z250"
-      },
-      "asOf": "2026-10-01"
-     },
-     {
-      "title": "RM Army package: Roczen Championship Replica graphics",
-      "text": "Eligible new 2027 RM-Z250/RM-Z450 buyers get a Ken Roczen Championship Replica Graphics Kit and a Pro Circuit T-6 exhaust, celebrating Roczen's 2026 AMA Supercross title.",
-      "source": {
-       "name": "Dirt Bike Magazine – 2027 Suzuki motocross models",
-       "url": "https://dirtbikemagazine.com/2027-suzuki-motocross-models-announced/"
-      },
-      "asOf": "2026-07-09"
-     }
-    ],
-    "events": [],
-    "deals": [
-     {
-      "title": "Customer cash up to $2,000 + low-APR financing (ended)",
-      "text": "Dealer-hosted Suzuki promotion with up to $2,000 customer cash on select new unregistered models (not combinable with promotional financing) was listed through 9/30/2026. A clear October replacement was not found in the sources checked on Oct 1.",
-      "expires": "Ended Sep 30, 2026",
-      "source": {
-       "name": "Cycle Motion – Suzuki offers",
-       "url": "https://www.cyclemotioninc.com/Promotion-Details-0fb3caa6-9bf8-4fa1-8c8d-b0900095dd3f"
-      },
-      "asOf": "2026-10-01"
-     }
-    ],
-    "gear": [],
-    "notFound": [
-     "No US Suzuki dirt-bike event found as of Oct 1, 2026.",
-     "No Suzuki-brand dirt-bike apparel sale found (the RM Army graphics kit is tied to a bike purchase).",
-     "A replacement Suzuki customer-cash offer after Sep 30 was not found in the sources checked."
-    ]
-   },
-   {
-    "id": "honda",
-    "name": "Honda",
-    "color": "#e60012",
-    "accent": "#ff8a93",
-    "graphic": "assets/honda.svg",
-    "models": [
-     {
-      "title": "2027 CRF450R – all-new engine, frame and suspension",
-      "text": "Honda calls it a ground-up update: new 450cc Unicam engine, new frame with slightly more rake and a longer wheelbase, footpegs moved back 5 mm, new suspension and new look, plus a limited CRF450R HRC Works Edition. US MSRP $10,099 plus $600 destination.",
-      "source": {
-       "name": "American Honda – CRF450R",
-       "url": "https://powersports.honda.com/motorcycle/motocross/crf450r"
-      },
-      "asOf": "2026-10-01"
-     },
-     {
-      "title": "2027 CRF250R – new graphics, HRC Works Edition rename",
-      "text": "The CRF250R and CRF250RX get the new HRC family graphics after their major 2025 overhaul; the CRF250RWE is renamed CRF250R HRC-WE.",
-      "source": {
-       "name": "Honda Europe press release – 27YM CRF250R (May 28, 2026)",
-       "url": "https://hondanews.eu/eu/en/motorcycles/media/pressreleases/574847"
-      },
-      "asOf": "2026-05-28"
-     },
-     {
-      "title": "Price source for the 2027 CRF450R",
-      "text": "The $10,099 MSRP and $600 destination figure comes from the spec listing below, not a Honda page we could read directly.",
-      "source": {
-       "name": "Motorcycle.com – 2027 Honda CRF450R",
-       "url": "https://www.motorcycle.com/specs/honda/off-road/2027/crf/450r/detail.html"
-      },
-      "asOf": "2026-10-01"
-     }
-    ],
-    "events": [
-     {
-      "title": "CR ELECTRIC PROTO demo at Motocross of Nations",
-      "date": "Oct 3 – 4, 2026 (12:45 local)",
-      "place": "Ernée, France",
-      "text": "Honda’s CR ELECTRIC PROTO will demo alongside Yamaha’s YE-01. Riders: Trey Canard and Justin Brayton. The prototype previously raced in the 2024 FIM E-Xplorer World Cup with Team HRC.",
-      "source": {
-       "name": "MXGP – Honda & Yamaha EV demos",
-       "url": "https://www.mxgp.com/news/honda-and-yamaha-stage-ev-motocross-demo-runs-monster-energy-fim-motocross-nations-ern%C3%A9e-0"
-      },
-      "asOf": "2026-10-01"
-     }
-    ],
-    "deals": [
-     {
-      "title": "$1,500 Bonus Bucks on select CRF450R (financing offer ended)",
-      "text": "$1,500 Bonus Bucks (accessories, HondaCare or down payment) on new, unregistered 2026 and 2025 CRF450R models was listed through Nov 30, 2026. The accompanying Honda Financial Services 3.99% APR for 36 months offer was listed through Sep 30, 2026 and is treated as ended unless a dealer confirms otherwise.",
-      "expires": "Bonus Bucks listed to Nov 30, 2026; 3.99% APR ended Sep 30, 2026",
-      "source": {
-       "name": "Track N' Trail Honda Suzuki – Honda promotion",
-       "url": "https://www.trackntrail.net/Promotion-Details-c0803d53-c96d-4f76-b7eb-b45c00f52f90"
-      },
-      "asOf": "2026-10-01"
-     }
-    ],
-    "gear": [],
-    "notFound": [
-     "No US Honda dirt-bike event found as of Oct 1, 2026 (MXoN EV demo is in France).",
-     "No Honda-brand dirt-bike apparel sale found."
-    ]
-   }
-  ],
-  "gearDeals": {
-   "title": "Riding gear sales (not brand-specific)",
-   "asOf": "2026-10-01",
-   "note": "Prices are as shown on the retailer's page when checked; they change often. Fox's sale page did not show an end date. Alpinestars discount % varies by set.",
-   "items": [
-    {
-     "name": "Fox V3 RS Carbon Solid Helmet",
-     "was": "$599.95",
-     "now": "$419.99"
-    },
-    {
-     "name": "Fox V3 RS Acric Helmet",
-     "was": "$649.95",
-     "now": "$454.99"
-    },
-    {
-     "name": "Fox Youth V3 Impression Helmet",
-     "was": "$369.95",
-     "now": "$258.99"
-    },
-    {
-     "name": "Fox V1 Digi Image Helmet",
-     "was": "$229.95",
-     "now": "$160.99"
-    },
-    {
-     "name": "Fox V1 Lean Helmet",
-     "was": "$229.95",
-     "now": "$160.98"
-    },
-    {
-     "name": "Fox Airframe Pro Jacket CE Chest Guard",
-     "was": "$329.95",
-     "now": "$230.98"
-    },
-    {
-     "name": "Fox 180 Flow Pants",
-     "was": "$129.95",
-     "now": "$90.99"
-    },
-    {
-     "name": "Fox 180 Digi Image Gloves",
-     "was": "$29.95",
-     "now": "$20.98"
-    },
-    {
-     "name": "Alpinestars 2026 Fluid Apex Gear Set",
-     "was": "$151.90",
-     "now": "$113.92"
-    }
-   ],
-   "source": {
-    "name": "Fox Racing dirt bike sale + Alpinestars Fluid Apex",
-    "url": "https://www.foxracing.com/deals/moto/"
-   },
-   "extraSources": [
-    {
-     "name": "Alpinestars – 2026 Fluid Apex Gear Set",
-     "url": "https://www.alpinestars.com/products/2026-fluid-apex-gear-set-1"
-    }
-   ]
   }
- }
 }

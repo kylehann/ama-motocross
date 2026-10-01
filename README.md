@@ -30,9 +30,19 @@ Edit only `data.json` (valid JSON: double quotes, no trailing commas). Each sect
 | `standings` | Each series has `classes["450"|"250"].tables`, rows = `[pos, rider, hometown, points]` |
 | `news` | Headlines: date, title, 1–2 sentence summary, source |
 | `brands.list[]` | Per brand: `models`, `events`, `deals` (each item: title, text, `source`, `asOf`; deals also `expires`) and `notFound` lines |
-| `brands.gearDeals` | Riding-gear sale table (`name`, `was`, `now`) with one source |
+| `gear` | **Gear Deals section** (category filter + cards). `gear.deals[]`: `item`, `category` (Helmets/Boots/Gloves/Jersey/Pants/Goggles/Protection/Other, must be in `gear.categories`), `brand`, `store`, `now`, optional `was`/`percentOff`, `endDate` (null if none stated), `url`, `asOf`, optional `note` |
+| `brands.gearDeals` | Riding-gear sale table (`name`, `was`, `now`, **`url`**) with one source |
 | `notFound` | Things you looked for but could not verify – shown on the page |
 | `sources` | Footer source links |
+
+### Gear deals must always include verified links
+- **Every** gear deal (`gear.deals[]`), every `brands.gearDeals.items[]` row and every brand deal/promotion needs a direct, working `url` to the actual product or sale page. Open it (curl/browser) and confirm it returns 200 and still shows that price **before** adding it.
+- Never guess URLs or prices. If a deal can't be verified, leave it out and note it in `gear.notFound`.
+- Record `was`/`now`/`percentOff` only as shown on the page, `endDate` only if the page states one (otherwise `null`), and update `gear.asOf` / each deal's `asOf` on every refresh. Drop deals whose page no longer shows the sale.
+- Links render as real `<a target="_blank" rel="noopener noreferrer">` buttons ("View deal").
+
+## YZ250F Owner App (`yz250f/`)
+Kyle's 2022 YZ250F workshop PWA, merged in as a sub-app and linked from the Yamaha section (`brands.list[0].ownerApp`). Everything uses relative paths so it works at `/ama-motocross/yz250f/`; its service worker (`yz250f/sw.js`) and manifest are scoped to that folder only, and the app has a "Back to Dirt Bike Updates" link. The 23 MB Yamaha owner's-manual PDF is not bundled; the app links to Yamaha's official copy instead.
 
 ### Rules for keeping it honest
 1. Only add a fact you can point to a source for; put that source next to it.
@@ -43,4 +53,4 @@ Edit only `data.json` (valid JSON: double quotes, no trailing commas). Each sect
 - **New race:** add an object at the top of `results`, update `standings`, add a `news` item.
 - **2027 schedule released:** replace the TBA entries in `schedule.upcoming`, remove the matching `notFound` line.
 
-Nothing here is published or pushed anywhere; it is a local folder.
+Published with GitHub Pages from `main`: https://kylehann.github.io/ama-motocross/

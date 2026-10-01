@@ -18,7 +18,7 @@
   }
   function link(s) {
     if (!s) return el("span", { text: "Source: none found" });
-    return el("a", { href: s.url, target: "_blank", rel: "noopener", text: s.name });
+    return el("a", { href: s.url, target: "_blank", rel: "noopener noreferrer", text: s.name });
   }
   function fmtDate(iso) {
     var p = iso.split("-");
@@ -178,7 +178,7 @@
       el("time", { datetime: h.date, text: fmtDate(h.date) }),
       el("h3", { text: h.title }),
       el("p", { text: h.summary }),
-      el("div", { class: "s" }, [el("a", { href: h.source.url, target: "_blank", rel: "noopener", text: "Read on " + h.source.name + " →" })])
+      el("div", { class: "s" }, [el("a", { href: h.source.url, target: "_blank", rel: "noopener noreferrer", text: "Read on " + h.source.name + " →" })])
     ]));
   });
 
@@ -200,6 +200,7 @@
       var f = el("div", { class: "it-src" }, [srcLine("Source:", it.source, it.asOf)]);
       if (it.expires) f.appendChild(el("span", { class: "pill", text: it.expires }));
       kids.push(f);
+      if (it.source && it.source.url) kids.push(el("a", { class: "btn btn-sm", href: it.source.url, target: "_blank", rel: "noopener noreferrer", text: "View source \u2192" }));
       return el("div", { class: "it" }, kids);
     }
     function group(title, items, emptyText, fn) {
@@ -223,7 +224,16 @@
         group("Events", b.events, "No event found in the sources checked.", function (e) { return item(e, e.date + " · " + e.place); }),
         group("Deals & promotions", b.deals, "No promotion found.", function (d) { return item(d); })
       ]);
-      p.appendChild(el("div", { class: "bpanel" }, [banner, grid]));
+      var kidsP = [banner];
+      if (b.ownerApp) {
+        kidsP.push(el("div", { class: "appcard" }, [
+          el("div", { class: "appcard-t" }, [el("span", { class: "tag", text: "Owner app" }), el("h4", { text: b.ownerApp.title })]),
+          el("p", { text: b.ownerApp.text }),
+          el("a", { class: "btn", href: b.ownerApp.url, text: b.ownerApp.cta + " \u2192" })
+        ]));
+      }
+      kidsP.push(grid);
+      p.appendChild(el("div", { class: "bpanel" }, kidsP));
       if (b.notFound && b.notFound.length) {
         var ul = el("ul", { class: "nf" });
         b.notFound.forEach(function (t) { ul.appendChild(el("li", { text: "Not found: " + t })); });
@@ -242,7 +252,7 @@
     $("gear-title").textContent = G.title;
     var rows = el("tbody");
     G.items.forEach(function (g) {
-      rows.appendChild(el("tr", {}, [el("td", { class: "r", text: g.name }), el("td", { class: "num was", text: g.was }), el("td", { class: "num now", text: g.now })]));
+      rows.appendChild(el("tr", {}, [el("td", { class: "r" }, [g.url ? el("a", { href: g.url, target: "_blank", rel: "noopener noreferrer", text: g.name }) : document.createTextNode(g.name)]), el("td", { class: "num was", text: g.was }), el("td", { class: "num now", text: g.now })]));
     });
     $("gear-deals").appendChild(el("div", { class: "card" }, [
       el("div", { class: "card-h" }, [el("div", { class: "m", text: G.note })]),
@@ -258,6 +268,47 @@
         return f;
       })()
     ]));
+  }
+
+  /* ---------- Gear deals (filterable) ---------- */
+  if (D.gear) {
+    var GD = D.gear, gcat = "All";
+    $("gear-note").textContent = GD.note;
+    $("gear-asof").textContent = "As of " + fmtDate(GD.asOf) + ".";
+    var cats = ["All"].concat(GD.categories);
+    var fbox = $("gear-filters");
+    function renderGear() {
+      var list = GD.deals.filter(function (d) { return d.url && (gcat === "All" || d.category === gcat); });
+      var grid = $("gear-grid"); grid.innerHTML = "";
+      $("gear-count").textContent = list.length + " deal" + (list.length === 1 ? "" : "s") + (gcat === "All" ? "" : " in " + gcat);
+      if (!list.length) grid.appendChild(el("p", { class: "empty", text: "No verified deals in this category right now." }));
+      list.forEach(function (d) {
+        var price = el("div", { class: "g-price" }, [el("span", { class: "g-now", text: d.now })]);
+        if (d.was) price.appendChild(el("span", { class: "g-was", text: d.was }));
+        if (d.percentOff) price.appendChild(el("span", { class: "g-off", text: "-" + d.percentOff + "%" }));
+        var meta = el("div", { class: "g-meta" }, [el("span", { class: "g-cat", text: d.category }), el("span", { text: d.brand })]);
+        var foot = el("div", { class: "g-foot" }, [el("span", { class: "g-store", text: d.store }), el("span", { class: "g-asof", text: "as of " + fmtDate(d.asOf) + (d.endDate ? " \u00b7 ends " + d.endDate : " \u00b7 no end date listed") })]);
+        var kids = [meta, el("h4", { text: d.item }), price, foot];
+        if (d.note) kids.push(el("p", { class: "g-note", text: d.note }));
+        kids.push(el("a", { class: "btn", href: d.url, target: "_blank", rel: "noopener noreferrer", text: "View deal", "aria-label": "View deal: " + d.item + " at " + d.store }));
+        grid.appendChild(el("article", { class: "gcard" }, kids));
+      });
+    }
+    cats.forEach(function (c) {
+      var n = c === "All" ? GD.deals.length : GD.deals.filter(function (d) { return d.category === c; }).length;
+      var b = el("button", { type: "button", class: "gf", "aria-pressed": String(c === "All"), text: c + " (" + n + ")", "data-cat": c });
+      b.addEventListener("click", function () {
+        gcat = c;
+        fbox.querySelectorAll(".gf").forEach(function (x) { x.setAttribute("aria-pressed", String(x.dataset.cat === c)); });
+        renderGear();
+      });
+      fbox.appendChild(b);
+    });
+    renderGear();
+    var gs = $("gear-sources");
+    gs.appendChild(document.createTextNode("Sale pages: "));
+    GD.sources.forEach(function (s, i) { if (i) gs.appendChild(document.createTextNode(" \u00b7 ")); gs.appendChild(link(s)); });
+    GD.notFound.forEach(function (t) { $("gear-notfound").appendChild(el("li", { text: "Not found: " + t })); });
   }
   }
 })();
