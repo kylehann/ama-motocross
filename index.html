@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dirt Bike Updates – AMA Motocross, Brands &amp; Deals</title>
+<meta name="description" content="AMA Pro Motocross, Supercross and SMX season status, schedule, results, standings and headlines – with sources.">
+<meta name="theme-color" content="#0b0b0d">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">▲</span> Dirt<span>Bike</span> Updates</a>
+    <nav aria-label="Sections">
+      <a href="#schedule">Schedule</a>
+      <a href="#results">Results</a>
+      <a href="#standings">Standings</a>
+      <a href="#brands">Brands</a>
+      <a href="#news">News</a>
+      <a href="#sources">Sources</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap">
+      <p class="kicker" id="hero-kicker"></p>
+      <h1 id="hero-title">Loading…</h1>
+      <p class="hero-meta" id="hero-meta"></p>
+      <div class="countdown" id="hero-countdown" aria-live="polite"></div>
+      <p class="hero-note" id="hero-note"></p>
+      <ul class="facts" id="hero-facts"></ul>
+      <p class="caveat" id="hero-caveat"></p>
+      <p class="src" id="hero-src"></p>
+      <div class="status" id="status" aria-label="Season status"></div>
+    </div>
+  </section>
+
+  <section id="schedule" class="wrap section">
+    <h2><span class="bar"></span>Schedule</h2>
+    <p class="asof" id="schedule-asof"></p>
+    <h3>Upcoming</h3>
+    <div class="upcoming" id="upcoming"></div>
+    <h3>Completed 2026 calendars</h3>
+    <div id="completed"></div>
+  </section>
+
+  <section id="results" class="wrap section">
+    <h2><span class="bar"></span>Latest results</h2>
+    <div class="controls">
+      <div class="tabs" role="tablist" aria-label="Class" id="class-tabs">
+        <button role="tab" class="tab" data-class="450" aria-selected="true">450</button>
+        <button role="tab" class="tab" data-class="250" aria-selected="false">250</button>
+      </div>
+    </div>
+    <div id="results-list" class="cards"></div>
+  </section>
+
+  <section id="standings" class="wrap section">
+    <h2><span class="bar"></span>Standings</h2>
+    <p class="muted">Final 2026 top 10. Use the 450 / 250 tabs above to switch class.</p>
+    <div id="standings-list" class="cards"></div>
+  </section>
+
+  <section id="brands" class="wrap section">
+    <h2><span class="bar"></span>Brands: Yamaha · Kawasaki · Suzuki · Honda</h2>
+    <p class="muted" id="brands-note"></p>
+    <div class="brand-tabs" role="tablist" aria-label="Brand" id="brand-tabs"></div>
+    <div id="brand-panel"></div>
+    <h3 id="gear-title">Gear deals</h3>
+    <div id="gear-deals"></div>
+  </section>
+
+  <section id="news" class="wrap section">
+    <h2><span class="bar"></span>Headlines</h2>
+    <div id="news-list" class="news"></div>
+  </section>
+
+  <section class="wrap section">
+    <h2><span class="bar"></span>Couldn’t find</h2>
+    <p class="muted">Nothing is guessed on this page. These items were searched for but not found as of the date above.</p>
+    <ul class="notfound" id="notfound"></ul>
+  </section>
+</main>
+
+<footer id="sources" class="footer">
+  <div class="wrap">
+    <h2>Sources</h2>
+    <ul class="srclist" id="sources-list"></ul>
+    <p class="muted small">Data compiled <span id="generated"></span>. Unofficial fan page — not affiliated with the AMA, MX Sports Pro Racing or any team. Always check the linked source for the latest.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

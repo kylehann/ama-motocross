@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Kawasaki brand-colored graphic">
+<defs>
+<linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#0d1a08"/><stop offset="1" stop-color="#6cc24a" stop-opacity=".55"/></linearGradient>
+<pattern id="p" width="26" height="26" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)"><rect width="10" height="26" fill="#fff" opacity=".05"/></pattern>
+</defs>
+<rect width="800" height="220" fill="url(#g)"/><rect width="800" height="220" fill="url(#p)"/>
+<polygon points="380,0 520,0 380,220 240,220" fill="#6cc24a" opacity=".9"/>
+<polygon points="540,0 600,0 460,220 400,220" fill="#d6ff9e" opacity=".85"/>
+<polygon points="620,0 800,0 800,220 480,220" fill="#6cc24a" opacity=".25"/>
+<g stroke="#d6ff9e" stroke-width="3" opacity=".6" stroke-linecap="round"><line x1="30" y1="150" x2="190" y2="150"/><line x1="60" y1="168" x2="230" y2="168"/><line x1="20" y1="186" x2="150" y2="186"/></g>
+<g transform="translate(610 40)"><path d="M14 0h120a14 14 0 0 1 14 14v96a70 70 0 0 1-74 70 70 70 0 0 1-74-70V14A14 14 0 0 1 14 0z" fill="#fff"/>
+<text x="74" y="98" text-anchor="middle" font-family="Arial Black,Impact,sans-serif" font-weight="900" font-style="italic" font-size="44" fill="#0d1a08">KX</text>
+<rect x="24" y="116" width="100" height="8" fill="#6cc24a"/></g>
+<rect y="210" width="800" height="10" fill="#6cc24a"/>
+</svg>
