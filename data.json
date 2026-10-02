@@ -1,8 +1,8 @@
 {
-  "generated": "2026-10-01",
+  "generated": "2026-10-02",
   "siteTitle": "Dirt Bike Updates",
   "status": {
-    "asOf": "2026-10-01",
+    "asOf": "2026-10-02",
     "items": [
       {
         "label": "AMA Pro Motocross",
@@ -32,51 +32,51 @@
         }
       },
       {
-        "label": "2027 Supercross",
-        "value": "17 rounds confirmed",
-        "detail": "AMA confirmed 17 rounds and released 2027 national numbers; the official dates/venues schedule was still not published as of Oct 1, 2026.",
+        "label": "2027 SMX calendar",
+        "value": "Full regular season released",
+        "detail": "SMX League published all 17 Supercross + 11 Pro Motocross dates/venues on Oct 1. SX opens Jan 9 at Anaheim; MX opens May 29 at Pala. Playoff venues TBA in January. Ticket presale registration opens Oct 6.",
         "source": {
-          "name": "Racer X – 2027 numbers (Sep 29)",
-          "url": "https://racerxonline.com/2026/09/29/ama-releases-2027-ama-supercross-motocross-and-supermotocross-national-numbers"
+          "name": "SupercrossLIVE – 2027 SMX schedule (Oct 1, 2026)",
+          "url": "https://www.supercrosslive.com/news/2027-monster-energy-smx-world-championship-schedule-presented-by-iheartradio-revealed/"
         }
       }
     ]
   },
   "nextEvent": {
-    "asOf": "2026-10-01",
-    "kicker": "Race weekend starts tomorrow",
+    "asOf": "2026-10-02",
+    "kicker": "Race weekend underway — Opening day",
     "name": "Monster Energy FIM Motocross of Nations",
-    "note": "Not an AMA-sanctioned event — the next race on the calendar, with Team USA. No AMA-sanctioned race is scheduled in the sources checked until the 2027 season.",
+    "note": "Not an AMA-sanctioned event — the next race on the calendar, with Team USA. No AMA-sanctioned race is scheduled until the 2027 season opens Jan 9 in Anaheim.",
     "startDate": "2026-10-02",
     "endDate": "2026-10-04",
     "dateText": "Oct 2 – 4, 2026",
     "location": "Circuit Raymond Demy, Ernée, France",
     "graphic": "assets/mxon.svg",
     "facts": [
-      "Team USA (#4–6): Julien Beaumer (MXGP, KTM), Levi Kitchen (MX2, Kawasaki), Cooper Webb (Open, Husqvarna) — manager Mike Pelletier. Final entry list updated Sep 29.",
-      "Hosts France (#7–9) are among the few leading nations with first-choice riders: Romain Febvre (MXGP), Mathis Valin (MX2), Tom Vialle (Open).",
-      "Defending champion Australia lines up Jed Beaton, Alex Larwood and Aaron Tanti — not the Lawrence brothers / Kyle Webster who won in 2025.",
-      "Sunday races (local): Race 1 MXGP+MX2 13:10, Race 2 MX2+Open 14:40, Race 3 Open+MXGP 16:08. Full live coverage on MXGP-TV.",
+      "Team USA (#4–6): Julien Beaumer (MXGP, KTM), Levi Kitchen (MX2, Kawasaki), Cooper Webb (Open, Husqvarna) — manager Mike Pelletier. Webb debuts the Team Tedder / Husqvarna FC 450 Factory Edition this weekend.",
+      "Friday gate ballot is done (updated Oct 2): Mexico drew pick #1; host France #22; Team USA #26 of 32 nations.",
+      "Today (Friday, local): tech checks, opening press conference, team press conferences, start practice, and Team/Riders Presentation at 16:30 — live on MXGP-TV.",
+      "Saturday: MXGP/MX2/Open qualifying races (14:30 / 15:30 / 16:30 local). Sunday Nations races: Race 1 MXGP+MX2 13:10, Race 2 MX2+Open 14:40, Race 3 Open+MXGP 16:08. Full live coverage on MXGP-TV.",
       "Honda CR ELECTRIC PROTO (Trey Canard, Justin Brayton) and Yamaha YE-01 Racing Concept (Ben Townley, Milko Potisek) demo together Sat & Sun at 12:45 local."
     ],
     "sources": [
+      {
+        "name": "MXGPResults – MXoN 2026 ballot & timetable (updated Oct 2)",
+        "url": "https://mxgpresults.com/mxon/2026/"
+      },
       {
         "name": "MXGP – All eyes on Ernée (Sep 30, 2026)",
         "url": "https://www.mxgp.com/news/all-eyes-ern%C3%A9e-2026-monster-energy-fim-motocross-nations"
       },
       {
-        "name": "MXGPResults – official entry list (updated Sep 29, 2026)",
-        "url": "https://mxgpresults.com/mxon/teams"
-      },
-      {
-        "name": "MXGP – Honda & Yamaha EV demos (Sep 29, 2026)",
-        "url": "https://www.mxgp.com/news/honda-and-yamaha-stage-ev-motocross-demo-runs-monster-energy-fim-motocross-nations-ern%C3%A9e-0"
+        "name": "SupercrossLIVE – Cooper Webb / Team Tedder Husqvarna (Oct 1)",
+        "url": "https://www.supercrosslive.com/news/cooper-webb-joins-team-tedder-husqvarna/"
       }
     ],
     "caveat": "An Aug 28 Pro Motocross article named Chance Hymas for Team USA; the final entry list (Sep 29) and MXGP preview (Sep 30) show Julien Beaumer instead."
   },
   "schedule": {
-    "asOf": "2026-10-01",
+    "asOf": "2026-10-02",
     "upcoming": [
       {
         "date": "Oct 2 – 4, 2026",
@@ -84,26 +84,39 @@
         "place": "Circuit Raymond Demy, Ernée, France",
         "tag": "FIM · Team USA",
         "source": {
-          "name": "MXGP",
-          "url": "https://www.mxgp.com/news/all-eyes-ern%C3%A9e-2026-monster-energy-fim-motocross-nations"
+          "name": "MXGPResults – MXoN 2026",
+          "url": "https://mxgpresults.com/mxon/2026/"
         }
       },
       {
-        "date": "TBA",
-        "event": "2027 AMA Supercross (17 rounds)",
-        "place": "Official schedule not yet released",
+        "date": "Jan 9, 2027",
+        "event": "2027 AMA Supercross opener (Rd 1 of 17)",
+        "place": "Angel Stadium, Anaheim, CA — new stops: San Antonio (Jan 30), Baltimore (Apr 10); finale Salt Lake City May 15",
         "tag": "AMA SX",
         "source": {
-          "name": "Racer X",
-          "url": "https://racerxonline.com/2026/09/29/ama-releases-2027-ama-supercross-motocross-and-supermotocross-national-numbers"
+          "name": "Motorcycle.com – 2027 SX/MX schedules (Oct 1, 2026)",
+          "url": "https://www.motorcycle.com/bikes/news/2027-ama-supercross-and-pro-motocross-schedules-announced-44672260"
         }
       },
       {
-        "date": "TBA",
-        "event": "2027 AMA Pro Motocross",
-        "place": "Not found in the sources checked",
+        "date": "May 29, 2027",
+        "event": "2027 AMA Pro Motocross opener (Rd 1 of 11)",
+        "place": "Fox Raceway, Pala, CA — familiar Nationals slate through Ironman Aug 28",
         "tag": "AMA MX",
-        "source": null
+        "source": {
+          "name": "Motorcycle.com – 2027 SX/MX schedules (Oct 1, 2026)",
+          "url": "https://www.motorcycle.com/bikes/news/2027-ama-supercross-and-pro-motocross-schedules-announced-44672260"
+        }
+      },
+      {
+        "date": "Sep 11 – 25, 2027",
+        "event": "2027 SMX Playoffs & Final (3 rounds)",
+        "place": "Cities/venues to be announced in January",
+        "tag": "SMX",
+        "source": {
+          "name": "SupercrossLIVE – 2027 SMX schedule (Oct 1, 2026)",
+          "url": "https://www.supercrosslive.com/news/2027-monster-energy-smx-world-championship-schedule-presented-by-iheartradio-revealed/"
+        }
       }
     ],
     "completed": {
@@ -1281,12 +1294,30 @@
   ],
   "news": [
     {
-      "date": "2026-10-01",
-      "title": "Ernée prepares for the 79th Motocross of Nations as 33 nations arrive",
-      "summary": "Local reporting ahead of Friday’s start at Circuit Raymond Demy describes final volunteer setup for the 79th MXoN (Oct 2–4). Qualifying is Saturday; Nations races Sunday. (The paper cites 33 nations; the Sep 29 official entry list published 32 teams.)",
+      "date": "2026-10-02",
+      "title": "MXoN opening day in Ernée: ballot done, Team USA draws pick #26",
+      "summary": "Friday’s Motocross of Nations program is underway at Circuit Raymond Demy. The gate-selection ballot finished with Mexico first and Team USA 26th of 32 nations. Qualifying races are Saturday; the three Nations races are Sunday (live on MXGP-TV).",
       "source": {
-        "name": "Le Courrier de la Mayenne (Oct 1, 2026)",
-        "url": "https://www.lecourrierdelamayenne.fr/actualite-41500-motocross-des-nations-notre-commune-va-etre-l-ambassadrice-du-pays-comment-ernee-se-prepare-a-recevoir-l-evenement"
+        "name": "MXGPResults – MXoN 2026 (updated Oct 2)",
+        "url": "https://mxgpresults.com/mxon/2026/"
+      }
+    },
+    {
+      "date": "2026-10-01",
+      "title": "2027 SMX regular-season schedule released: Anaheim Jan 9, Pala May 29",
+      "summary": "The SMX League published all 17 Supercross and 11 Pro Motocross dates and venues. New SX stops include San Antonio’s Alamodome and Baltimore’s M&T Bank Stadium. Playoff cities come in January; ticket presale registration opens Oct 6.",
+      "source": {
+        "name": "Racer X – 2027 SMX schedule revealed (Oct 1, 2026)",
+        "url": "https://racerxonline.com/2026/10/01/2027-monster-energy-smx-world-championship-schedule-revealed"
+      }
+    },
+    {
+      "date": "2026-10-01",
+      "title": "Cooper Webb joins Rocky Mountain ATV/MC – Monster Energy – Team Tedder – Husqvarna",
+      "summary": "Three-time 450SX champion Cooper Webb signed a multi-year deal with Team Tedder on Husqvarna for 2027–28, reuniting with the brand. He debuts the FC 450 Factory Edition this weekend for Team USA at MXoN Ernée alongside returning teammate Justin Hill.",
+      "source": {
+        "name": "SupercrossLIVE – Cooper Webb joins Team Tedder Husqvarna (Oct 1)",
+        "url": "https://www.supercrosslive.com/news/cooper-webb-joins-team-tedder-husqvarna/"
       }
     },
     {
@@ -1372,17 +1403,19 @@
     }
   ],
   "notFound": [
-    "Official 2027 AMA Supercross schedule (dates/venues) — AMA says it is coming; not published in the sources checked. (Supercross.com's schedule page still shows the 2026 calendar as of Oct 1, 2026.)",
-    "2027 AMA Pro Motocross schedule — not found.",
-    "An AMA-sanctioned race after Sep 26 — none found; the 2026 AMA SX / MX / SMX seasons are complete.",
-    "US broadcast channel for MXoN (beyond MXGP-TV live stream) — not found in the sources checked.",
-    "Brand-specific (Yamaha/Kawasaki/Suzuki/Honda) dirt-bike apparel sales — see brand panels; third-party Fox/Alpinestars gear sales are listed under Gear deals.",
-    "Replacement Yamaha / Kawasaki / Suzuki factory promotions for October after several Sep 30, 2026 incentives ended — not found on the manufacturer pages checked Oct 1."
+    "US broadcast channel for MXoN beyond the MXGP-TV live stream — not found in the sources checked Oct 2, 2026.",
+    "2027 SMX Playoff cities/venues — SMX League says those will be announced in January.",
+    "Brand-specific (Yamaha/Kawasaki/Suzuki/Honda) dirt-bike apparel sales — see brand panels; third-party Fox/Alpinestars/etc. gear sales are listed under Gear deals.",
+    "Replacement Yamaha or Kawasaki factory YZ/KX customer-cash promotions after the Sep 30, 2026 incentives ended — not found on the manufacturer pages checked Oct 2 (Suzuki autumn cash and RM-Z Champion Edition are listed separately under Suzuki)."
   ],
   "sources": [
     {
       "name": "ProMotocross.com",
       "url": "https://promotocross.com/"
+    },
+    {
+      "name": "SupercrossLIVE",
+      "url": "https://www.supercrosslive.com/"
     },
     {
       "name": "Supercross.com",
@@ -1401,8 +1434,12 @@
       "url": "https://www.mxgp.com/"
     },
     {
-      "name": "MXGPResults",
-      "url": "https://mxgpresults.com/mxon/teams"
+      "name": "MXGPResults – MXoN 2026",
+      "url": "https://mxgpresults.com/mxon/2026/"
+    },
+    {
+      "name": "Motorcycle.com – 2027 schedules",
+      "url": "https://www.motorcycle.com/bikes/news/2027-ama-supercross-and-pro-motocross-schedules-announced-44672260"
     },
     {
       "name": "Yamaha Motorsports USA",
@@ -1425,20 +1462,16 @@
       "url": "https://www.foxracing.com/deals/moto/"
     },
     {
-      "name": "Loretta Lynn's Ranch",
-      "url": "https://lorettalynn.com/pages/fall-ride-2026"
-    },
-    {
       "name": "Alpinestars",
       "url": "https://www.alpinestars.com/products/2026-fluid-apex-gear-set-1"
     },
     {
-      "name": "MXGP – EV demos",
-      "url": "https://www.mxgp.com/news/honda-and-yamaha-stage-ev-motocross-demo-runs-monster-energy-fim-motocross-nations-ern%C3%A9e-0"
+      "name": "Loretta Lynn's Ranch",
+      "url": "https://lorettalynn.com/pages/fall-ride-2026"
     }
   ],
   "brands": {
-    "asOf": "2026-10-01",
+    "asOf": "2026-10-02",
     "note": "Model, deal and event facts are from manufacturer press releases, manufacturer pages, dealer-hosted copies of manufacturer promotions and trade media. Prices are US MSRP unless stated. Graphics are original artwork made for this page (no logos or photos).",
     "list": [
       {
@@ -1455,7 +1488,7 @@
               "name": "Yamaha Motorsports USA – 2027 WR450F",
               "url": "https://yamahamotorsports.com/models/wr450f"
             },
-            "asOf": "2026-10-01"
+            "asOf": "2026-10-02"
           },
           {
             "title": "2027 YZ450F – carryover with a new rear brake",
@@ -1464,7 +1497,7 @@
               "name": "Yamaha Motorsports USA – 2027 YZ450F",
               "url": "https://yamahamotorsports.com/models/yz450f"
             },
-            "asOf": "2026-09-30"
+            "asOf": "2026-10-02"
           },
           {
             "title": "2027 YZ450FX – the big redesign",
@@ -1495,7 +1528,7 @@
               "name": "MXGP – Honda & Yamaha EV demos",
               "url": "https://www.mxgp.com/news/honda-and-yamaha-stage-ev-motocross-demo-runs-monster-energy-fim-motocross-nations-ern%C3%A9e-0"
             },
-            "asOf": "2026-10-01"
+            "asOf": "2026-10-02"
           },
           {
             "title": "Yamaha Learn to Ride: Dirt Discovery",
@@ -1506,7 +1539,7 @@
               "name": "Yamaha Motorsports USA – Events",
               "url": "https://yamahamotorsports.com/events.php?event_id=360"
             },
-            "asOf": "2026-10-01"
+            "asOf": "2026-10-02"
           },
           {
             "title": "The Fall Ride 2026 (Yamaha demo rides)",
@@ -1517,25 +1550,25 @@
               "name": "Loretta Lynn's Ranch – Fall Ride 2026",
               "url": "https://lorettalynn.com/pages/fall-ride-2026"
             },
-            "asOf": "2026-10-01"
+            "asOf": "2026-10-02"
           }
         ],
         "deals": [
           {
             "title": "Customer cash on select YZ models (ended)",
-            "text": "Dealer-hosted Yamaha promotion with customer cash tiers of up to $1,500 / $1,000 / $750 on select 2024–2026 YZ models was valid through 9/30/2026. As of Oct 1, 2026 the Yamaha USA finance-offers page did not show a replacement dirt-bike cash offer in the sources checked.",
+            "text": "Dealer-hosted Yamaha promotion with customer cash tiers of up to $1,500 / $1,000 / $750 on select 2024–2026 YZ models was valid through 9/30/2026. As of Oct 2, no replacement YZ cash offer was found on Yamaha USA’s current-offers pages.",
             "expires": "Ended Sep 30, 2026",
             "source": {
               "name": "Central Coast Yamaha – promotion details",
               "url": "https://www.centralcoastyamaha.com/Promotion-Details-5d60e95f-2a6d-46f4-88e8-b49c009ccfb0"
             },
-            "asOf": "2026-10-01"
+            "asOf": "2026-10-02"
           }
         ],
         "gear": [],
         "notFound": [
-          "No active Yamaha-brand dirt-bike apparel sale found as of Oct 1, 2026.",
-          "A replacement Yamaha YZ customer-cash offer after Sep 30 was not found on Yamaha USA’s finance-offers page."
+          "No active Yamaha-brand dirt-bike apparel sale found as of Oct 2, 2026.",
+          "A replacement Yamaha YZ customer-cash offer after Sep 30 was not found on Yamaha USA’s current-offers pages."
         ],
         "ownerApp": {
           "title": "YZ250F Owner App",
@@ -1576,27 +1609,27 @@
               "name": "Kawasaki Motors USA – KX327/KX327X press release",
               "url": "https://content2.kawasaki.com/ContentStorage/KMC/PressReleases/851/e0db145b-9529-48d0-a70d-40c07e3223a6.pdf"
             },
-            "asOf": "2026-10-01"
+            "asOf": "2026-10-02"
           }
         ],
         "events": [],
         "deals": [
           {
             "title": "Factory off-road incentives up to $3,000 (ended)",
-            "text": "Dealer-hosted Kawasaki promotion with factory incentives up to $3,000 on select new unregistered off-road models plus low-APR financing was listed through 9/30/2026. A clear October replacement was not found in the sources checked on Oct 1.",
+            "text": "Dealer-hosted Kawasaki promotion with factory incentives up to $3,000 on select new unregistered off-road models plus low-APR financing was listed through 9/30/2026. As of Oct 2, no replacement US KX incentive was found (a Canada Mega Cash page listing KX models through Oct 31 is not a US offer).",
             "expires": "Ended Sep 30, 2026",
             "source": {
               "name": "Long Island Kawasaki Yamaha – promotion details",
               "url": "https://www.likawasaki.com/Promotion-Details-f01adb05-8f4b-4b7d-8f00-b1a10026113c"
             },
-            "asOf": "2026-10-01"
+            "asOf": "2026-10-02"
           }
         ],
         "gear": [],
         "notFound": [
-          "No US Kawasaki dirt-bike event found as of Oct 1, 2026.",
+          "No US Kawasaki dirt-bike event found as of Oct 2, 2026.",
           "No Kawasaki-brand dirt-bike apparel sale found.",
-          "A replacement Kawasaki factory off-road incentive after Sep 30 was not found in the sources checked."
+          "A replacement US Kawasaki factory off-road incentive after Sep 30 was not found in the sources checked."
         ]
       },
       {
@@ -1622,7 +1655,7 @@
               "name": "Suzuki Cycles – 2027 RM-Z250",
               "url": "https://suzukicycles.com/motocross/2027/rm-z250"
             },
-            "asOf": "2026-10-01"
+            "asOf": "2026-10-02"
           },
           {
             "title": "RM Army package: Roczen Championship Replica graphics",
@@ -1637,21 +1670,30 @@
         "events": [],
         "deals": [
           {
-            "title": "Customer cash up to $2,000 + low-APR financing (ended)",
-            "text": "Dealer-hosted Suzuki promotion with up to $2,000 customer cash on select new unregistered models (not combinable with promotional financing) was listed through 9/30/2026. A clear October replacement was not found in the sources checked on Oct 1.",
-            "expires": "Ended Sep 30, 2026",
+            "title": "Autumn customer cash: $1,000 on 2024–2026 RM-Z250",
+            "text": "Suzuki’s Autumn Deal$ program (Oct 1 – Dec 31, 2026) lists $1,000 customer cash on new unregistered 2024, 2025 and 2026 RM-Z250 models (and higher tiers on select DR-Z models). Cash excludes promotional financing; see suzukicycles.com/offers for qualifying models.",
+            "expires": "Dec 31, 2026",
             "source": {
-              "name": "Cycle Motion – Suzuki offers",
-              "url": "https://www.cyclemotioninc.com/Promotion-Details-0fb3caa6-9bf8-4fa1-8c8d-b0900095dd3f"
+              "name": "Suzuki Autumn Deal$ PDF (effective 10/01/2026–12/31/2026)",
+              "url": "https://cdpcdn.dx1app.com/products/PROMOTION/61a311d0-32cb-48c3-b29a-b4d6006b8ca6/PDF/M0D0000004.pdf"
             },
-            "asOf": "2026-10-01"
+            "asOf": "2026-10-02"
+          },
+          {
+            "title": "RM-Z Champion Edition package (free exhaust + Roczen graphics)",
+            "text": "Buy a new 2027 RM-Z250 or RM-Z450 and receive a Pro Circuit RM Army Edition T-6 full system (ARV $1,349.99) plus a custom Ken Roczen replica graphics kit. Kit ships to the dealer after retail registration; installation not included. Offer ends Dec 31, 2026 per the official RM-Z250 page.",
+            "expires": "Dec 31, 2026",
+            "source": {
+              "name": "Suzuki Cycles – 2027 RM-Z250 (Champion Edition)",
+              "url": "https://suzukicycles.com/motocross/2027/rm-z250"
+            },
+            "asOf": "2026-10-02"
           }
         ],
         "gear": [],
         "notFound": [
-          "No US Suzuki dirt-bike event found as of Oct 1, 2026.",
-          "No Suzuki-brand dirt-bike apparel sale found (the RM Army graphics kit is tied to a bike purchase).",
-          "A replacement Suzuki customer-cash offer after Sep 30 was not found in the sources checked."
+          "No US Suzuki dirt-bike event found as of Oct 2, 2026.",
+          "No Suzuki-brand dirt-bike apparel sale found (Champion Edition graphics/exhaust are tied to a new 2027 RM-Z purchase)."
         ]
       },
       {
@@ -1668,7 +1710,7 @@
               "name": "American Honda – CRF450R",
               "url": "https://powersports.honda.com/motorcycle/motocross/crf450r"
             },
-            "asOf": "2026-10-01"
+            "asOf": "2026-10-02"
           },
           {
             "title": "2027 CRF250R – new graphics, HRC Works Edition rename",
@@ -1686,7 +1728,7 @@
               "name": "Motorcycle.com – 2027 Honda CRF450R",
               "url": "https://www.motorcycle.com/specs/honda/off-road/2027/crf/450r/detail.html"
             },
-            "asOf": "2026-10-01"
+            "asOf": "2026-10-02"
           }
         ],
         "events": [
@@ -1699,31 +1741,41 @@
               "name": "MXGP – Honda & Yamaha EV demos",
               "url": "https://www.mxgp.com/news/honda-and-yamaha-stage-ev-motocross-demo-runs-monster-energy-fim-motocross-nations-ern%C3%A9e-0"
             },
-            "asOf": "2026-10-01"
+            "asOf": "2026-10-02"
           }
         ],
         "deals": [
           {
             "title": "$1,500 Bonus Bucks on select CRF450R (financing offer ended)",
-            "text": "$1,500 Bonus Bucks (accessories, HondaCare or down payment) on new, unregistered 2026 and 2025 CRF450R models was listed through Nov 30, 2026. The accompanying Honda Financial Services 3.99% APR for 36 months offer was listed through Sep 30, 2026 and is treated as ended unless a dealer confirms otherwise.",
+            "text": "$1,500 Bonus Bucks (accessories, HondaCare or down payment) on new, unregistered 2026 and 2025 CRF450R models was listed through Nov 30, 2026. The accompanying 3.99% APR financing ended Sep 30, 2026.",
             "expires": "Bonus Bucks listed to Nov 30, 2026; 3.99% APR ended Sep 30, 2026",
             "source": {
               "name": "Track N' Trail Honda Suzuki – Honda promotion",
               "url": "https://www.trackntrail.net/Promotion-Details-c0803d53-c96d-4f76-b7eb-b45c00f52f90"
             },
-            "asOf": "2026-10-01"
+            "asOf": "2026-10-02"
+          },
+          {
+            "title": "$500 Bonus Bucks on 2026 CRF250R",
+            "text": "Dealer-listed $500 Bonus Bucks on a new, unregistered 2026 CRF250R (toward accessories, HondaCare or down payment), end date Nov 30, 2026. Page also restates MX APR terms that ended Sep 30, 2026 — those financing terms are no longer active.",
+            "expires": "Nov 30, 2026",
+            "source": {
+              "name": "Treasure Coast Honda Kawasaki – $500 CRF250R",
+              "url": "https://www.honda-kawasaki.com/Promotion-Details-77fcaa0e-87e8-4835-8be5-b48000f686ff"
+            },
+            "asOf": "2026-10-02"
           }
         ],
         "gear": [],
         "notFound": [
-          "No US Honda dirt-bike event found as of Oct 1, 2026 (MXoN EV demo is in France).",
+          "No US Honda dirt-bike event found as of Oct 2, 2026 (MXoN EV demo is in France).",
           "No Honda-brand dirt-bike apparel sale found."
         ]
       }
     ],
     "gearDeals": {
       "title": "Riding gear sales (not brand-specific)",
-      "asOf": "2026-10-01",
+      "asOf": "2026-10-02",
       "note": "Prices are as shown on the retailer's page when checked; they change often. Fox's sale page did not show an end date. Alpinestars discount % varies by set.",
       "items": [
         {
@@ -1795,7 +1847,7 @@
   },
   "gear": {
     "title": "Gear deals",
-    "asOf": "2026-10-01",
+    "asOf": "2026-10-02",
     "note": "Prices and discounts are as shown on each store's product page on the date checked; stock, sizes and colors vary and prices change often. No end dates were stated on any of these pages. Every item links to the actual product page.",
     "categories": [
       "Helmets",
@@ -1808,20 +1860,28 @@
     ],
     "sources": [
       {
-        "name": "Fox Racing dirt bike sale",
+        "name": "Fox Racing moto deals",
         "url": "https://www.foxracing.com/legacy-drops/moto/"
       },
       {
-        "name": "BTO Sports riding gear sale",
-        "url": "https://www.btosports.com/collections/shop-all-riding-gear-sale"
+        "name": "BTO Sports",
+        "url": "https://www.btosports.com/"
       },
       {
-        "name": "MotoSport Fly Racing clearance",
-        "url": "https://www.motosport.com/dirtbike/fly-racing-riding-gear-clearance"
+        "name": "MotoSport",
+        "url": "https://www.motosport.com/"
       },
       {
-        "name": "Motorcycle Closeouts – Big MX Sale",
-        "url": "https://motorcyclecloseouts.com/hot-deals/warehouse-sale/big-mx-sale/"
+        "name": "Alpinestars",
+        "url": "https://www.alpinestars.com/"
+      },
+      {
+        "name": "Motorcycle Closeouts",
+        "url": "https://motorcyclecloseouts.com/"
+      },
+      {
+        "name": "MX Locker",
+        "url": "https://mxlocker.com/"
       }
     ],
     "deals": [
@@ -1832,7 +1892,7 @@
         "store": "Fox Racing (foxracing.com)",
         "now": "$419.99",
         "url": "https://www.foxracing.com/product/v3-rs-carbon-solid-helmet/VG-31361-206.html",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$599.95",
         "percentOff": 30,
         "endDate": null
@@ -1844,7 +1904,7 @@
         "store": "Fox Racing (foxracing.com)",
         "now": "$454.99",
         "url": "https://www.foxracing.com/product/v3-rs-acric-helmet/VG-32995-922.html",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$649.95",
         "percentOff": 30,
         "endDate": null
@@ -1856,7 +1916,7 @@
         "store": "Fox Racing (foxracing.com)",
         "now": "$258.99",
         "url": "https://www.foxracing.com/product/youth-v3-impression-helmet/VG-36117-330.html",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$369.95",
         "percentOff": 30,
         "endDate": null
@@ -1868,7 +1928,7 @@
         "store": "Fox Racing (foxracing.com)",
         "now": "$160.99",
         "url": "https://www.foxracing.com/product/v1-digi-image-helmet/VG-33531-285.html",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$229.95",
         "percentOff": 30,
         "endDate": null
@@ -1880,7 +1940,7 @@
         "store": "Fox Racing (foxracing.com)",
         "now": "$160.98",
         "url": "https://www.foxracing.com/product/v1-lean-helmet/VG-32999-001.html",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$229.95",
         "percentOff": 30,
         "endDate": null
@@ -1892,7 +1952,7 @@
         "store": "Fox Racing (foxracing.com)",
         "now": "$230.98",
         "url": "https://www.foxracing.com/product/airframe-pro-jacket-ce-chest-guard/VG-19909-001.html",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$329.95",
         "percentOff": 30,
         "endDate": null
@@ -1904,7 +1964,7 @@
         "store": "Fox Racing (foxracing.com)",
         "now": "$90.99",
         "url": "https://www.foxracing.com/product/180-flow-pants/VG-33703-077.html",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$129.95",
         "percentOff": 30,
         "endDate": null
@@ -1916,7 +1976,7 @@
         "store": "Fox Racing (foxracing.com)",
         "now": "$20.98",
         "url": "https://www.foxracing.com/product/180-digi-image-gloves/VG-33519-285.html",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$29.95",
         "percentOff": 30,
         "endDate": null
@@ -1928,7 +1988,7 @@
         "store": "Fox Racing (foxracing.com)",
         "now": "$38.99",
         "url": "https://www.foxracing.com/product/main-drive-goggles/VG-33523-001.html",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$54.95",
         "percentOff": 29,
         "endDate": null
@@ -1940,7 +2000,7 @@
         "store": "Fox Racing (foxracing.com)",
         "now": "$263.99",
         "url": "https://www.foxracing.com/product/comp-x-off-road-boots/VG-30078-035.html",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$309.95",
         "percentOff": 15,
         "endDate": null
@@ -1952,7 +2012,7 @@
         "store": "Fox Racing (foxracing.com)",
         "now": "$59.99",
         "url": "https://www.foxracing.com/product/ranger-drive-jersey/VG-33538-407.html",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$84.95",
         "percentOff": 29,
         "endDate": null
@@ -1964,7 +2024,7 @@
         "store": "Fox Racing (foxracing.com)",
         "now": "$52.99",
         "url": "https://www.foxracing.com/product/ranger-off-road-jersey/VG-33012-001.html",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$74.95",
         "percentOff": 29,
         "endDate": null
@@ -1976,7 +2036,7 @@
         "store": "Fox Racing (foxracing.com)",
         "now": "$108.99",
         "url": "https://www.foxracing.com/product/ranger-off-road-packable-rain-jacket/VG-33736-001.html",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$154.95",
         "percentOff": 30,
         "endDate": null
@@ -1988,7 +2048,7 @@
         "store": "Fox Racing (foxracing.com)",
         "now": "$97.99",
         "url": "https://www.foxracing.com/product/ranger-off-road-wind-vest/VG-33737-001.html",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$139.95",
         "percentOff": 30,
         "endDate": null
@@ -2000,7 +2060,7 @@
         "store": "BTO Sports",
         "now": "$349.99",
         "url": "https://www.btosports.com/products/fox-racing-v3-rs-carbon-solid-helmet",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$599.95",
         "percentOff": 42,
         "endDate": null,
@@ -2013,7 +2073,7 @@
         "store": "BTO Sports",
         "now": "$189.99",
         "url": "https://www.btosports.com/products/bell-moto-9s-flex-helmet",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$579.95",
         "percentOff": 67,
         "endDate": null,
@@ -2026,7 +2086,7 @@
         "store": "BTO Sports",
         "now": "$274.50",
         "url": "https://www.btosports.com/products/troy-lee-designs-se5-composite-team-matte-helmet",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$549.00",
         "percentOff": 50,
         "endDate": null,
@@ -2039,7 +2099,7 @@
         "store": "BTO Sports",
         "now": "$217.46",
         "url": "https://www.btosports.com/products/fly-racing-formula-cp-slice-helmet",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$289.95",
         "percentOff": 25,
         "endDate": null,
@@ -2052,7 +2112,7 @@
         "store": "BTO Sports",
         "now": "$384.30",
         "url": "https://www.btosports.com/products/leatt-v26-moto-8-5-helmet-kit",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$549.00",
         "percentOff": 30,
         "endDate": null,
@@ -2065,7 +2125,7 @@
         "store": "BTO Sports",
         "now": "$493.69",
         "url": "https://www.btosports.com/products/alpinestars-s-m10-tld-edition-25-helmet",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$919.95",
         "percentOff": 46,
         "endDate": null,
@@ -2078,7 +2138,7 @@
         "store": "BTO Sports",
         "now": "$137.97",
         "url": "https://www.btosports.com/products/fox-racing-v1-digi-image-helmet",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$229.95",
         "percentOff": 40,
         "endDate": null,
@@ -2091,7 +2151,7 @@
         "store": "BTO Sports",
         "now": "$139.99",
         "url": "https://www.btosports.com/products/bell-moto-9-mips-helmet-youth",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$279.95",
         "percentOff": 50,
         "endDate": null,
@@ -2104,7 +2164,7 @@
         "store": "BTO Sports",
         "now": "$539.95",
         "url": "https://www.btosports.com/products/alpinestars-tech-10-boots",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$699.95",
         "percentOff": 23,
         "endDate": null,
@@ -2117,7 +2177,7 @@
         "store": "BTO Sports",
         "now": "$274.50",
         "url": "https://www.btosports.com/products/leatt-5-5-flexlock-enduro-boots",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$549.00",
         "percentOff": 50,
         "endDate": null,
@@ -2130,7 +2190,7 @@
         "store": "BTO Sports",
         "now": "$307.30",
         "url": "https://www.btosports.com/products/leatt-4-5-boots",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$439.00",
         "percentOff": 30,
         "endDate": null,
@@ -2143,7 +2203,7 @@
         "store": "BTO Sports",
         "now": "$299.99",
         "url": "https://www.btosports.com/products/sidi-crossair-boots",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$499.99",
         "percentOff": 40,
         "endDate": null,
@@ -2156,7 +2216,7 @@
         "store": "BTO Sports",
         "now": "$254.99",
         "url": "https://www.btosports.com/products/fox-racing-2025-comp-boots",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$299.95",
         "percentOff": 15,
         "endDate": null,
@@ -2169,7 +2229,7 @@
         "store": "BTO Sports",
         "now": "$17.97",
         "url": "https://www.btosports.com/products/fox-racing-180-ballast-glove",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$29.95",
         "percentOff": 40,
         "endDate": null,
@@ -2182,7 +2242,7 @@
         "store": "BTO Sports",
         "now": "$14.97",
         "url": "https://www.btosports.com/products/fly-racing-lite-glove-1",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$24.95",
         "percentOff": 40,
         "endDate": null,
@@ -2195,7 +2255,7 @@
         "store": "BTO Sports",
         "now": "$24.60",
         "url": "https://www.btosports.com/products/troy-lee-designs-air-gloves",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$41.00",
         "percentOff": 40,
         "endDate": null,
@@ -2208,7 +2268,7 @@
         "store": "BTO Sports",
         "now": "$16.99",
         "url": "https://www.btosports.com/products/leatt-moto-1-5-gripr-gloves-1",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$38.49",
         "percentOff": 56,
         "endDate": null,
@@ -2221,7 +2281,7 @@
         "store": "BTO Sports",
         "now": "$41.97",
         "url": "https://www.btosports.com/products/fox-racing-bomber-gloves",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$69.95",
         "percentOff": 40,
         "endDate": null,
@@ -2234,7 +2294,7 @@
         "store": "BTO Sports",
         "now": "$73.99",
         "url": "https://www.btosports.com/products/fox-racing-airspace-drive-goggles",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$104.95",
         "percentOff": 29,
         "endDate": null,
@@ -2247,7 +2307,7 @@
         "store": "BTO Sports",
         "now": "from $69.99",
         "url": "https://www.btosports.com/products/leatt-velocity-5-5-iriz-goggle",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$99.99",
         "percentOff": 30,
         "endDate": null,
@@ -2260,7 +2320,7 @@
         "store": "BTO Sports",
         "now": "$77.97",
         "url": "https://www.btosports.com/products/fly-racing-zone-elite-goggle",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$129.95",
         "percentOff": 40,
         "endDate": null,
@@ -2273,7 +2333,7 @@
         "store": "BTO Sports",
         "now": "$38.99",
         "url": "https://www.btosports.com/products/leatt-velocity-4-5-snz-goggle",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$59.99",
         "percentOff": 35,
         "endDate": null,
@@ -2286,7 +2346,7 @@
         "store": "BTO Sports",
         "now": "$79.99",
         "url": "https://www.btosports.com/products/atlas-vision-neck-brace",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$199.99",
         "percentOff": 60,
         "endDate": null,
@@ -2299,7 +2359,7 @@
         "store": "BTO Sports",
         "now": "$230.99",
         "url": "https://www.btosports.com/products/fox-racing-airframe-pro-jacket-ce",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$329.95",
         "percentOff": 30,
         "endDate": null,
@@ -2312,7 +2372,7 @@
         "store": "BTO Sports",
         "now": "$439.96",
         "url": "https://www.btosports.com/products/pod-mx-dngr1-haiden-deegan-limited-edition-k4-2-0-le-danger-boy-knee-brace-pair",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$549.95",
         "percentOff": 20,
         "endDate": null,
@@ -2325,7 +2385,7 @@
         "store": "BTO Sports",
         "now": "$44.99",
         "url": "https://www.btosports.com/products/leatt-3df-hybrid-elbow-guard-1",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$99.99",
         "percentOff": 55,
         "endDate": null,
@@ -2338,7 +2398,7 @@
         "store": "BTO Sports",
         "now": "$67.20",
         "url": "https://www.btosports.com/products/troy-lee-designs-stage-knee-guard",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$112.00",
         "percentOff": 40,
         "endDate": null,
@@ -2351,7 +2411,7 @@
         "store": "BTO Sports",
         "now": "$84.99",
         "url": "https://www.btosports.com/products/leatt-4-5-junior-chest-protector",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$159.00",
         "percentOff": 47,
         "endDate": null,
@@ -2364,7 +2424,7 @@
         "store": "BTO Sports",
         "now": "$361.20",
         "url": "https://www.btosports.com/products/leatt-fusion-3-0-snx",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$516.00",
         "percentOff": 30,
         "endDate": null,
@@ -2377,7 +2437,7 @@
         "store": "BTO Sports",
         "now": "$132.99",
         "url": "https://www.btosports.com/products/fly-racing-2026-kinetic-jersey-pant-combo",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$189.90",
         "percentOff": 30,
         "endDate": null
@@ -2389,7 +2449,7 @@
         "store": "BTO Sports",
         "now": "$109.99",
         "url": "https://www.btosports.com/products/alpinestars-fluid-haul-jersey-pant-combo",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$146.90",
         "percentOff": 25,
         "endDate": null
@@ -2401,7 +2461,7 @@
         "store": "BTO Sports",
         "now": "$199.98",
         "url": "https://www.btosports.com/products/fox-racing-flexair-energy-jersey-pant-combo",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$284.90",
         "percentOff": 30,
         "endDate": null
@@ -2413,7 +2473,7 @@
         "store": "MotoSport",
         "now": "$384.30",
         "url": "https://www.motosport.com/leatt-2026-moto-85-composite-helmet-with-55-velocity-goggles",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$549.00",
         "percentOff": 30,
         "endDate": null
@@ -2425,7 +2485,7 @@
         "store": "MotoSport",
         "now": "$193.97",
         "url": "https://www.motosport.com/oneal-2026-hardwear-combo-swipe",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$284.97",
         "percentOff": 32,
         "endDate": null
@@ -2437,7 +2497,7 @@
         "store": "MotoSport",
         "now": "$144.90",
         "url": "https://www.motosport.com/fly-racing-2026-kinetic-combo",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$189.90",
         "percentOff": 24,
         "endDate": null
@@ -2449,7 +2509,7 @@
         "store": "Alpinestars (alpinestars.com)",
         "now": "$629.95",
         "url": "https://www.alpinestars.com/products/tech-10-boots-black-red-fluo",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$699.95",
         "percentOff": 10,
         "endDate": null
@@ -2461,7 +2521,7 @@
         "store": "Alpinestars (alpinestars.com)",
         "now": "$113.92",
         "url": "https://www.alpinestars.com/products/2026-fluid-apex-gear-set-1",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$151.90",
         "percentOff": 25,
         "endDate": null
@@ -2473,7 +2533,7 @@
         "store": "Motorcycle Closeouts",
         "now": "$139.95",
         "url": "https://motorcyclecloseouts.com/leatt-4-5-camo-neck-brace/",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$349.95",
         "percentOff": 60,
         "endDate": null
@@ -2485,7 +2545,7 @@
         "store": "Motorcycle Closeouts",
         "now": "$119.95",
         "url": "https://motorcyclecloseouts.com/fly-racing-lite-2026-pants/",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$199.95",
         "percentOff": 40,
         "endDate": null
@@ -2497,7 +2557,7 @@
         "store": "Motorcycle Closeouts",
         "now": "$26.95",
         "url": "https://motorcyclecloseouts.com/fly-racing-kinetic-2026-jersey/",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "was": "$44.95",
         "percentOff": 40,
         "endDate": null
@@ -2509,13 +2569,13 @@
         "store": "MX Locker",
         "now": "$123.95",
         "url": "https://mxlocker.com/product/fly-racing-kinetic-dbk-pants-mx26-flhne",
-        "asOf": "2026-10-01",
+        "asOf": "2026-10-02",
         "endDate": null,
         "note": "Listed as a closeout; no 'was' price shown on the page."
       }
     ],
     "notFound": [
-      "No end dates were published for any listed deal.",
+      "No end dates were published for any listed gear deal (checked Oct 2, 2026).",
       "RevZilla, MotoSport clearance category pages, Rocky Mountain ATV/MC, Chaparral, Dennis Kirk, Troy Lee Designs, Fly Racing, Answer and Thor official sale pages blocked automated checks, returned errors or showed no verifiable sale, so only individually verified product pages from those brands (via other stores) are listed.",
       "No Yamaha, Kawasaki, Suzuki or Honda branded riding-apparel sale was found."
     ]
