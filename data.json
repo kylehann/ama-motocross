@@ -1,8 +1,8 @@
 {
-  "generated": "2026-10-23",
+  "generated": "2026-10-26",
   "siteTitle": "Dirt Bike Updates",
   "status": {
-    "asOf": "2026-10-23",
+    "asOf": "2026-10-26",
     "items": [
       {
         "label": "AMA Pro Motocross",
@@ -52,7 +52,7 @@
     ]
   },
   "nextEvent": {
-    "asOf": "2026-10-23",
+    "asOf": "2026-10-26",
     "kicker": "Next AMA race — 2027 season opener",
     "name": "Anaheim 1 — 2027 Monster Energy AMA Supercross, Round 1",
     "note": "No AMA-sanctioned race until Jan 9, 2027. Near-term non-AMA: AUSX Auckland Oct 31, Geelong Nov 7 (Barcia + Roczen on Suzuki confirmed), Perth Nov 14, Newcastle Nov 28; Paris Supercross Nov 21–22; Red Bull Day in the Dirt at Glen Helen Nov 27–29.",
@@ -65,6 +65,7 @@
       "A1 is a 250SX West round with KTM Junior Supercross; the first Triple Crown of 2027 follows two weeks later at Anaheim 2 (Jan 23).",
       "Tickets for every 2027 Supercross and Pro Motocross round went on sale to the general public on Oct 13, 2026.",
       "450SMX field led by reigning SX champion Ken Roczen with Jason Anderson, Jett Lawrence, Chase Sexton and Cooper Webb; Haiden Deegan begins his 450 rookie season.",
+      "Chase Sexton has no announced 2027 team after he and Kawasaki parted ways on Oct 23, 2026; Ken Roczen has still not confirmed whether he'll race 2027.",
       "U.S. debut season for Belgian twins Lucas (450) and Sacha Coenen (250), who just won the Motocross of Nations with Team Belgium.",
       "Justin Barcia makes his Suzuki RM-Z450 debut for Pipes Motorsports Group at A1.",
       "Justin Barcia will make his Twisted Tea Suzuki / Pipes Motorsports debut early at AUSX Open Geelong (Nov 7), lining up with teammate Ken Roczen."
@@ -85,11 +86,15 @@
       {
         "name": "AUSX – Barcia locked in for Geelong (Oct 16, 2026)",
         "url": "https://ausxsupercross.com.au/news/bam-bam-justin-barcia-locked-in-for-the-ausx-open-supercross-in-geelong/"
+      },
+      {
+        "name": "Racer X – Kawasaki and Chase Sexton part ways (Oct 23, 2026)",
+        "url": "https://racerxonline.com/2026/10/23/kawasaki-and-chase-sexton-part-ways-effective-immediately"
       }
     ]
   },
   "schedule": {
-    "asOf": "2026-10-23",
+    "asOf": "2026-10-26",
     "upcoming": [
       {
         "date": "Oct 31, 2026",
@@ -124,11 +129,15 @@
       {
         "date": "Nov 21 – 22, 2026",
         "event": "Paris Supercross (43rd edition)",
-        "place": "Plenitude Arena, Nanterre, France — SX1/SX2 + Freestyle; qualifying Sat, finals Sun",
+        "place": "Plenitude Arena, Nanterre, France — SX1/SX2 + Freestyle; qualifying Sat, finals Sun. 2025 winner Malcolm Stewart won't race (Kawasaki's call, per Racer X); Aaron Plessinger is set for his Triumph debut here",
         "tag": "INTL SX",
         "source": {
           "name": "Plenitude Arena – Supercross of Paris 2026",
           "url": "https://www.plenitudearena.com/en/event/supercross-de-paris-2026-en/"
+        },
+        "extraSource": {
+          "name": "Racer X – Racerhead #43 (Oct 23, 2026)",
+          "url": "https://racerxonline.com/2026/10/23/racerhead-43"
         }
       },
       {
@@ -1516,6 +1525,33 @@
   ],
   "news": [
     {
+      "date": "2026-10-25",
+      "title": "Brycen Neal clinches fifth GNCC ATV title at the Yamaha Racing Ironman",
+      "summary": "At the pink-themed Yamaha Racing Ironman GNCC (Round 12 of 13, Crawfordsville, IN), Phoenix Racing Yamaha's Brycen Neal won the Saturday Oct 24 pro ATV race to clinch his fifth XC1 Pro ATV national championship (332 pts). Yamaha swept the top six overall: Neal, Hunter Hart, Wyatt Wilkin, John Glauda Jr., Branden Owens, Steven Harrell. Honda's Layne McCormick won XC2 and leads that title chase 268–261 over Braxton Grosse (Honda). GNCC had not published a pro bike race report for Sunday's race when checked Oct 26.",
+      "source": {
+        "name": "GNCC Racing – Yamaha Racing Ironman ATV race report (Oct 25, 2026)",
+        "url": "https://gnccracing.com/2026/10/25/yamaha-racing-ironman-atv-race-report"
+      }
+    },
+    {
+      "date": "2026-10-23",
+      "title": "Kawasaki and Chase Sexton part ways, effective immediately",
+      "summary": "Kawasaki Motors Corp., U.S.A. and Chase Sexton announced late Friday, Oct 23, that they had mutually agreed to part ways effective that day, ending a reported three-year deal after one season. Kawasaki's statement highlighted his two 2026 450SX wins (Anaheim and Salt Lake City). Sexton has no announced 2027 team; Supercross.com (updated Oct 24) stresses that any destination is still unconfirmed. Media speculation includes KTM, Star Yamaha, Quad Lock Honda and Suzuki, depending on Ken Roczen's decision. It's the second year running that Kawasaki has split early with a big-name signing, after Jorge Prado.",
+      "source": {
+        "name": "Racer X – Kawasaki and Chase Sexton part ways (Oct 23, 2026)",
+        "url": "https://racerxonline.com/2026/10/23/kawasaki-and-chase-sexton-part-ways-effective-immediately"
+      }
+    },
+    {
+      "date": "2026-10-23",
+      "title": "Racerhead: Malcolm Stewart out of Paris SX; 2027 KX450 lands in early November",
+      "summary": "Racer X's Racerhead #43 reports that Malcolm Stewart, the 2025 Paris SX winner, won't race Paris this year (Nov 21–22) because his new Kawasaki team didn't want him racing in Europe with the new 2027 KX450 coming. Paris SX promoter Eric Peronnard told PulpMX that Kawasaki agreed to support Stewart there next year, and Triumph's Jordon Smith is expected to step in. The same column says the 2027 Kawasaki KX450 reaches dealers in early November (media intro Nov 23), the Ducati Desmo 250 is at dealers now (intro Oct 28), and KTM's 250/450 Factory Editions arrive in December (intro Nov 18). Cooper Webb is training on his new Team Tedder Husqvarna at North Carolina's Aus Ranch with Quad Lock Honda's Cameron McAdoo.",
+      "source": {
+        "name": "Racer X – Racerhead #43 (Oct 23, 2026)",
+        "url": "https://racerxonline.com/2026/10/23/racerhead-43"
+      }
+    },
+    {
       "date": "2026-10-22",
       "title": "Michael Mosiman signs with Quad Lock Honda for 2027",
       "summary": "After leaving Monster Energy Yamaha Star Racing, Mosiman will race Quad Lock Honda's 250 program in 2027 AMA Supercross, Pro Motocross and the SMX Playoffs. He joins Cameron McAdoo, with the team citing increased American Honda backing and Kevin Windham's role in rider development and testing. Mosiman won a 250SX West main event and was third in the 2022 West standings.",
@@ -1878,7 +1914,9 @@
   ],
   "notFound": [
     "2027 SMX Playoff cities/venues — SMX League says those will be announced in January.",
-    "Brand-specific (Yamaha/Kawasaki/Suzuki/Honda) dirt-bike apparel sales — none found Oct 21; third-party Fox/Alpinestars/etc. gear sales are under Gear deals."
+    "Chase Sexton's 2027 team — not announced as of Oct 26 (only speculation published).",
+    "Yamaha Racing Ironman GNCC pro bike (Sunday Oct 25) race report — not yet published by GNCC when checked Oct 26.",
+    "Brand-specific (Yamaha/Kawasaki/Suzuki/Honda) dirt-bike apparel sales — none found Oct 26; third-party gear sales are under Gear deals."
   ],
   "sources": [
     {
@@ -2012,10 +2050,26 @@
     {
       "name": "Racer X – Nate Thrasher Star Yamaha stats (Oct 20, 2026)",
       "url": "https://racerxonline.com/2026/10/20/wild-stats-about-nate-thrashers-time-with-monster-energy-yamaha-star-racing"
+    },
+    {
+      "name": "Racer X – Kawasaki and Chase Sexton part ways (Oct 23, 2026)",
+      "url": "https://racerxonline.com/2026/10/23/kawasaki-and-chase-sexton-part-ways-effective-immediately"
+    },
+    {
+      "name": "Supercross.com – Sexton leaves Kawasaki, 2027 team unconfirmed (Oct 24, 2026)",
+      "url": "https://www.supercross.com/blogs/news/chase-sexton-kawasaki-part-ways-2027"
+    },
+    {
+      "name": "Racer X – Racerhead #43 (Oct 23, 2026)",
+      "url": "https://racerxonline.com/2026/10/23/racerhead-43"
+    },
+    {
+      "name": "GNCC Racing – Yamaha Racing Ironman ATV race report (Oct 25, 2026)",
+      "url": "https://gnccracing.com/2026/10/25/yamaha-racing-ironman-atv-race-report"
     }
   ],
   "brands": {
-    "asOf": "2026-10-23",
+    "asOf": "2026-10-26",
     "note": "Model, deal and event facts are from manufacturer press releases, manufacturer pages, dealer-hosted copies of manufacturer promotions and trade media. Prices are US MSRP unless stated. Graphics are original artwork made for this page (no logos or photos).",
     "list": [
       {
@@ -2100,15 +2154,15 @@
         ],
         "events": [
           {
-            "title": "Yamaha Racing Ironman GNCC — the pink race (AMA National Championship, Rd 12)",
+            "title": "Concluded — Yamaha Racing Ironman GNCC, the pink race (AMA National Championship, Rd 12)",
             "date": "Oct 23 – 25, 2026",
             "place": "Ironman Raceway, Crawfordsville, IN",
-            "text": "Penultimate round of the 2026 Progressive GNCC series (off-road cross-country, not MX/SX). Yamaha pledges $50 for every Yamaha class win and $50 for every national championship earned by Yamaha riders, benefiting the Montgomery County Community Foundation's free mammogram program. Riders are encouraged to run pink plate backgrounds; weekend includes ePeeWee (STACYC) racing, trick-or-treating and a Halloween costume contest.",
+            "text": "Penultimate round of the 2026 Progressive GNCC series (off-road cross-country, not MX/SX), with Yamaha donating $50 per Yamaha class win and per national title earned by Yamaha riders to the Montgomery County Community Foundation's free mammogram program. Result: Phoenix Racing Yamaha's Brycen Neal won Saturday's pro ATV race and clinched his fifth XC1 Pro ATV national title, and Yamaha took the top six overall. GNCC's pro bike race report hadn't been published when checked Oct 26. The series finale is the Buckwheat 100 in Newburg, WV.",
             "source": {
-              "name": "GNCC Racing – Ironman turns pink (Oct 20, 2026)",
-              "url": "https://gnccracing.com/2026/10/20/yamaha-racing-ironman-gncc-turns-pink-for-breast-cancer-awareness-month"
+              "name": "GNCC Racing – Yamaha Racing Ironman ATV race report (Oct 25, 2026)",
+              "url": "https://gnccracing.com/2026/10/25/yamaha-racing-ironman-atv-race-report"
             },
-            "asOf": "2026-10-22"
+            "asOf": "2026-10-26"
           },
           {
             "title": "Concluded — Yamaha Learn to Ride: Dirt Discovery",
@@ -2164,6 +2218,15 @@
         "graphic": "assets/kawasaki.svg",
         "models": [
           {
+            "title": "Race team news — Chase Sexton and Kawasaki part ways",
+            "text": "Kawasaki and Chase Sexton mutually agreed on Oct 23, 2026 to part ways effective immediately, one season into a reported three-year deal. Kawasaki credited him with two 2026 450SX wins (Anaheim, Salt Lake City). His 2027 team hasn't been announced. Racer X reports Garrett Marchbanks has been extended and Malcolm Stewart is expected on the team (neither officially announced yet), and that Kawasaki kept Stewart out of the Paris SX (Nov 21–22).",
+            "source": {
+              "name": "Racer X – Kawasaki and Chase Sexton part ways (Oct 23, 2026)",
+              "url": "https://racerxonline.com/2026/10/23/kawasaki-and-chase-sexton-part-ways-effective-immediately"
+            },
+            "asOf": "2026-10-26"
+          },
+          {
             "title": "Race team news — Nate Thrasher joins Monster Energy/Pro Circuit Kawasaki",
             "text": "Pro Circuit Kawasaki's 2027 250 roster (announced Oct 19): Levi Kitchen (reigning 250SMX champ), Seth Hammaker, Drew Adams, Nick Romano (now full-time) and newcomer Nate Thrasher, a seven-time 250SX winner coming from Star Yamaha, on the KX250F.",
             "source": {
@@ -2174,12 +2237,12 @@
           },
           {
             "title": "2027 KX450F – new frame and swingarm",
-            "text": "The \"F\" returns to the name. New frame and swingarm with a longer wheelbase, revised suspension, intake/exhaust updates, full Brembo brakes and improved smartphone tuning. $10,299 MSRP, available late 2026. KX450FX: $10,599.",
+            "text": "The \"F\" returns to the name. New frame and swingarm with a longer wheelbase, revised suspension, intake/exhaust updates, full Brembo brakes and improved smartphone tuning. $10,299 MSRP, available late 2026. KX450FX: $10,599. Racer X (Oct 23) says the 2027 KX450 reaches dealers at the beginning of November, with the media intro on Nov 23. In Japan, Kawasaki Motors Japan put the KX450F/KX450FX on sale Oct 24.",
             "source": {
               "name": "Kawasaki press release – 2027 KX450F / KX450FX (PDF)",
               "url": "https://content2.kawasaki.com/ContentStorage/KMC/PressReleases/852/9aa2a00a-9ad6-40cf-976d-7aec1a904831.pdf"
             },
-            "asOf": "2026-06-02"
+            "asOf": "2026-10-26"
           },
           {
             "title": "2027 KX250F – more power, sharper focus",
@@ -2422,8 +2485,8 @@
     ],
     "gearDeals": {
       "title": "Riding gear sales (not brand-specific)",
-      "asOf": "2026-10-21",
-      "note": "Prices as shown on retailer pages Oct 21, 2026; they change often. Fox Racing's Fall Sale ended Oct 20, 2026 11:59 pm PT, so the Fox items are back to their regular markdown prices on foxracing.com (V3 RS Carbon $419.99, V3 RS Acric $454.99, Youth V3 Impression $258.99, V1 Digi Image $160.99, 180 Flow Pants $90.99; V1 Lean, Airframe Pro and 180 Digi Image Gloves unchanged).",
+      "asOf": "2026-10-26",
+      "note": "Prices as shown on retailer pages Oct 26, 2026; they change often. Fox items are at their regular markdown prices on foxracing.com (Fall Sale ended Oct 20). All prices rechecked Oct 26 and unchanged.",
       "items": [
         {
           "name": "Fox V3 RS Carbon Solid Helmet",
@@ -2494,8 +2557,8 @@
   },
   "gear": {
     "title": "Gear deals",
-    "asOf": "2026-10-23",
-    "note": "Prices and discounts are as shown on each store's product page on the date checked (Oct 22, 2026); stock, sizes and colors vary and prices change often. Fox Racing's Fall Sale ended Tue, Oct 20, 2026 at 11:59 pm PT, so its 14 foxracing.com deals were removed. No end dates were stated on the remaining product pages. Every item links to the actual product page. All 51 links were rechecked Oct 22 and all prices matched (no changes). BTO Sports rate-limited repeated checks (HTTP 429), so BTO pages that wouldn't load directly were confirmed through each product's store listing data (in-stock variants at the listed price).",
+    "asOf": "2026-10-26",
+    "note": "Prices and discounts are as shown on each store's product page on the date checked (Oct 26, 2026); stock, sizes and colors vary and prices change often. No end dates were stated on the product pages. Every item links to the actual product page. All 51 links were rechecked Oct 26 and returned HTTP 200 (no BTO Sports rate-limiting this run). One price changed: the Pod MX K4 2.0 Dangerboy Limited Edition knee braces at BTO Sports dropped from $439.96 to $374.99 (was $549.95, 32% off). All other prices matched.",
     "categories": [
       "Helmets",
       "Boots",
@@ -2539,7 +2602,7 @@
         "store": "BTO Sports",
         "now": "$349.99",
         "url": "https://www.btosports.com/products/fox-racing-v3-rs-carbon-solid-helmet",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$599.95",
         "percentOff": 42,
         "endDate": null,
@@ -2552,7 +2615,7 @@
         "store": "BTO Sports",
         "now": "$189.99",
         "url": "https://www.btosports.com/products/bell-moto-9s-flex-helmet",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$579.95",
         "percentOff": 67,
         "endDate": null,
@@ -2565,7 +2628,7 @@
         "store": "BTO Sports",
         "now": "$247.99",
         "url": "https://www.btosports.com/products/troy-lee-designs-se5-composite-team-matte-helmet",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$549.00",
         "percentOff": 55,
         "endDate": null,
@@ -2578,7 +2641,7 @@
         "store": "BTO Sports",
         "now": "$217.46",
         "url": "https://www.btosports.com/products/fly-racing-formula-cp-slice-helmet",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$289.95",
         "percentOff": 25,
         "endDate": null,
@@ -2591,7 +2654,7 @@
         "store": "BTO Sports",
         "now": "$384.30",
         "url": "https://www.btosports.com/products/leatt-v26-moto-8-5-helmet-kit",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$549.00",
         "percentOff": 30,
         "endDate": null,
@@ -2604,7 +2667,7 @@
         "store": "BTO Sports",
         "now": "$493.69",
         "url": "https://www.btosports.com/products/alpinestars-s-m10-tld-edition-25-helmet",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$919.95",
         "percentOff": 46,
         "endDate": null,
@@ -2617,7 +2680,7 @@
         "store": "BTO Sports",
         "now": "$137.97",
         "url": "https://www.btosports.com/products/fox-racing-v1-digi-image-helmet",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$229.95",
         "percentOff": 40,
         "endDate": null,
@@ -2630,7 +2693,7 @@
         "store": "BTO Sports",
         "now": "$139.99",
         "url": "https://www.btosports.com/products/bell-moto-9-mips-helmet-youth",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$279.95",
         "percentOff": 50,
         "endDate": null,
@@ -2643,7 +2706,7 @@
         "store": "BTO Sports",
         "now": "$539.95",
         "url": "https://www.btosports.com/products/alpinestars-tech-10-boots",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$699.95",
         "percentOff": 23,
         "endDate": null,
@@ -2656,7 +2719,7 @@
         "store": "BTO Sports",
         "now": "$274.50",
         "url": "https://www.btosports.com/products/leatt-5-5-flexlock-enduro-boots",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$549.00",
         "percentOff": 50,
         "endDate": null,
@@ -2669,7 +2732,7 @@
         "store": "BTO Sports",
         "now": "$249.95",
         "url": "https://www.btosports.com/products/leatt-4-5-boots",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$439.00",
         "percentOff": 43,
         "endDate": null,
@@ -2682,7 +2745,7 @@
         "store": "BTO Sports",
         "now": "$299.99",
         "url": "https://www.btosports.com/products/sidi-crossair-boots",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$499.99",
         "percentOff": 40,
         "endDate": null,
@@ -2695,7 +2758,7 @@
         "store": "BTO Sports",
         "now": "$254.99",
         "url": "https://www.btosports.com/products/fox-racing-2025-comp-boots",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$299.95",
         "percentOff": 15,
         "endDate": null,
@@ -2708,7 +2771,7 @@
         "store": "BTO Sports",
         "now": "$17.97",
         "url": "https://www.btosports.com/products/fox-racing-180-ballast-glove",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$29.95",
         "percentOff": 40,
         "endDate": null,
@@ -2721,7 +2784,7 @@
         "store": "BTO Sports",
         "now": "$14.97",
         "url": "https://www.btosports.com/products/fly-racing-lite-glove-1",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$24.95",
         "percentOff": 40,
         "endDate": null,
@@ -2734,7 +2797,7 @@
         "store": "BTO Sports",
         "now": "$24.60",
         "url": "https://www.btosports.com/products/troy-lee-designs-air-gloves",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$41.00",
         "percentOff": 40,
         "endDate": null,
@@ -2747,7 +2810,7 @@
         "store": "BTO Sports",
         "now": "$16.99",
         "url": "https://www.btosports.com/products/leatt-moto-1-5-gripr-gloves-1",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$38.49",
         "percentOff": 56,
         "endDate": null,
@@ -2760,7 +2823,7 @@
         "store": "BTO Sports",
         "now": "$41.97",
         "url": "https://www.btosports.com/products/fox-racing-bomber-gloves",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$69.95",
         "percentOff": 40,
         "endDate": null,
@@ -2773,7 +2836,7 @@
         "store": "BTO Sports",
         "now": "$73.99",
         "url": "https://www.btosports.com/products/fox-racing-airspace-drive-goggles",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$104.95",
         "percentOff": 29,
         "endDate": null,
@@ -2786,7 +2849,7 @@
         "store": "BTO Sports",
         "now": "from $69.99",
         "url": "https://www.btosports.com/products/leatt-velocity-5-5-iriz-goggle",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$99.99",
         "percentOff": 30,
         "endDate": null,
@@ -2799,7 +2862,7 @@
         "store": "BTO Sports",
         "now": "$77.97",
         "url": "https://www.btosports.com/products/fly-racing-zone-elite-goggle",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$129.95",
         "percentOff": 40,
         "endDate": null,
@@ -2812,7 +2875,7 @@
         "store": "BTO Sports",
         "now": "$38.99",
         "url": "https://www.btosports.com/products/leatt-velocity-4-5-snz-goggle",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$59.99",
         "percentOff": 35,
         "endDate": null,
@@ -2825,7 +2888,7 @@
         "store": "BTO Sports",
         "now": "$79.99",
         "url": "https://www.btosports.com/products/atlas-vision-neck-brace",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$199.99",
         "percentOff": 60,
         "endDate": null,
@@ -2838,7 +2901,7 @@
         "store": "BTO Sports",
         "now": "$230.99",
         "url": "https://www.btosports.com/products/fox-racing-airframe-pro-jacket-ce",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$329.95",
         "percentOff": 30,
         "endDate": null,
@@ -2849,11 +2912,11 @@
         "category": "Protection",
         "brand": "Pod MX",
         "store": "BTO Sports",
-        "now": "$439.96",
+        "now": "$374.99",
         "url": "https://www.btosports.com/products/pod-mx-dngr1-haiden-deegan-limited-edition-k4-2-0-le-danger-boy-knee-brace-pair",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$549.95",
-        "percentOff": 20,
+        "percentOff": 32,
         "endDate": null,
         "note": "Price shown is for in-stock variants; sizes/colors can differ."
       },
@@ -2864,7 +2927,7 @@
         "store": "BTO Sports",
         "now": "$67.20",
         "url": "https://www.btosports.com/products/troy-lee-designs-stage-knee-guard",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$112.00",
         "percentOff": 40,
         "endDate": null,
@@ -2880,7 +2943,7 @@
         "percentOff": 40,
         "endDate": null,
         "url": "https://www.btosports.com/products/troy-lee-designs-stage-elbow-guard",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "note": "Price shown is for in-stock variants; sizes/colors can differ."
       },
       {
@@ -2890,7 +2953,7 @@
         "store": "BTO Sports",
         "now": "$84.99",
         "url": "https://www.btosports.com/products/leatt-4-5-junior-chest-protector",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$159.00",
         "percentOff": 47,
         "endDate": null,
@@ -2903,7 +2966,7 @@
         "store": "BTO Sports",
         "now": "$361.20",
         "url": "https://www.btosports.com/products/leatt-fusion-3-0-snx",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$516.00",
         "percentOff": 30,
         "endDate": null,
@@ -2916,7 +2979,7 @@
         "store": "BTO Sports",
         "now": "$132.99",
         "url": "https://www.btosports.com/products/fly-racing-2026-kinetic-jersey-pant-combo",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$189.90",
         "percentOff": 30,
         "endDate": null
@@ -2928,7 +2991,7 @@
         "store": "BTO Sports",
         "now": "$94.99",
         "url": "https://www.btosports.com/products/alpinestars-fluid-haul-jersey-pant-combo",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$146.90",
         "percentOff": 35,
         "endDate": null
@@ -2940,7 +3003,7 @@
         "store": "BTO Sports",
         "now": "$199.98",
         "url": "https://www.btosports.com/products/fox-racing-flexair-energy-jersey-pant-combo",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$284.90",
         "percentOff": 30,
         "endDate": null
@@ -2952,7 +3015,7 @@
         "store": "MotoSport",
         "now": "$384.30",
         "url": "https://www.motosport.com/leatt-2026-moto-85-composite-helmet-with-55-velocity-goggles",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$549.00",
         "percentOff": 30,
         "endDate": null
@@ -2964,7 +3027,7 @@
         "store": "MotoSport",
         "now": "$193.97",
         "url": "https://www.motosport.com/oneal-2026-hardwear-combo-swipe",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$284.97",
         "percentOff": 32,
         "endDate": null
@@ -2976,7 +3039,7 @@
         "store": "MotoSport",
         "now": "$144.90",
         "url": "https://www.motosport.com/fly-racing-2026-kinetic-combo",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$189.90",
         "percentOff": 24,
         "endDate": null
@@ -2988,7 +3051,7 @@
         "store": "Alpinestars (alpinestars.com)",
         "now": "$629.95",
         "url": "https://www.alpinestars.com/products/tech-10-boots-black-red-fluo",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$699.95",
         "percentOff": 10,
         "endDate": null
@@ -3000,7 +3063,7 @@
         "store": "Alpinestars (alpinestars.com)",
         "now": "$121.52",
         "url": "https://www.alpinestars.com/products/2026-fluid-apex-gear-set-1",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$151.90",
         "percentOff": 20,
         "endDate": null
@@ -3012,7 +3075,7 @@
         "store": "Motorcycle Closeouts",
         "now": "$139.95",
         "url": "https://motorcyclecloseouts.com/leatt-4-5-camo-neck-brace/",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$349.95",
         "percentOff": 60,
         "endDate": null
@@ -3024,7 +3087,7 @@
         "store": "Motorcycle Closeouts",
         "now": "$119.95",
         "url": "https://motorcyclecloseouts.com/fly-racing-lite-2026-pants/",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$199.95",
         "percentOff": 40,
         "endDate": null
@@ -3036,7 +3099,7 @@
         "store": "Motorcycle Closeouts",
         "now": "$26.95",
         "url": "https://motorcyclecloseouts.com/fly-racing-kinetic-2026-jersey/",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$44.95",
         "percentOff": 40,
         "endDate": null
@@ -3048,7 +3111,7 @@
         "store": "MX Locker",
         "now": "$95.95",
         "url": "https://mxlocker.com/product/fly-racing-kinetic-dbk-pants-mx26-flhne",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "endDate": null,
         "note": "Listed as a closeout; no 'was' price shown on the page."
       },
@@ -3059,7 +3122,7 @@
         "store": "BTO Sports",
         "now": "$199.99",
         "url": "https://www.btosports.com/products/sidi-x-power-sc-boots",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$399.99",
         "percentOff": 50,
         "endDate": null,
@@ -3072,7 +3135,7 @@
         "store": "BTO Sports",
         "now": "$339.96",
         "url": "https://www.btosports.com/products/alpinestars-tech-5-boots",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$399.95",
         "percentOff": 15,
         "endDate": null,
@@ -3085,7 +3148,7 @@
         "store": "BTO Sports",
         "now": "$249.00",
         "url": "https://www.btosports.com/products/forma-pilot-boot",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$399.00",
         "percentOff": 38,
         "endDate": null,
@@ -3098,7 +3161,7 @@
         "store": "BTO Sports",
         "now": "$495.00",
         "url": "https://www.btosports.com/products/troy-lee-designs-se5-composite-speed-helmet",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$825.00",
         "percentOff": 40,
         "endDate": null,
@@ -3111,7 +3174,7 @@
         "store": "BTO Sports",
         "now": "$27.99",
         "url": "https://www.btosports.com/products/fox-racing-airline-glove",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$39.95",
         "percentOff": 30,
         "endDate": null,
@@ -3124,7 +3187,7 @@
         "store": "BTO Sports",
         "now": "$139.20",
         "url": "https://www.btosports.com/products/oakley-airbrake-mx-goggles-prizm-lens",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$232.00",
         "percentOff": 40,
         "endDate": null,
@@ -3137,7 +3200,7 @@
         "store": "BTO Sports",
         "now": "$65.97",
         "url": "https://www.btosports.com/products/100-armega-goggle-w-clear-lens",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$109.95",
         "percentOff": 40,
         "endDate": null,
@@ -3150,7 +3213,7 @@
         "store": "BTO Sports",
         "now": "$29.97",
         "url": "https://www.btosports.com/products/100-accuri-2-0-goggle-clear-lens",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$49.95",
         "percentOff": 40,
         "endDate": null,
@@ -3163,7 +3226,7 @@
         "store": "BTO Sports",
         "now": "$215.99",
         "url": "https://www.btosports.com/products/atlas-2026-air-lite-neck-brace",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$269.99",
         "percentOff": 20,
         "endDate": null,
@@ -3176,7 +3239,7 @@
         "store": "BTO Sports",
         "now": "$153.30",
         "url": "https://www.btosports.com/products/leatt-moto-xl-1-5-hydration-system",
-        "asOf": "2026-10-23",
+        "asOf": "2026-10-26",
         "was": "$219.00",
         "percentOff": 30,
         "endDate": null,
@@ -3184,7 +3247,7 @@
       }
     ],
     "notFound": [
-      "No end dates were published for the listed gear deals (checked Oct 22, 2026). Fox Racing's Fall Sale ended Oct 20, 2026 11:59 pm PT, and its deals were removed.",
+      "No end dates were published for the listed gear deals (checked Oct 26, 2026).",
       "RevZilla, Rocky Mountain ATV/MC, Chaparral, Dennis Kirk, Troy Lee Designs, Answer and Thor official sale pages blocked automated checks, returned errors or showed no verifiable sale, so only individually verified product pages are listed.",
       "No Yamaha, Kawasaki, Suzuki or Honda branded riding-apparel sale was found."
     ]
