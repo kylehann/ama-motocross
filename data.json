@@ -1,8 +1,8 @@
 {
-  "generated": "2026-11-02",
+  "generated": "2026-11-03",
   "siteTitle": "Dirt Bike Updates",
   "status": {
-    "asOf": "2026-11-02",
+    "asOf": "2026-11-03",
     "items": [
       {
         "label": "AMA Pro Motocross",
@@ -48,11 +48,20 @@
           "name": "MXGPResults – MXoN 2026 overall results",
           "url": "https://mxgpresults.com/mxon/2026/"
         }
+      },
+      {
+        "label": "2027 sound limit",
+        "value": "109 dB max (down from 112.0)",
+        "detail": "SMX League / AMA Supercross rulebook change effective Jan 2027 at Anaheim 1; manufacturers committed to compliant bikes.",
+        "source": {
+          "name": "Racer X – SMX League 109 dB standard for 2027 (Nov 2, 2026)",
+          "url": "https://racerxonline.com/2026/11/02/the-smx-league-sets-a-new-sound-benchmark-109-db-standard-coming-for-2027"
+        }
       }
     ]
   },
   "nextEvent": {
-    "asOf": "2026-11-02",
+    "asOf": "2026-11-03",
     "kicker": "Next AMA race — 2027 season opener",
     "name": "Anaheim 1 — 2027 Monster Energy AMA Supercross, Round 1",
     "note": "No AMA-sanctioned race until Jan 9, 2027. Near-term non-AMA: AUSX Geelong Nov 7 (Roczen, who swept Auckland Oct 31, joined by Barcia on Suzuki), Perth Nov 14, Newcastle Nov 28; Buckwheat 100 GNCC finale Nov 6–8; Paris Supercross Nov 21–22 (Jordon Smith replaces Malcolm Stewart); Red Bull Day in the Dirt at Glen Helen Nov 27–29.",
@@ -70,7 +79,8 @@
       "Chase Sexton has no announced 2027 team after he and Kawasaki parted ways on Oct 23, 2026 (Kawasaki has since signed Malcolm Stewart alongside Garrett Marchbanks).",
       "U.S. debut season for Belgian twins Lucas (450) and Sacha Coenen (250), who just won the Motocross of Nations with Team Belgium.",
       "Justin Barcia makes his Suzuki RM-Z450 debut for Pipes Motorsports Group at A1.",
-      "Justin Barcia will make his Twisted Tea Suzuki / Pipes Motorsports debut early at AUSX Open Geelong (Nov 7), lining up with teammate Ken Roczen."
+      "Justin Barcia will make his Twisted Tea Suzuki / Pipes Motorsports debut early at AUSX Open Geelong (Nov 7), lining up with teammate Ken Roczen.",
+      "2027 AMA Supercross/SMX sound limit drops to 109 dB (from 112.0 dB), effective at Anaheim 1 (SMX League/AMA rulebook, Nov 2, 2026)."
     ],
     "sources": [
       {
@@ -104,20 +114,28 @@
       {
         "name": "MCNews – Roczen and Davies sweep Auckland (Nov 2, 2026)",
         "url": "https://www.mcnews.com.au/2026-auckland-supercross-results/"
+      },
+      {
+        "name": "Racer X – SMX League 109 dB standard for 2027 (Nov 2, 2026)",
+        "url": "https://racerxonline.com/2026/11/02/the-smx-league-sets-a-new-sound-benchmark-109-db-standard-coming-for-2027"
       }
     ]
   },
   "schedule": {
-    "asOf": "2026-11-02",
+    "asOf": "2026-11-03",
     "upcoming": [
       {
         "date": "Nov 6 – 8, 2026",
         "event": "Buckwheat 100 GNCC — Round 13 of 13 (season finale)",
-        "place": "CJ Raceway, Newburg, WV — Pro ATV race Sat Nov 7, Pro bike race Sun Nov 8 (1–4 PM); Ashburn vs. Baylor XC1 title decider (off-road, not MX/SX)",
+        "place": "CJ Raceway, Newburg, WV — Pro ATV race Sat Nov 7, Pro bike race Sun Nov 8 (1–4 PM); overall title fight: Ashburn 202, Baylor 193, Draper 191 after Ironman (off-road, not MX/SX)",
         "tag": "GNCC",
         "source": {
           "name": "GNCC Racing – Rd 13 Buckwheat 100 schedule",
           "url": "https://gnccracing.com/event/rd-13-cj-raceway/schedule"
+        },
+        "extraSource": {
+          "name": "Racer X – 2026 GNCC Overall Points Standings",
+          "url": "https://racerxonline.com/gncc/2026/points/overall"
         }
       },
       {
@@ -1543,6 +1561,41 @@
   ],
   "news": [
     {
+      "date": "2026-11-02",
+      "title": "SMX League adopts 109 dB sound limit for 2027",
+      "summary": "The 2027 AMA Supercross rulebook drops the maximum sound standard from 112.0 dB to 109 dB, effective at Anaheim 1 on Jan 9. The SMX League, AMA Pro Racing, the AMA and series manufacturers aligned on the change to cut sound impact beyond the track and support venue access; all SMX manufacturers committed to compliant bikes for 2027.",
+      "source": {
+        "name": "Racer X – SMX League 109 dB standard for 2027 (Nov 2, 2026)",
+        "url": "https://racerxonline.com/2026/11/02/the-smx-league-sets-a-new-sound-benchmark-109-db-standard-coming-for-2027"
+      },
+      "extraSource": {
+        "name": "Cycle News – SMX League adopts new sound rules for 2027",
+        "url": "https://www.cyclenews.com/2026/11/article/smx-league-adopts-new-sound-rules-for-2027-season/"
+      }
+    },
+    {
+      "date": "2026-11-02",
+      "title": "Yamaha signs Rubén Fernández for 2027 MXGP",
+      "summary": "After leaving Honda HRC PETRONAS, Rubén Fernández joins Yamaha Factory Racing MXGP for 2027 on a factory YZ450FM alongside Tim Gajser. Yamaha Motor Europe is shifting the MXGP program to a centralized in-house structure at its Gerno di Lesmo, Italy racing headquarters. (MXGP, not AMA.)",
+      "source": {
+        "name": "Racer X – Yamaha signs Rubén Fernández for 2027 MXGP (Nov 2, 2026)",
+        "url": "https://racerxonline.com/2026/11/02/yamaha-signs-ruben-fernandez-for-2027-mxgp-season"
+      },
+      "extraSource": {
+        "name": "Yamaha Racing – official signing release",
+        "url": "https://www.yamaha-racing.com/news/motocross/yamaha-signs-ruben-fernandez-for-2027-fim-motocross-world-champi/"
+      }
+    },
+    {
+      "date": "2026-11-02",
+      "title": "Justin Cooper is back on the bike after Hangtown concussion",
+      "summary": "Monster Energy Yamaha Star Racing’s Justin Cooper told Racer X he is training and riding supercross again after the Hangtown concussion that truncated his 2026 Pro Motocross season and kept him out of the SMX Playoffs. He said there is “no rush” and he is taking the steps needed to be at 100 percent for the 2027 AMA Supercross opener at Anaheim.",
+      "source": {
+        "name": "Racer X – Justin Cooper update (Nov 2, 2026)",
+        "url": "https://racerxonline.com/2026/11/02/justin-cooper-update"
+      }
+    },
+    {
       "date": "2026-10-31",
       "title": "Ken Roczen and Cole Davies sweep AUSX Auckland",
       "summary": "At the opening round of the four-round 2026 Australian Supercross Championship (Townsville didn't count toward the titles), reigning 450SX champion Ken Roczen went 1-1-1 in SX1 on his Suzuki for the maximum 75 points, ahead of Quad Lock Honda's Christian Craig (2-2-2, 66) and Luke Clout (KTM, 60). Home hero Cole Davies (Star Racing Yamaha) swept SX2 ahead of Cameron McAdoo (Honda) and Ryder Kingsford (Honda) in front of almost 18,000 fans at North Harbour Stadium. Geelong is next on Nov 7. (Australian series, not AMA.)",
@@ -2240,7 +2293,7 @@
     }
   ],
   "brands": {
-    "asOf": "2026-10-30",
+    "asOf": "2026-11-03",
     "note": "Model, deal and event facts are from manufacturer press releases, manufacturer pages, dealer-hosted copies of manufacturer promotions and trade media. Prices are US MSRP unless stated. Graphics are original artwork made for this page (no logos or photos).",
     "list": [
       {
@@ -2714,8 +2767,8 @@
     ],
     "gearDeals": {
       "title": "Riding gear sales (not brand-specific)",
-      "asOf": "2026-11-02",
-      "note": "Prices as shown on retailer pages Nov 2, 2026; they change often. Fox items are at their regular markdown prices on foxracing.com (Fall Sale ended Oct 20). All prices rechecked Nov 2 and unchanged.",
+      "asOf": "2026-11-03",
+      "note": "Prices as shown on retailer pages Nov 3, 2026; they change often. Fox items are at their regular markdown prices on foxracing.com (Fall Sale ended Oct 20). All 9 brand gearDeals rechecked Nov 3 and unchanged; gear.deals Leatt 4.5 Boots updated to $199.99 at BTO.",
       "items": [
         {
           "name": "Fox V3 RS Carbon Solid Helmet",
@@ -2786,8 +2839,8 @@
   },
   "gear": {
     "title": "Gear deals",
-    "asOf": "2026-11-02",
-    "note": "Prices and discounts are as shown on each store's product page on the date checked (Nov 2, 2026); stock, sizes and colors vary and prices change often. No end dates were stated on the product pages. Every item links to the actual product page.",
+    "asOf": "2026-11-03",
+    "note": "Prices and discounts are as shown on each store's product page on the date checked (Nov 3, 2026); stock, sizes and colors vary and prices change often. No end dates were stated on the product pages. Every item links to the actual product page.",
     "categories": [
       "Helmets",
       "Boots",
@@ -2959,13 +3012,13 @@
         "category": "Boots",
         "brand": "Leatt",
         "store": "BTO Sports",
-        "now": "$209.99",
+        "now": "$199.99",
         "url": "https://www.btosports.com/products/leatt-4-5-boots",
-        "asOf": "2026-11-02",
+        "asOf": "2026-11-03",
         "was": "$439.00",
-        "percentOff": 52,
+        "percentOff": 54,
         "endDate": null,
-        "note": "Price dropped from $249.95 (Nov 2); all listed sizes/colors in stock."
+        "note": "Price dropped from $209.99 (Nov 3); all listed sizes/colors in stock."
       },
       {
         "item": "Sidi Crossair Boots",
@@ -3476,7 +3529,7 @@
       }
     ],
     "notFound": [
-      "No end dates were published for the listed gear deals (checked Nov 2, 2026). The DeCal Works Halloween Sale ended Nov 1 and was removed.",
+      "No end dates were published for the listed gear deals (checked Nov 3, 2026). The DeCal Works Halloween Sale ended Nov 1 and was removed.",
       "RevZilla, Rocky Mountain ATV/MC, Chaparral, Dennis Kirk, Troy Lee Designs, Answer and Thor official sale pages blocked automated checks, returned errors or showed no verifiable sale, so only individually verified product pages are listed.",
       "No Yamaha, Kawasaki, Suzuki or Honda branded riding-apparel sale was found."
     ]
