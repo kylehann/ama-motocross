@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06",
+  "generated": "2026-11-09",
   "siteTitle": "Dirt Bike Updates",
   "status": {
     "asOf": "2026-11-06",
@@ -79,7 +79,7 @@
       {
         "label": "AUSX remainder format",
         "value": "Triple Crowns for Perth + Newcastle",
-        "detail": "On Nov 6 AUSX CEO Adam Bailey told MotoOnline that Perth (Nov 14) and Newcastle (Nov 28) switch from planned Double Headers to Triple Crown formats, partly so domestic SX1/SX2 regulars can claw back points from guest riders (Roczen, Davies, Barcia, Shimoda) who only contest select rounds. Heat races are retained for privateer track time.",
+        "detail": "On Nov 6 AUSX CEO Adam Bailey told MotoOnline that Perth (Nov 14) and Newcastle (Nov 28) switch from planned Double Headers to Triple Crown formats, partly so domestic SX1/SX2 regulars can claw back points from guest riders (Roczen, Davies, Barcia, Shimoda) who only contest select rounds. Heat races are retained for privateer track time. Geelong ran Nov 7 as a Triple Crown.",
         "source": {
           "name": "MotoOnline – Triple Crowns introduced for AUSX remainder (Nov 6, 2026)",
           "url": "https://www.motoonline.com/au/triple-crowns-introduced-for-ausx-remainder/"
@@ -88,10 +88,10 @@
     ]
   },
   "nextEvent": {
-    "asOf": "2026-11-06",
+    "asOf": "2026-11-09",
     "kicker": "Next AMA race — 2027 season opener",
     "name": "Anaheim 1 — 2027 Monster Energy AMA Supercross, Round 1",
-    "note": "No AMA-sanctioned race until Jan 9, 2027. Near-term non-AMA: Buckwheat 100 GNCC finale underway Nov 6–8 (Pro ATV Sat Nov 7 2 PM ET / Pro bike Sun Nov 8 1 PM ET on FloRacing); AUSX Geelong Nov 7 (championship Rd 2 of 4 — Barcia debuts Twisted Tea Suzuki alongside Roczen; Shimoda 450 SX debut; press day ran Nov 6); Perth Nov 14 and Newcastle Nov 28 now Triple Crowns; Paris Supercross Nov 21–22 (Jordon Smith replaces Malcolm Stewart); Red Bull Day in the Dirt at Glen Helen Nov 27–29.",
+    "note": "No AMA-sanctioned race until Jan 9, 2027. Near-term non-AMA: AUSX Perth Nov 14 (Triple Crown; Craig leads SX1 182–150 over Roczen, McAdoo leads SX2 152–150 over Davies after Geelong); Newcastle Nov 28 (Triple Crown); Paris Supercross Nov 21–22 (Jordon Smith replaces Malcolm Stewart); Red Bull Day in the Dirt at Glen Helen Nov 27–29.",
     "startDate": "2027-01-09",
     "endDate": "2027-01-09",
     "dateText": "Sat, Jan 9, 2027",
@@ -171,36 +171,8 @@
     ]
   },
   "schedule": {
-    "asOf": "2026-11-06",
+    "asOf": "2026-11-09",
     "upcoming": [
-      {
-        "date": "Nov 6 – 8, 2026",
-        "event": "Buckwheat 100 GNCC — Round 13 of 13 (season finale)",
-        "place": "CJ Raceway, Newburg, WV — gates open Fri Nov 6; Pro ATV Sat Nov 7 2–4 PM ET; Pro bike Sun Nov 8 1–4 PM ET (live on FloRacing); overall title fight entering finale: Ashburn 202, Baylor 193, Draper 191 (off-road, not MX/SX)",
-        "tag": "GNCC",
-        "source": {
-          "name": "GNCC Racing – Rd 13 Buckwheat 100 schedule",
-          "url": "https://gnccracing.com/event/rd-13-cj-raceway/schedule"
-        },
-        "extraSource": {
-          "name": "Racer X – How to watch Buckwheat 100 GNCC (Nov 6, 2026)",
-          "url": "https://racerxonline.com/2026/11/06/how-to-watch-buckwheat-100-gncc-broadcast-streaming-information"
-        }
-      },
-      {
-        "date": "Nov 7, 2026",
-        "event": "AUSX Championship Rd 2 of 4 — Geelong (Boost Mobile AUSX)",
-        "place": "GMHBA Stadium, Geelong, Victoria — press day Nov 6; main event Sat Nov 7 ~6 PM local. Barcia (Twisted Tea Suzuki) debuts alongside Roczen; Shimoda makes 450 SX debut; Davies, Craig, Soubeyras, Clout billed; Cosford out (reassess Perth). Roczen (SX1) and Davies (SX2) lead after Auckland 1-1-1 sweeps.",
-        "tag": "AUSX",
-        "source": {
-          "name": "AUSX – Barcia locked in for Geelong (Oct 16, 2026)",
-          "url": "https://ausxsupercross.com.au/news/bam-bam-justin-barcia-locked-in-for-the-ausx-open-supercross-in-geelong/"
-        },
-        "extraSource": {
-          "name": "MotoOnline – Pre-Race AUSX Open Geelong (Nov 6, 2026)",
-          "url": "https://www.motoonline.com/au/pre-race-2026-ausx-open-geelong/"
-        }
-      },
       {
         "date": "Nov 14, 2026",
         "event": "AUSX Championship Rd 3 of 4 — Perth (Boost Mobile AUSX)",
@@ -519,6 +491,151 @@
     }
   },
   "results": [
+    {
+      "id": "ausx-geelong-2026",
+      "name": "AUSX Open Geelong (non-AMA)",
+      "date": "Nov 7, 2026",
+      "venue": "GMHBA Stadium, Geelong, Victoria",
+      "asOf": "2026-11-09",
+      "detailLabel": "Finals (F1-F2-F3)",
+      "source": {
+        "name": "Supercross.com – AUSX Open Geelong 2026 Results",
+        "url": "https://www.supercross.com/blogs/news/ausx-open-geelong-2026-results"
+      },
+      "summary": "Ken Roczen (Suzuki) and Cole Davies (Yamaha) each swept all three Triple Crown finals in SX1 and SX2. Series leads after Geelong (round 3 of the Boost Mobile AUSX count): Christian Craig 182 over Roczen 150 and Clout 147 in SX1; Cameron McAdoo 152 over Davies 150 and Turner 138 in SX2. Roczen and Davies head back to the US. The 450 tab shows SX1, the 250 tab SX2.",
+      "classes": {
+        "450": {
+          "label": "SX1",
+          "rows": [
+            [
+              1,
+              "Ken Roczen",
+              "Suzuki",
+              "1 - 1 - 1"
+            ],
+            [
+              2,
+              "Christian Craig",
+              "Honda",
+              "2 - 2 - 2"
+            ],
+            [
+              3,
+              "Jo Shimoda",
+              "Honda",
+              "4 - 4 - 4"
+            ],
+            [
+              4,
+              "Austin Politelli",
+              "Honda",
+              "6 - 5 - 3"
+            ],
+            [
+              5,
+              "Luke Clout",
+              "KTM",
+              "5 - 3 - 10"
+            ],
+            [
+              6,
+              "Cedric Soubeyras",
+              "Kawasaki",
+              "7 - 7 - 6"
+            ],
+            [
+              7,
+              "Jed Beaton",
+              "Yamaha",
+              "8 - 8 - 7"
+            ],
+            [
+              8,
+              "Aaron Tanti",
+              "Yamaha",
+              "9 - 6 - 11"
+            ],
+            [
+              9,
+              "Justin Barcia",
+              "Suzuki",
+              "3 - DNF - 5"
+            ],
+            [
+              10,
+              "Jorge Zaragoza",
+              "Stark",
+              "10 - 9 - 8"
+            ]
+          ]
+        },
+        "250": {
+          "label": "SX2",
+          "rows": [
+            [
+              1,
+              "Cole Davies",
+              "Yamaha",
+              "1 - 1 - 1"
+            ],
+            [
+              2,
+              "Lux Turner",
+              "Yamaha",
+              "2 - 2 - 3"
+            ],
+            [
+              3,
+              "Cameron McAdoo",
+              "Honda",
+              "3 - 5 - 2"
+            ],
+            [
+              4,
+              "Dylan Walsh",
+              "KTM",
+              "4 - 3 - 5"
+            ],
+            [
+              5,
+              "Max Anstie",
+              "Yamaha",
+              "5 - 6 - 4"
+            ],
+            [
+              6,
+              "Kayd Kingsford",
+              "Honda",
+              "7 - 4 - 7"
+            ],
+            [
+              7,
+              "Brodie Connolly",
+              "Honda",
+              "10 - 12 - 6"
+            ],
+            [
+              8,
+              "Michael Hicks",
+              "Stark",
+              "9 - 7 - 14"
+            ],
+            [
+              9,
+              "Thomas Wood",
+              "KTM",
+              "8 - 8 - 15"
+            ],
+            [
+              10,
+              "Reid Taylor",
+              "Kawasaki",
+              "13 - 11 - 8"
+            ]
+          ]
+        }
+      }
+    },
     {
       "id": "mxon-2026",
       "name": "Motocross of Nations (FIM, non-AMA)",
@@ -1627,6 +1744,24 @@
     }
   ],
   "news": [
+    {
+      "date": "2026-11-08",
+      "title": "Roczen and Davies sweep AUSX Open Geelong; Craig and McAdoo keep series leads",
+      "summary": "Ken Roczen won all three SX1 finals and Cole Davies all three SX2 finals at GMHBA Stadium on Nov 7 before 20,000+ fans. Christian Craig (Quad Lock Honda) leads SX1 on 182 points to Roczen's 150; Cameron McAdoo leads SX2 152–150 over Davies. Perth (Nov 14) is next.",
+      "source": {
+        "name": "AUSX – Roczen and Davies prove untouchable at 2026 AUSX Open",
+        "url": "https://ausxsupercross.com.au/news/ken-roczen-and-cole-davies-prove-untouchable-at-2026-ausx-open/"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "title": "Kailub Russell wins Buckwheat 100 GNCC finale; Draper second",
+      "summary": "Per Racer X results, Kailub Russell (Yamaha) won the Round 13 overall at CJ Raceway ahead of Liam Draper (Yamaha) and Grant Davis (KTM); Jordan Ashburn was 6th and Grant Baylor 18th. Final 2026 title standings were not confirmed in sources checked (off-road, not MX/SX).",
+      "source": {
+        "name": "Racer X – 2026 Buckwheat 100 Overall GNCC Results",
+        "url": "https://racerxonline.com/gncc/2026/rd-13-cj-raceway/overall"
+      }
+    },
     {
       "date": "2026-11-06",
       "title": "Quad Lock Honda's Konsky confirms Sexton negotiations; still no signing",
@@ -3048,8 +3183,8 @@
   },
   "gear": {
     "title": "Gear deals",
-    "asOf": "2026-11-06",
-    "note": "Prices and discounts are as shown on each store's product page on the date checked (2026-11-06); stock, sizes and colors vary and prices change often. No end dates were stated on most product pages (some BTO boots flagged as Veterans Day Deal). Every remaining item links to the actual product page. Nov 6 recheck: verified live pages for key BTO/Alpinestars/Fox Racing deals (curl HEAD blocked by BTO/Alpinestars bot protection; WebFetch product pages used). Removed 3 expired/no-discount BTO items (Fox V3 RS Carbon Solid Helmet, Fox Airline Glove, 100% Accuri 2.0 Goggle (Clear Lens)). Price updates: Tech 10 $539.95, Tech 5 $339.96, Airbrake $139.20, Armega $69.99, Leatt XL hydration $149; Fox Racing site V3 RS Carbon $327.99. Leatt 4.5/Forma Pilot/Sidi X Power/Bell Moto-9S unchanged. Motosport/Motorcycle Closeouts/MX Locker links returned HTTP 200 on HEAD. Working deals: 48.",
+    "asOf": "2026-11-09",
+    "note": "Prices and discounts are as shown on each store's product page on the date checked (2026-11-06); stock, sizes and colors vary and prices change often. No end dates were stated on most product pages (some BTO boots flagged as Veterans Day Deal). Every remaining item links to the actual product page. Nov 6 recheck: verified live pages for key BTO/Alpinestars/Fox Racing deals (curl HEAD blocked by BTO/Alpinestars bot protection; WebFetch product pages used). Removed 3 expired/no-discount BTO items (Fox V3 RS Carbon Solid Helmet, Fox Airline Glove, 100% Accuri 2.0 Goggle (Clear Lens)). Price updates: Tech 10 $539.95, Tech 5 $339.96, Airbrake $139.20, Armega $69.99, Leatt XL hydration $149; Fox Racing site V3 RS Carbon $327.99. Leatt 4.5/Forma Pilot/Sidi X Power/Bell Moto-9S unchanged. Motosport/Motorcycle Closeouts/MX Locker links returned HTTP 200 on HEAD. Working deals: 48. Nov 9 recheck: all links resolve (motosport.com pages block curl with 403 as before); no price changes verified.",
     "categories": [
       "Helmets",
       "Boots",
