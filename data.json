@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-20",
+ "generated": "2026-11-23",
  "siteTitle": "Dirt Bike Updates",
  "status": {
-  "asOf": "2026-11-20",
+  "asOf": "2026-11-23",
   "items": [
    {
     "label": "AMA Pro Motocross",
@@ -1799,6 +1799,15 @@
   }
  ],
  "news": [
+  {
+   "date": "2026-11-22",
+   "title": "Paris Supercross: Roczen sweeps SX1 to be King of Paris; Sacha Coenen wins Prince of Paris",
+   "summary": "Ken Roczen won all six SX1 races and Sacha Coenen all three SX2 races at Paris. Sexton still has no announced 2027 team; Quad Lock Honda talks unresolved.",
+   "source": {
+    "name": "Supercross.com – Paris Supercross 2026 Results",
+    "url": "https://www.supercross.com/blogs/news/paris-supercross-2026-results"
+   }
+  },
   {
    "date": "2026-11-18",
    "title": "Red Bull KTM launches six-rider 2027 SMX team; Sexton still unannounced",
